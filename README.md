@@ -1,7 +1,7 @@
 # DIYRaman – Open Hardware Raman Spectrometer 
 
-> An open, modular Raman spectrometer you can build, understand, and modify –  
-> with documentation aimed at hobbyists, educators, and low-resource labs.
+An open, modular Raman spectrometer you can build, understand, and modify –  
+with documentation aimed at hobbyists, educators, and low-resource labs.
 
 ![Full Assembly in Overpressure Glove Box without Cuvette](assets/images_pictures/Overview-Video-Pic_1_1400px_JPG.jpg)
 
