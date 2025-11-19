@@ -1,0 +1,34 @@
+# Parts and Materials
+
+---
+
+### Sourced Parts
+
+| Qty. | Name                                         | Model-Nr.                                                                             | Related To | Source                                                               | Notes                                                                                                           | Cost (total)      |
+| ---- | -------------------------------------------- | ------------------------------------------------------------------------------------- | ---------- | -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | ----------------- |
+| 1x   | "Spectrometer Unit"                          | B&W Tek BTC-110S                                                                      |            | eBay                                                                 |                                                                                                                 | 200$              |
+| 1x   | "Longpass Filter" 550nm                      | Thorlabs FELH0550                                                                     |            | Thorlabs                                                             |                                                                                                                 | 170$              |
+| 1x   | "Dichroic Mirror" 550nm                      | Thorlabs DMLP550                                                                      |            | Thorlabs                                                             |                                                                                                                 | 230$              |
+| 1x   | "Laser" 532nm, 30mW                          | Any DPSS, 30mW - 70mW                                                                 |            | Aliexpress                                                           |                                                                                                                 | 25$               |
+| 2x   | "Kinematic Mount"                            | Thorlabs KM100                                                                        |            | Thorlabs                                                             |                                                                                                                 | 90$               |
+| 1x   | "Laser Safety Glasses"                       | PROTECT-Laserschutz<br>Terminator, Filter 0277                                        |            | [PROTECT-Laserschutz](https://protect-laserschutz.de/de/shop/~p1924) | Any laser safety glasses for 532nm (DONT BUY CHEAP CHINESE KNOCK-OFFS HERE!)                                    | 130$              |
+| 1x   | "Bandpass Filter" 532nm                      | Edmund Optics #65640                                                                  |            | Edmund Optics                                                        | OPTIONAL FOR NOW (use for cheap laser)                                                                          | 95$               |
+| 1x   | "Microscope Objective" 20x, Infinity Focused | Leitz PL Fluotar 20x/0.45 D EPI, oo/0                                                 |            | eBay Marketplace                                                     | WD > Cuvette-Thickness                                                                                          | 80$               |
+| 2x   | "Quartz Cuvette"                             |                                                                                       |            | eBay Marketplace                                                     | 1x is sufficient, but two cuvettes facilitate calibration (sample cuvette & fluorescent cuvette)                | 20$               |
+| 1x   | "Focusing Lens"                              | Thorlabs AC127-019-A - f = 19 mm, Ø1/2" Achromatic Doublet (+ optional "LMR05" mount) |            | Thorlabs                                                             | Alternatively this can be another infinity-corrected microscope objective or for testing, any plano-convex lens | 60$               |
+| 1x   | "Fiber Optic Cable" 200um                    | SMA905-SMA905 1m VIS-IR 200um                                                         |            | Aliexpress                                                           |                                                                                                                 | 50$               |
+| 1x   | 3D-Printing "Filament"                       | PETG-CF (Black)                                                                       |            |                                                                      |                                                                                                                 | 25$               |
+| 4x   | Guide Rods ⌀6mm, 100mm                       | ideally for optical applications (tight tolerances)                                   |            | eBay Marketplace / various                                           |                                                                                                                 | -                 |
+| 2x   | Guide Rods ⌀6mm, 50mm                        | ideally for optical applications (tight tolerances)                                   |            | eBay Marketplace / various                                           | (for [Linear Translation Stage](../docs/instructions/Linear%20Translation%20Stage.md) / Full Assembly)          | -                 |
+|      |                                              |                                                                                       |            |                                                                      | **<u>TOTAL</u>**                                                                                                | **<u>1,175$</u>** |
+
+### 3D-Printed Parts
+
+| Part-Nr. | Name | Qty. | Related To               | Source   | Notes | Print Preview |
+| -------- | ---- | ---- | ------------------------ | -------- | ----- | ------------- |
+| #101     |      |      |                          | Download |       |               |
+| #102     |      |      |                          |          |       |               |
+| #103     |      |      | Linear Translation Stage |          |       |               |
+| #104     |      |      |                          |          |       |               |
+| #105     |      |      |                          |          |       |               |
+| #106     |      |      |                          |          |       |               |
