@@ -8,7 +8,6 @@ The design shown here is built around a surplus [B&W Tek spectrometer module](ht
 
 For cost reasons, this setup uses a low-cost 532 nm green laser pointer together with a dichroic mirror (cut-on 550 nm) and a longpass filter (cut-on 550 nm). You can find more information in the [Parts](#parts) section below. Because the laser operates at 532 nm and the filters begin transmitting at 550 nm, the usable Raman signal will be in the Stokes region above roughly 600 cm⁻¹.
 
-![Raman shift infographic](../../assets/images_infographic/Raman-Shift_Infographic_BlackBG_Scaled_JPG.jpg)
 
 > [!NOTE] Full vs. Basic Optical Assembly  
 > The [Full Raman Optical Assembly](Full%20Raman%20Optical%20Assembly.md) incorporates the [Linear Translation Stage](Linear%20Translation%20Stage.md) along with two stepper motors to motorise the kinematic laser mount for convenience.  
@@ -20,16 +19,42 @@ For cost reasons, this setup uses a low-cost 532 nm green laser pointer togeth
 
 ### Printed parts
 
-| Qty | Part name (.stl) | Notes                                                           |
-| --- | ---------------- | ---------------------------------------------------------------- |
-| 1×  | Baseplate_Small  | Baseplate sized to fit common 3D-printer beds up to 256 mm.     |
-|     | _Further parts…_ | The full printed part list will be added for the final release. |
+| Qty  | Part name (.stl)         | Used for                                                                                              |
+| ---- | ------------------------ | ----------------------------------------------------------------------------------------------------- |
+| 1×   | `Defaultholder`          | [Sample Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly)       |
+| 2×   | `Rodholder`              | [Sample Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly)       |
+| 1×   | `Sample-Stage`           | [Sample Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly)       |
+| 1×   | `Kuvettecase_Top`        | [Sample Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly)       |
+| 1×   | `Kuvettecase_Bottom`     | [Sample Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly)       |
+| 1×   | `Objective-Mount_Insert` | [Sample Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly)       |
+| 1x   | `Laser_KM100-Insert`     | [Laser Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Laser%20Assembly)         |
+| 1x   | `Laser_KM100-Mount`      | [Laser Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Laser%20Assembly)         |
+| 3x   | `Defaultholder`          | [Focusing Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Focusing%20Assembly)   |
+| 2x   | `Rodholder`              | [Focusing Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Focusing%20Assembly)   |
+| (1x) | `SMA905_Insert`          | [Focusing Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Focusing%20Assembly)   |
+| 1x   | `Dichroic_KM100-Mount`   | [Dichroic Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Dichroic%20Assembly)   |
+| 1x   | `Baseplate_Small`        | [Baseplate Mounting](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Baseplate%20Mounting) |
 
 ### Sourced parts
 
-| Qty | Part            | Notes                                   |
-| --- | --------------- | --------------------------------------- |
-|     | _To be defined_ | Will be finalised for the full release. |
+| Qty. | Name                                       | Model-Nr.         | Source | Notes                                                                                                                                                                                 | Used for                                                                                            |
+| ---- | ------------------------------------------ | ----------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| 1×   | Cuvette                                    |                   |        | Standard spectroscopic cuvette matching the dimensions of `Kuvettecase_Bottom` and `Kuvettecase_Top`.                                                                                 | [Sample Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly)     |
+| 1×   | Microscope objective (20×, inf.-corrected) |                   |        | See [Edmund Optics – Understanding Microscopes and Objectives](https://www.edmundoptics.com/knowledge-center/application-notes/microscopy/understanding-microscopes-and-objectives/). | [Sample Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly)     |
+| 2×   | Rod (⌀ 6 mm, 100 mm)                       |                   |        | Smooth metal rods that fit the rod openings in the printed parts.                                                                                                                     | [Sample Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly)     |
+| 2×   | M3 screw + nut                             |                   |        | For clamping the microscope objective in its holder.                                                                                                                                  | [Sample Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly)     |
+| 1×   | Laser (⌀ 18 mm)                            |                   |        | Cylindrical laser module, 18 mm body.                                                                                                                                                 | [Laser Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Laser%20Assembly)       |
+| 1×   | Thorlabs KM100                             |                   |        | Kinematic mirror mount.                                                                                                                                                               | [Laser Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Laser%20Assembly)       |
+| 2–3× | M4 heat-set insert                         |                   |        | For mounting the KM100 to the base.                                                                                                                                                   | [Laser Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Laser%20Assembly)       |
+| 1×   | M3 heat-set insert                         |                   |        | For clamping the laser in the insert.                                                                                                                                                 | [Laser Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Laser%20Assembly)       |
+| 1×   | Longpass filter (550 nm)                   | Thorlabs FELH0550 |        |                                                                                                                                                                                       | [Focusing Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Focusing%20Assembly) |
+| 1×   | Focusing lens                              |                   |        | Diameter must match the corresponding printed holder.                                                                                                                                 | [Focusing Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Focusing%20Assembly) |
+| 2×   | Rod (⌀ 6 mm, 100 mm)                       |                   |        | Same rod type and diameter as used in the sample stage.                                                                                                                               | [Focusing Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Focusing%20Assembly) |
+| 6×   | M3 heat-set insert                         |                   |        | For clamping the optical elements in the holders.                                                                                                                                     | [Focusing Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Focusing%20Assembly) |
+| 6×   | M3 screws                                  |                   |        | For clamping the optical elements in the holders.                                                                                                                                     | [Focusing Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Focusing%20Assembly) |
+| 1×   | Thorlabs KM100                             |                   |        | Kinematic mirror mount.                                                                                                                                                               | [Dichroic Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Dichroic%20Assembly) |
+| 1×   | Dichroic mirror (550 nm)                   |                   |        | Thorlabs DMLP550 (or similar).                                                                                                                                                        | [Dichroic Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Dichroic%20Assembly) |
+| 1×   | M4 heat-set insert                         |                   |        | For the central KM100 mounting screw.                                                                                                                                                 | [Dichroic Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Dichroic%20Assembly) |
 
 ---
 

@@ -160,8 +160,7 @@ A suggested build order for new users:
 6. **Upgrade options** *(planned)*  
    – Alternative optics, higher-quality mechanics, software features.
 
-
-![Overview of spectrometer with optical assembly in its glovebox.](../../assets/images_pictures/Overview-Video-Pic_3_1400px_JPG.jpg)
+![](assets/images_pictures/Overview-Video-Pic_3_1400px_JPG.jpg)
 
 ---
 
