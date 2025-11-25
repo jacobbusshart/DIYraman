@@ -16,7 +16,7 @@ For cost reasons, this setup uses a low-cost 532 nm green laser pointer togeth
 
 ---
 
-## Parts
+## Parts and Materials
 
 ### Printed parts
 
@@ -53,23 +53,23 @@ The sample assembly positions the cuvette in front of the microscope objective o
 
 **Printed parts**
 
-| Qty | Part name (.stl)       | Print preview                                                                                                 |
-| --- | ---------------------- | ------------------------------------------------------------------------------------------------------------- |
-| 1×  | Defaultholder          | ![Print orientation of Defaultholder](../../assets/images_print-orientation/Print-Orientation_Defaultholder_164px_PNG.png)          |
-| 2×  | Rodholder              | ![Print orientation of Rodholder](../../assets/images_print-orientation/Print-Orientation_Rodholder_164px_PNG.png)              |
-| 1×  | Sample-Stage           | ![Print orientation of Sample-Stage](../../assets/images_print-orientation/Print-Orientation_Sample-Stage_164px_PNG.png)           |
-| 1×  | Kuvettecase_Top        | ![Print orientation of Kuvettecase_Top](../../assets/images_print-orientation/Print-Orientation_Kuvettecase_Top_164px_PNG.png)        |
-| 1×  | Kuvettecase_Bottom     | ![Print orientation of Kuvettecase_Bottom](../../assets/images_print-orientation/Print-Orientation_Kuvettecase_Bottom_164px_PNG.png)     |
+| Qty | Part name (.stl)       | Print preview                                                                                                                                |
+| --- | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1×  | Defaultholder          | ![Print orientation of Defaultholder](../../assets/images_print-orientation/Print-Orientation_Defaultholder_164px_PNG.png)                   |
+| 2×  | Rodholder              | ![Print orientation of Rodholder](../../assets/images_print-orientation/Print-Orientation_Rodholder_164px_PNG.png)                           |
+| 1×  | Sample-Stage           | ![Print orientation of Sample-Stage](../../assets/images_print-orientation/Print-Orientation_Sample-Stage_164px_PNG.png)                     |
+| 1×  | Kuvettecase_Top        | ![Print orientation of Kuvettecase_Top](../../assets/images_print-orientation/Print-Orientation_Kuvettecase_Top_164px_PNG.png)               |
+| 1×  | Kuvettecase_Bottom     | ![Print orientation of Kuvettecase_Bottom](../../assets/images_print-orientation/Print-Orientation_Kuvettecase_Bottom_164px_PNG.png)         |
 | 1×  | Objective-Mount_Insert | ![Print orientation of Objective-Mount_Insert](../../assets/images_print-orientation/Print-Orientation_Objective-Mount_Insert_164px_PNG.png) |
 
 **Sourced parts**
 
-| Qty | Sourced part                               | Notes / essential traits                                                                                                                                            |
-| --- | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1×  | Cuvette                                    | Standard spectroscopic cuvette matching the dimensions of `Kuvettecase_Bottom` and `Kuvettecase_Top`.                                                               |
+| Qty | Sourced part                               | Notes / essential traits                                                                                                                                                              |
+| --- | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1×  | Cuvette                                    | Standard spectroscopic cuvette matching the dimensions of `Kuvettecase_Bottom` and `Kuvettecase_Top`.                                                                                 |
 | 1×  | Microscope objective (20×, inf.-corrected) | See [Edmund Optics – Understanding Microscopes and Objectives](https://www.edmundoptics.com/knowledge-center/application-notes/microscopy/understanding-microscopes-and-objectives/). |
-| 2×  | Rod (⌀ 6 mm, 100 mm)                       | Smooth metal rods that fit the rod openings in the printed parts.                                                                                                   |
-| 2×  | M3 screw + nut                             | For clamping the microscope objective in its holder.                                                                                                                |
+| 2×  | Rod (⌀ 6 mm, 100 mm)                       | Smooth metal rods that fit the rod openings in the printed parts.                                                                                                                     |
+| 2×  | M3 screw + nut                             | For clamping the microscope objective in its holder.                                                                                                                                  |
 
 > [!WARNING] Before you print  
 > Make sure your sourced parts are compatible with the printed parts:  
@@ -164,10 +164,10 @@ The laser assembly holds a cylindrical laser module in a Thorlabs KM100 kinemati
 
 **Printed parts**
 
-| Qty | Part name (.stl)   | Print preview                                                                                                 |
-| --- | ------------------ | ------------------------------------------------------------------------------------------------------------- |
+| Qty | Part name (.stl)   | Print preview                                                                                                                        |
+| --- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
 | 1×  | Laser_KM100-Insert | ![Print orientation of Laser_KM100-Insert](../../assets/images_print-orientation/Print-Orientation_Laser_KM100-Insert_164px_PNG.png) |
-| 1×  | Laser_KM100-Mount  | ![Print orientation of Laser_KM100-Mount](../../assets/images_print-orientation/Print-Orientation_Laser_KM100-Mount_164px_PNG.png)  |
+| 1×  | Laser_KM100-Mount  | ![Print orientation of Laser_KM100-Mount](../../assets/images_print-orientation/Print-Orientation_Laser_KM100-Mount_164px_PNG.png)   |
 
 **Sourced parts**
 
@@ -254,21 +254,21 @@ The focusing assembly combines the longpass filter, focusing lens and (optionall
 
 **Printed parts**
 
-| Qty  | Part name (.stl) | Print preview                                                                            |
-| ---- | ---------------- | ---------------------------------------------------------------------------------------- |
+| Qty  | Part name (.stl) | Print preview                                                                                                              |
+| ---- | ---------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | 3×   | Defaultholder    | ![Print orientation of Defaultholder](../../assets/images_print-orientation/Print-Orientation_Defaultholder_164px_PNG.png) |
 | 2×   | Rodholder        | ![Print orientation of Rodholder](../../assets/images_print-orientation/Print-Orientation_Rodholder_164px_PNG.png)         |
-| (1×) | SMA905_Insert    | ![Print orientation of SMA905_Insert](../../assets/images_print-orientation/Print-Orientation_SMA905_Insert_164px_PNG.png)  |
+| (1×) | SMA905_Insert    | ![Print orientation of SMA905_Insert](../../assets/images_print-orientation/Print-Orientation_SMA905_Insert_164px_PNG.png) |
 
 **Sourced parts**
 
-| Qty | Sourced part            | Notes                                                   |
-| --- | ----------------------- | ------------------------------------------------------- |
-| 1×  | Longpass filter (550 nm) | Thorlabs FELH0550                                      |
-| 1×  | Focusing lens           | Diameter must match the corresponding printed holder.   |
+| Qty | Sourced part             | Notes                                                   |
+| --- | ------------------------ | ------------------------------------------------------- |
+| 1×  | Longpass filter (550 nm) | Thorlabs FELH0550                                       |
+| 1×  | Focusing lens            | Diameter must match the corresponding printed holder.   |
 | 2×  | Rod (⌀ 6 mm, 100 mm)     | Same rod type and diameter as used in the sample stage. |
-| 6×  | M3 heat-set insert      | For clamping the optical elements in the holders.       |
-| 6×  | M3 screws               | For clamping the optical elements in the holders.       |
+| 6×  | M3 heat-set insert       | For clamping the optical elements in the holders.       |
+| 6×  | M3 screws                | For clamping the optical elements in the holders.       |
 
 > [!WARNING] Before you print  
 > Confirm that the longpass filter and focusing lens diameters match the openings in the printed `Defaultholder` parts.
@@ -321,17 +321,17 @@ The dichroic assembly mounts a Thorlabs dichroic mirror in a KM100 kinematic mou
 
 **Printed parts**
 
-| Qty | Part name (.stl)     | Print preview                                                                                   |
-| --- | -------------------- | ----------------------------------------------------------------------------------------------- |
+| Qty | Part name (.stl)     | Print preview                                                                                                                            |
+| --- | -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | 1×  | Dichroic_KM100-Mount | ![Print orientation of Dichroic_KM100-Mount](../../assets/images_print-orientation/Print-Orientation_Dichroic_KM100-Mount_164px_PNG.png) |
 
 **Sourced parts**
 
-| Qty | Sourced part            | Notes                                   |
-| --- | ----------------------- | --------------------------------------- |
-| 1×  | Thorlabs KM100          | Kinematic mirror mount.                 |
-| 1×  | Dichroic mirror (550 nm) | Thorlabs DMLP550 (or similar).          |
-| 1×  | M4 heat-set insert      | For the central KM100 mounting screw.   |
+| Qty | Sourced part             | Notes                                 |
+| --- | ------------------------ | ------------------------------------- |
+| 1×  | Thorlabs KM100           | Kinematic mirror mount.               |
+| 1×  | Dichroic mirror (550 nm) | Thorlabs DMLP550 (or similar).        |
+| 1×  | M4 heat-set insert       | For the central KM100 mounting screw. |
 
 ---
 
@@ -383,8 +383,8 @@ In this final step you mount all sub-assemblies onto the baseplate to form the c
 
 **Printed parts**
 
-| Qty | Part name (.stl) | Dimensions      | Print preview                                                                              |
-| --- | ---------------- | --------------- | ------------------------------------------------------------------------------------------ |
+| Qty | Part name (.stl) | Dimensions       | Print preview                                                                                                                  |
+| --- | ---------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | 1×  | Baseplate_Small  | 250 × 140 × 7 mm | ![Print orientation of Baseplate_Small](../../assets/images_print-orientation/Print-Orientation_Baseplate_Small_164px_PNG.png) |
 
 **Sourced parts**

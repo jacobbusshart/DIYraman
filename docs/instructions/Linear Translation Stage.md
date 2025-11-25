@@ -2,9 +2,6 @@
 
 ![Linear translation stage – assembled](../../assets/images_picked/Linear-Translation-Stage/Linear%20Translation%20Stage%20Part%20-%20Desktop%20-%202.jpg)
 
-%% Alle gedruckten Teile des Modells revisen, vor allem die Rods zu fixieren und Teile zu minimieren + dimensional accuracy der rod holes zu gewährleisten. 
-+ überall noch step by step mittels DXF in Illustrator, analog zu Basic Assembly %%
-
 Build a compact linear translation stage for fine axial adjustment of the focusing optics in the [Full Raman Optical Assembly](Full%20Raman%20Optical%20Assembly.md).
 
 This stage uses:
@@ -23,6 +20,8 @@ The design is simple to print and tune, and accurate enough to focus the final l
 
 ## Parts and Materials
 
+![](../../assets/images_picked/Linear-Translation-Stage/LinearTranslationStage-Annotated-1-700px_JPG.jpg)
+
 ### Sourced parts
 
 | Part                          | Qty | Specification / notes                                                              |
@@ -30,7 +29,7 @@ The design is simple to print and tune, and accurate enough to focus the final l
 | Micrometer screw              | 1×  | ~10–15 mm travel, with mounting nut/collar                                         |
 | Metal rods, ⌀ 6 mm            | 2×  | ≥ 55 mm length, straight, smooth surface                                           |
 | Compression springs, ⌀ ≥ 6 mm | 2×  | Inner diameter slightly larger than 6 mm; stiffness chosen for light pre-load      |
-| M3.5 screw + washer + nut     | 4×  | ≥ 20 mm length (for mounting the stage to the main baseplate or frame)             |
+| M3.5 screw + washer + nut     | 4×  | ≥ 12 mm length (for securing two frontplates to the base)                          |
 | Sandpaper                     | –   | ~150–240 grit for fine tuning of rod holes                                         |
 | (Optional) Lubricant          | –   | Light machine oil or PTFE/silicone-based lubricant for rods and sliding interfaces |
 
@@ -44,11 +43,12 @@ The design is simple to print and tune, and accurate enough to focus the final l
 > [!NOTE] STL files  
 > All STL files are provided in the project repository. The BOM IDs below are used consistently across the documentation.
 
-| BOM-ID | Part name (.stl)              | Qty | Recommended print orientation                     | Notes                                                                 | Preview |
-| ------ | ----------------------------- | --- | ------------------------------------------------- | --------------------------------------------------------------------- | ------- |
-| 011    | `LinearStage_Base_STL`        | 1×  | Hole grid facing the build plate                  | Rod holes oversized (~⌀ 6.65 mm) to compensate vertical printing      | ![LinearStage_Base](../../assets/images_picked/Linear-Translation-Stage/Linear%20Translation%20Stage%20Part%20-%20Desktop%20-%204.jpg) |
-| 012    | `LinearStage_Stage_STL`       | 1×  | Rod holes facing the build plate                  | Rod holes sized (~⌀ 6.2 mm) for a snug but movable fit                | ![LinearStage_Stage](../../assets/images_picked/Linear-Translation-Stage/Linear%20Translation%20Stage%20Part%20-%20Desktop%20-%203.jpg) |
-| 013    | `LinearStage_Frontplate_STL`  | 1×  | Flat face down, holes facing up                   | Optional stiffening / front support plate (recommended)               | ![LinearStage_Frontplate](../../assets/images_picked/Linear-Translation-Stage/Linear%20Translation%20Stage%20Part%20-%20Desktop%20-%207.jpg) |
+| Qty  | Part name (.stl)         | Print preview                                                                                     |
+| ---- | ------------------------ | ------------------------------------------------------------------------------------------------- |
+| 1×   | `LinearStage_Base`       | ![](../../assets/images_print-orientation/Print-Orientation_LinearStage_Base_164px_PNG.png)       |
+| 1×   | `LinearStage_Stage`      | ![](../../assets/images_print-orientation/Print-Orientation_LinearStage_Stage-Dual_164px_PNG.png) |
+| 1×   | `LinearStage_Frontplate` | ![](../../assets/images_print-orientation/Print-Orientation_LinearStage_Frontplate_164px_PNG.png) |
+| (1x) | `LinearStage_L-Bracket`  | ![](../../assets/images_print-orientation/Print-Orientation_LinearStage_L-Bracket_164px_PNG.png)  |
 
 > [!TIP] Suggested print settings  
 > - Material: PETG-CF or regular PETG for stiffness and wear resistance  
@@ -63,14 +63,14 @@ The design is simple to print and tune, and accurate enough to focus the final l
 
 Good rod fit is critical for smooth and repeatable motion. Before full assembly, verify and tune the fit of the rods in both the base and the moving stage.
 
-### Step 1 – Base (BOM 011, rod fit)
+### Step 1 – Base
 
 For the base, the rods should press in firmly and not move once installed.
 
 1. Measure the rod diameter with digital callipers to confirm ~⌀ 6.0 mm.  
-2. Push each rod all the way through the rod holes in `LinearStage_Base_STL`:
+2. Push each rod all the way through the rod holes in `LinearStage_Base`:
 
-   ![Checking rod fit in the base](../../assets/images_picked/Linear-Translation-Stage/Linear%20Translation%20Stage%20Part%20-%20Desktop%20-%205.jpg)
+![](../../assets/images_picked/Linear-Translation-Stage/Step_LinearStage_Base-PushRods_1_JPG.jpg)
 
    - You should feel noticeable, even resistance as the rod enters the holes.  
    - Once inserted, the rods should not wobble or rattle in the base.
@@ -93,13 +93,13 @@ For the base, the rods should press in firmly and not move once installed.
 
 ---
 
-### Step 2 – Stage (BOM 012, sliding fit)
+### Step 2 – Stage
 
 The stage must slide smoothly on the rods with minimal play.
 
-1. Insert a rod into one of the holes in `LinearStage_Stage_STL` and push it through:
+1. Insert a rod into one of the holes in `LinearStage_Stage` and push it through:
 
-   ![Checking rod fit in the stage](../../assets/images_picked/Linear-Translation-Stage/Linear%20Translation%20Stage%20Part%20-%20Desktop%20-%206.jpg)
+   ![](../../assets/images_picked/Linear-Translation-Stage/Step_LinearStage_Stage-PushRods_2_JPG.jpg)
 
    - The rod should move with slight resistance but **not** bind or jam.  
    - A small amount of stiffness is acceptable and often improves after some movement or light lubrication.
@@ -127,10 +127,10 @@ Once the printed parts are tuned for proper rod fit, you can assemble the stage.
 
 ### Step 3 – Install the micrometer screw
 
-1. Insert the **micrometer head** into the central opening of `LinearStage_Base_STL` from the front.  
+1. Insert the **micrometer head** into the central opening of `LinearStage_Base` from the front.  
 2. Use the nut supplied with the micrometer to secure it against the base.  
 3. Make sure that:  
-   - The micrometer axis is aligned with the central recess in the `LinearStage_Stage_STL`. 
+   - The micrometer axis is aligned with the central recess in the `LinearStage_Stage`. 
    - The micrometer body does not collide with the rods or springs over the full range of motion.
 
 > [!TIP] Avoid overtightening the micrometer nut  
@@ -142,8 +142,8 @@ Once the printed parts are tuned for proper rod fit, you can assemble the stage.
 
 ![Assembly animation – base, rods, stage, springs](../../assets/images_animated/Animation_LinearStage_Assembly_512px_DIYraman_GIF.gif)
 
-1. Insert both ⌀ 6 mm rods from the **same side** of the `LinearStage_Base_STL`. Push them approximately **one third** of the way in.  
-2. Position the `LinearStage_Stage_STL` so that its central recess faces the **tip of the micrometer screw**.  
+1. Insert both ⌀ 6 mm rods from the **same side** of the `LinearStage_Base`. Push them approximately **one third** of the way in.  
+2. Position the `LinearStage_Stage` so that its central recess faces the **tip of the micrometer screw**.  
 3. Carefully align the two rod holes in the stage with the rods and slide the stage onto the rods.  
 4. Make sure the micrometer tip sits in the central recess of the stage or contacts the intended push surface.  
 5. Push the rods further through the base and stage until they protrude slightly on the opposite side, leaving room for the springs.
@@ -161,19 +161,17 @@ Once the printed parts are tuned for proper rod fit, you can assemble the stage.
 3. Push the rods fully into the base until:  
    - The springs are slightly pre-loaded (compressed a few millimetres), and  
    - The rods are fully seated in both ends of the base.
-
 4. Gently turn the micrometer screw to move the stage through its travel:  
    - The stage should move smoothly with no sudden jumps.  
    - There should be minimal backlash (lost motion) when reversing direction.  
    - The springs should stay seated and not buckle.
-
 5. Apply a **small amount of lubricant** to the rods if needed to improve the feel of the motion.
 
 ---
 
-### Step 6 – Optional: Front plate (BOM 013)
-%% Frontplate anders implementieren, wobei print orientation hier schon essenziell ist, wenn die Stage vertikal gedruckt wird - vor allem für die Rod holes. Eventuell die Base anders gestalten, um beide Seiten flush aber in richtiger Orientierung geprinted zu haben %%
-1. Align `LinearStage_Frontplate_STL` with the corresponding holes on the front of the `LinearStage_Base_STL`.  
+### Step 6 – Optional: Frontplate 
+
+1. Align `LinearStage_Frontplate` with the corresponding holes on the front of the `LinearStage_Base`.  
 2. Fix the front plate with four suitable screws (e.g. M3.5 with washers and nuts), tightening evenly.  
 3. Verify that:  
    - The rods remain parallel and properly seated.  

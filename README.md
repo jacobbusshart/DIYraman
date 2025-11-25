@@ -161,7 +161,7 @@ A suggested build order for new users:
    – Alternative optics, higher-quality mechanics, software features.
 
 
-![](../../assets/images_pictures/Overview-Video-Pic_3_1400px_JPG.jpg)
+![Overview of spectrometer with optical assembly in its glovebox.](../../assets/images_pictures/Overview-Video-Pic_3_1400px_JPG.jpg)
 
 ---
 
