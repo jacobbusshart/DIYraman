@@ -22,32 +22,9 @@
 |      |                                              |                                                                                       |                                                                      | **<u>TOTAL</u>**                                                                                                | **<u>1,175€</u>** |
 
 
-### [Linear Translation Stage](../docs/instructions/Linear%20Translation%20Stage.md#Parts%20and%20Materials)
-
-#### Sourced
-
-| Qty. | Name                          | Model-Nr. | Source                     | Notes                                                                              | Cost (total) |
-| ---- | ----------------------------- | --------- | -------------------------- | ---------------------------------------------------------------------------------- | ------------ |
-| 1x   | Micrometer Screw              | -         | Any                        | ~10–15 mm travel, with mounting nut/collar                                         | -            |
-| 2x   | Guide Rods ⌀6mm, 50mm         | -         | eBay Marketplace / various | ideally for optical applications (tight tolerances)                                | -            |
-| 2x   | Compression springs, ⌀ ≥ 6 mm | -         | Any                        | Inner diameter slightly larger than 6 mm; stiffness chosen for light pre-load      | -            |
-| 4x   | M3.5 screw + nut + washer     | -         | Any                        | ≥ 12 mm length (for securing two frontplates to the base)                          | -            |
-|      | Sandpaper                     | -         | Any                        | ~150–240 grit for fine tuning of rod holes                                         |              |
-|      | Lubricant                     |           | Any                        | Light machine oil or PTFE/silicone-based lubricant for rods and sliding interfaces |              |
-
-#### 3D-Printed
-
-| Qty  | Part name (.stl)         |
-| ---- | ------------------------ |
-| 1×   | `LinearStage_Base`       |
-| 1×   | `LinearStage_Stage`      |
-| 1×   | `LinearStage_Frontplate` |
-| (1x) | `LinearStage_L-Bracket`  |
-
-
 ### [Overpressure Glove Box](Overpressure%20Glove%20Box.md#Parts%20and%20Materials)
 
-#### Sourced
+#### Sourced Parts
 
 | Qty. | Name         | Model-Nr.                                   | Source                                                                                                | Notes                                                                                      | Cost (total) |
 | ---- | ------------ | ------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | ------------ |
@@ -63,7 +40,7 @@
 | 4×   |              | M4 × 65 mm                                  |                                                                                                       | For clamping filter + fan + brackets through the box wall.                                 |              |
 | 14×  | M4 nut       | Any M4 nut                                  | Any                                                                                                   | Matching the M4 screws.                                                                    | -            |
 
-#### 3D-Printed
+#### 3D-Printed Parts
 
 | Qty | Part name (.stl)                  | Used for                 |
 | --- | --------------------------------- | ------------------------ |
@@ -82,9 +59,32 @@
 | 1×  | `Cable‑Insert_Cover`              | Cable / feedthrough port |
 
 
+### [Spectrometer Unit](../docs/instructions/Spectrometer%20Unit.md#1.%20Parts%20and%20Materials)
+
+#### Sourced Parts
+
+| Qty. | Name               | Model-Nr.                                | Source                                             | Notes                                                                                | Cost (total) |
+| ---- | ------------------ | ---------------------------------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------ | ------------ |
+| 1x   | Spectrometer board | B&W Tek BTC-110S                         | [eBay](https://www.ebay.com/itm/143989529085)/ Any | Or any other spectrometer - ideally with SMA905 input, if you use fiber              | -            |
+| 1x   | Power supply       | 5 V, ≥ 3 A, barrel jack connector        | Any                                                | Must be stable and regulated.                                                        | -            |
+| 1x   | RS-232 to USB      | RS-232 to USB adapter cable              | Any                                                | Choose a chipset compatible with your OS (many FTDI / Prolific chips work reliably). | -            |
+| 1x   | Calibration source | CFL or mercury-vapour / calibration lamp | Any                                                | Needs several sharp lines near ~550 nm for wavelength calibration.                   | -            |
+|      | Sandpaper          | -                                        | Any                                                | ~150–240 grit for fine tuning of rod holes                                           |              |
+|      | Lubricant          |                                          | Any                                                | Light machine oil or PTFE/silicone-based lubricant for rods and sliding interfaces   |              |
+
+#### 3D-Printed Parts
+
+| Qty  | Part name (.stl)         |
+| ---- | ------------------------ |
+| 1×   | `LinearStage_Base`       |
+| 1×   | `LinearStage_Stage`      |
+| 1×   | `LinearStage_Frontplate` |
+| (1x) | `LinearStage_L-Bracket`  |
+
+
 ### [Basic Raman Optical Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Parts%20and%20Materials)
 
-#### Sourced
+#### Sourced Parts
 
 | Qty. | Name                                       | Model-Nr.         | Source | Notes                                                                                                                                                                                 | Used for                                                                                            | Cost (total) |
 | ---- | ------------------------------------------ | ----------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ------------ |
@@ -105,7 +105,7 @@
 | 1×   | Dichroic mirror (550 nm)                   |                   |        | Thorlabs DMLP550 (or similar).                                                                                                                                                        | [Dichroic Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Dichroic%20Assembly) |              |
 | 1×   | M4 heat-set insert                         |                   |        | For the central KM100 mounting screw.                                                                                                                                                 | [Dichroic Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Dichroic%20Assembly) |              |
 
-#### 3D-Printed
+#### 3D-Printed Parts
 
 | Qty  | Part name (.stl)         | Used for                                                                                              |
 | ---- | ------------------------ | ----------------------------------------------------------------------------------------------------- |
@@ -122,6 +122,29 @@
 | (1x) | `SMA905_Insert`          | [Focusing Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Focusing%20Assembly)   |
 | 1x   | `Dichroic_KM100-Mount`   | [Dichroic Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Dichroic%20Assembly)   |
 | 1x   | `Baseplate_Small`        | [Baseplate Mounting](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Baseplate%20Mounting) |
+
+
+### [Linear Translation Stage](../docs/instructions/Linear%20Translation%20Stage.md#Parts%20and%20Materials)
+
+#### Sourced Parts
+
+| Qty. | Name                          | Model-Nr. | Source                     | Notes                                                                              | Cost (total) |
+| ---- | ----------------------------- | --------- | -------------------------- | ---------------------------------------------------------------------------------- | ------------ |
+| 1x   | Micrometer Screw              | -         | Any                        | ~10–15 mm travel, with mounting nut/collar                                         | -            |
+| 2x   | Guide Rods ⌀6mm, 50mm         | -         | eBay Marketplace / various | ideally for optical applications (tight tolerances)                                | -            |
+| 2x   | Compression springs, ⌀ ≥ 6 mm | -         | Any                        | Inner diameter slightly larger than 6 mm; stiffness chosen for light pre-load      | -            |
+| 4x   | M3.5 screw + nut + washer     | -         | Any                        | ≥ 12 mm length (for securing two frontplates to the base)                          | -            |
+|      | Sandpaper                     | -         | Any                        | ~150–240 grit for fine tuning of rod holes                                         |              |
+|      | Lubricant                     |           | Any                        | Light machine oil or PTFE/silicone-based lubricant for rods and sliding interfaces |              |
+
+#### 3D-Printed Parts
+
+| Qty  | Part name (.stl)         |
+| ---- | ------------------------ |
+| 1×   | `LinearStage_Base`       |
+| 1×   | `LinearStage_Stage`      |
+| 1×   | `LinearStage_Frontplate` |
+| (1x) | `LinearStage_L-Bracket`  |
 
 
 

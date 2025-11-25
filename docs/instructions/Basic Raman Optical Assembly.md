@@ -4,9 +4,9 @@
 
 Build the basic optical assembly for the DIYRaman setup in a *backscattering* configuration. This module provides the minimum optical path you need to record your first Raman spectra.
 
-The design shown here is built around a surplus [B&W Tek spectrometer module](https://www.ebay.com/itm/143989529085), which is commonly available on the used market for around 200 USD. Other spectrometers with a similar input geometry can also be adapted.
+The design shown here is built around a surplus [B&W Tek spectrometer module](https://www.ebay.com/itm/143989529085), which is commonly available on the used market for around 200€. Other spectrometers with a similar input geometry / SMA905-connector can also be adapted.
 
-For cost reasons, this setup uses a low-cost 532 nm green laser pointer together with a dichroic mirror (cut-on 550 nm) and a longpass filter (cut-on 550 nm). You can find more information in the [Parts](#parts) section below. Because the laser operates at 532 nm and the filters begin transmitting at 550 nm, the usable Raman signal will be in the Stokes region above roughly 600 cm⁻¹.
+For cost reasons, this setup uses a low-cost 532 nm green laser pointer together with a dichroic mirror (cut-on 550 nm) and a longpass filter (cut-on 550 nm). You can find more information in the [Parts and Materials](#Parts%20and%20Materials) section below. Because the laser operates at 532 nm and the filters begin transmitting at 550 nm, the usable Raman signal will be in the Stokes region above roughly 600 cm⁻¹.
 
 
 > [!NOTE] Full vs. Basic Optical Assembly  

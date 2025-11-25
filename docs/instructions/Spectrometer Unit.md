@@ -26,7 +26,7 @@ It covers inspection and cleaning, the 3D-printed housing, first power-up, acqui
 
 ---
 
-## 1. Parts and Tools
+## 1. Parts and Materials
 
 ### 1.1 Sourced parts
 
@@ -40,9 +40,16 @@ It covers inspection and cleaning, the 3D-printed housing, first power-up, acqui
 > [!TIP] Budget builds  
 > Used BTC-110S boards are available on eBay but may also appear via surplus or auction sites and are much cheaper than new spectrometers or even buying the parts.
 
+### 1.2 Printed parts
+
+| Qty | Part name (.stl)           |
+| --- | -------------------------- |
+| 1x  | `Spectrometer-Case_Bottom` |
+| 1x  | `Spectrometer-Case_Top`    |
+
 ---
 
-### 1.2 Tools
+### 1.3 Tools
 
 - Small **hand blower** (camera cleaning blower) or compressed inert gas  
 - Lint-free cloth and **99 % isopropanol**  
@@ -95,10 +102,10 @@ The BTC-110S is an exposed PCB assembly. A simple printed case protects it from 
 
 ### 3.1 Printed parts
 
-| ID  | Name                           | Qty | Print notes |
-| --- | ------------------------------ | --- | ----------- |
-| 201 | `Spectrometer-Case_Bottom.stl` | 1   |             |
-| 202 | `Spectrometer-Case_Top.stl`    | 1   |             |
+| Qty | Part name (.stl)           | Print preview |
+| --- | -------------------------- | ------------- |
+| 1x  | `Spectrometer-Case_Bottom` |               |
+| 1x  | `Spectrometer-Case_Top`    |               |
 
 #### Print orientation & fit
 
