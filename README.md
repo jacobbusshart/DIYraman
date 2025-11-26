@@ -11,23 +11,6 @@ The goal is to make Raman spectroscopy **replicable, affordable, and well-docume
 - teaching optics and spectroscopy.
 
 
- Built from cost-efficient parts and repurposed components:
- 
-- a surplus spectrometer module [(B&W Tek - eBay](https://www.ebay.com/itm/143989529085)),
-- a cheap 532nm laser pointer,
-- 3D-printed parts,
-- various used components.
-
-
-For performance and reproducibility, essential optics had to be purchased new from Thorlabs and Edmund Optics – the most costly portion of this build:
-
-- Dichroic Mirror (DMLP550 - Thorlabs, 230$)
-- Longpass Filter (FELH0550 - Thorlabs, 170$)
-- (Optional) Bandpass Filter (#65640 - Edmund Optics, 95$)
-
-A detailed overview of all the used parts and cost can be found under `/bom/BOM (Bill of Materials).md`
-
-
 This repository contains:
 
 - **Build documentation** (step-by-step with images),
@@ -35,8 +18,26 @@ This repository contains:
 - **Software** for acquisition and visualisation,
 - **BOMs** with parts, essential properties and alternatives.
 
-> 💡 This README is a *project overview*. Detailed build instructions can be found in `docs/` and the dedicated pages (Basic Assembly, Glove Box, Linear Stage, Full Assembly, …).
+> 💡 This README is a *project overview*. Detailed build instructions can be found in `docs/` and the dedicated pages: 
+> [Basic Assembly](docs/instructions/Basic%20Raman%20Optical%20Assembly.md) | [Glove Box](docs/instructions/Overpressure%20Glove%20Box.md) | [Spectrometer Unit](docs/instructions/Spectrometer%20Unit.md) | [Linear Stage](docs/instructions/Linear%20Translation%20Stage.md) | [Full Assembly](docs/instructions/Full%20Raman%20Optical%20Assembly.md)
+ 
+![](assets/images_infographic/Optical-Path-Overview_PNG.png)
 
+ Built from cost-efficient parts and repurposed components:
+ 
+- a surplus spectrometer module [(B&W Tek - eBay](https://www.ebay.com/itm/143989529085)),
+- a cheap 532nm laser pointer,
+- 3D-printed parts,
+- various used components.
+
+For performance and reproducibility, essential optics had to be purchased new from Thorlabs and Edmund Optics – the most costly portion of this build:
+
+- Dichroic Mirror (DMLP550 - Thorlabs, 230€)
+- Longpass Filter (FELH0550 - Thorlabs, 170€)
+- (Optional) Bandpass Filter (#65640 - Edmund Optics, 95€)
+
+
+A detailed overview of all the used parts and cost can be found under [`/bom/BOM (Bill of Materials).md`](/bom/BOM%20(Bill%20of%20Materials).md)
 
 ---
 
@@ -116,7 +117,10 @@ docs/
 
 parts/                    # .STL-files for 3D-printing
   basic-assembly/
+  spectrometer-unit/
   glovebox/
+  translation-stage/
+  full-assembly/
 
 results/                  # Captured example spectra
 
@@ -174,7 +178,7 @@ You can help by:
 - proposing improved or more accessible part choices,  
 - designing mechanical variants (e.g. alternative mounts, stages),  
 - improving the GUI / firmware,  
-- sharing example spectra and calibration tips.
+- sharing example spectra or general tips.
 
 ---
 
