@@ -16,11 +16,7 @@ Lorem ipsum
 
 --------------------------
 
-## Sub-Assemblies
+## Lorem Ipsum
 
-| ![](../../assets/images_picked/Raman-Optical-Assembly/Sample-Assembly-1080px_03LW_PNG.png)<br><br>**"Sample Assembly"** | ![](../../assets/images_picked/Raman-Optical-Assembly/Focusing-Assembly-1080px_03LW_PNG.png)<br><br>**"Focusing Assembly"** |
-| ----------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-|                                                                                                                         |                                                                                                                             |
-| ![](../../assets/images_picked/Raman-Optical-Assembly/Laser-Assembly-1080px_03LW_PNG.png)<br><br>**"Laser Assembly"**   | ![](../../assets/images_picked/Raman-Optical-Assembly/Dichroic-Assembly-1080px_03LW_PNG.png)<br><br>**"Dichroic Assembly"** |
+![](../../assets/images_pictures/Picture_Motorized-KM100_512px_JPG.jpg)
 
-dw

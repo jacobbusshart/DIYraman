@@ -19,42 +19,42 @@ For cost reasons, this setup uses a low-cost 532 nm green laser pointer togeth
 
 ### Printed parts
 
-| Qty  | Part name (.stl)         | Used for                                                                                              |
-| ---- | ------------------------ | ----------------------------------------------------------------------------------------------------- |
-| 1×   | `Defaultholder`          | [Sample Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly)       |
-| 2×   | `Rodholder`              | [Sample Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly)       |
-| 1×   | `Sample-Stage`           | [Sample Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly)       |
-| 1×   | `Kuvettecase_Top`        | [Sample Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly)       |
-| 1×   | `Kuvettecase_Bottom`     | [Sample Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly)       |
-| 1×   | `Objective-Mount_Insert` | [Sample Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly)       |
-| 1x   | `Laser_KM100-Insert`     | [Laser Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Laser%20Assembly)         |
-| 1x   | `Laser_KM100-Mount`      | [Laser Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Laser%20Assembly)         |
-| 3x   | `Defaultholder`          | [Focusing Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Focusing%20Assembly)   |
-| 2x   | `Rodholder`              | [Focusing Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Focusing%20Assembly)   |
-| (1x) | `SMA905_Insert`          | [Focusing Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Focusing%20Assembly)   |
-| 1x   | `Dichroic_KM100-Mount`   | [Dichroic Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Dichroic%20Assembly)   |
-| 1x   | `Baseplate_Small`        | [Baseplate Mounting](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Baseplate%20Mounting) |
+| Qty  | Part name (.stl)         | Used for                                    |
+| ---- | ------------------------ | ------------------------------------------- |
+| 1×   | `Defaultholder`          | [Sample Assembly](#Sample%20Assembly)       |
+| 2×   | `Rodholder`              | [Sample Assembly](#Sample%20Assembly)       |
+| 1×   | `Sample-Stage`           | [Sample Assembly](#Sample%20Assembly)       |
+| 1×   | `Kuvettecase_Top`        | [Sample Assembly](#Sample%20Assembly)       |
+| 1×   | `Kuvettecase_Bottom`     | [Sample Assembly](#Sample%20Assembly)       |
+| 1×   | `Objective-Mount_Insert` | [Sample Assembly](#Sample%20Assembly)       |
+| 1x   | `Laser_KM100-Insert`     | [Laser Assembly](#Laser%20Assembly)         |
+| 1x   | `Laser_KM100-Mount`      | [Laser Assembly](#Laser%20Assembly)         |
+| 3x   | `Defaultholder`          | [Focusing Assembly](#Focusing%20Assembly)   |
+| 2x   | `Rodholder`              | [Focusing Assembly](#Focusing%20Assembly)   |
+| (1x) | `SMA905_Insert`          | [Focusing Assembly](#Focusing%20Assembly)   |
+| 1x   | `Dichroic_KM100-Mount`   | [Dichroic Assembly](#Dichroic%20Assembly)   |
+| 1x   | `Baseplate_Small`        | [Baseplate Mounting](#Baseplate%20Mounting) |
 
 ### Sourced parts
 
-| Qty. | Name                                       | Model-Nr.         | Source | Notes                                                                                                                                                                                 | Used for                                                                                            |
-| ---- | ------------------------------------------ | ----------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| 1×   | Cuvette                                    |                   |        | Standard spectroscopic cuvette matching the dimensions of `Kuvettecase_Bottom` and `Kuvettecase_Top`.                                                                                 | [Sample Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly)     |
-| 1×   | Microscope objective (20×, inf.-corrected) |                   |        | See [Edmund Optics – Understanding Microscopes and Objectives](https://www.edmundoptics.com/knowledge-center/application-notes/microscopy/understanding-microscopes-and-objectives/). | [Sample Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly)     |
-| 2×   | Rod (⌀ 6 mm, 100 mm)                       |                   |        | Smooth metal rods that fit the rod openings in the printed parts.                                                                                                                     | [Sample Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly)     |
-| 2×   | M3 screw + nut                             |                   |        | For clamping the microscope objective in its holder.                                                                                                                                  | [Sample Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly)     |
-| 1×   | Laser (⌀ 18 mm)                            |                   |        | Cylindrical laser module, 18 mm body.                                                                                                                                                 | [Laser Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Laser%20Assembly)       |
-| 1×   | Thorlabs KM100                             |                   |        | Kinematic mirror mount.                                                                                                                                                               | [Laser Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Laser%20Assembly)       |
-| 2–3× | M4 heat-set insert                         |                   |        | For mounting the KM100 to the base.                                                                                                                                                   | [Laser Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Laser%20Assembly)       |
-| 1×   | M3 heat-set insert                         |                   |        | For clamping the laser in the insert.                                                                                                                                                 | [Laser Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Laser%20Assembly)       |
-| 1×   | Longpass filter (550 nm)                   | Thorlabs FELH0550 |        |                                                                                                                                                                                       | [Focusing Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Focusing%20Assembly) |
-| 1×   | Focusing lens                              |                   |        | Diameter must match the corresponding printed holder.                                                                                                                                 | [Focusing Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Focusing%20Assembly) |
-| 2×   | Rod (⌀ 6 mm, 100 mm)                       |                   |        | Same rod type and diameter as used in the sample stage.                                                                                                                               | [Focusing Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Focusing%20Assembly) |
-| 6×   | M3 heat-set insert                         |                   |        | For clamping the optical elements in the holders.                                                                                                                                     | [Focusing Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Focusing%20Assembly) |
-| 6×   | M3 screws                                  |                   |        | For clamping the optical elements in the holders.                                                                                                                                     | [Focusing Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Focusing%20Assembly) |
-| 1×   | Thorlabs KM100                             |                   |        | Kinematic mirror mount.                                                                                                                                                               | [Dichroic Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Dichroic%20Assembly) |
-| 1×   | Dichroic mirror (550 nm)                   |                   |        | Thorlabs DMLP550 (or similar).                                                                                                                                                        | [Dichroic Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Dichroic%20Assembly) |
-| 1×   | M4 heat-set insert                         |                   |        | For the central KM100 mounting screw.                                                                                                                                                 | [Dichroic Assembly](../docs/instructions/Basic%20Raman%20Optical%20Assembly.md#Dichroic%20Assembly) |
+| Qty. | Name                                       | Notes                                                                                                                                                                                 | Used for                                  |
+| ---- | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
+| 1×   | Cuvette                                    | Standard spectroscopic cuvette matching the dimensions of `Kuvettecase_Bottom` and `Kuvettecase_Top`.                                                                                 | [Sample Assembly](#Sample%20Assembly)     |
+| 1×   | Microscope objective (20×, inf.-corrected) | See [Edmund Optics – Understanding Microscopes and Objectives](https://www.edmundoptics.com/knowledge-center/application-notes/microscopy/understanding-microscopes-and-objectives/). | [Sample Assembly](#Sample%20Assembly)     |
+| 2×   | Rod (⌀ 6 mm, 100 mm)                       | Smooth metal rods that fit the rod openings in the printed parts.                                                                                                                     | [Sample Assembly](#Sample%20Assembly)     |
+| 2×   | M3 screw + nut                             | For clamping the microscope objective in its holder.                                                                                                                                  | [Sample Assembly](#Sample%20Assembly)     |
+| 1×   | Laser (⌀ 18 mm)                            | Cylindrical laser module, 18 mm body.                                                                                                                                                 | [Laser Assembly](#Laser%20Assembly)       |
+| 1×   | Thorlabs KM100                             | Kinematic mirror mount.                                                                                                                                                               | [Laser Assembly](#Laser%20Assembly)       |
+| 2–3× | M4 heat-set insert                         | For mounting the KM100 to the base.                                                                                                                                                   | [Laser Assembly](#Laser%20Assembly)       |
+| 1×   | M3 heat-set insert                         | For clamping the laser in the insert.                                                                                                                                                 | [Laser Assembly](#Laser%20Assembly)       |
+| 1×   | Longpass filter (550 nm)                   | Thorlabs FELH0550                                                                                                                                                                     | [Focusing Assembly](#Focusing%20Assembly) |
+| 1×   | Focusing lens                              | Diameter must match the corresponding printed holder.                                                                                                                                 | [Focusing Assembly](#Focusing%20Assembly) |
+| 2×   | Rod (⌀ 6 mm, 100 mm)                       | Same rod type and diameter as used in the sample stage.                                                                                                                               | [Focusing Assembly](#Focusing%20Assembly) |
+| 6×   | M3 heat-set insert                         | For clamping the optical elements in the holders.                                                                                                                                     | [Focusing Assembly](#Focusing%20Assembly) |
+| 6×   | M3 screws                                  | For clamping the optical elements in the holders.                                                                                                                                     | [Focusing Assembly](#Focusing%20Assembly) |
+| 1×   | Thorlabs KM100                             | Kinematic mirror mount.                                                                                                                                                               | [Dichroic Assembly](#Dichroic%20Assembly) |
+| 1×   | Dichroic mirror (550 nm)                   | Thorlabs DMLP550 (or similar).                                                                                                                                                        | [Dichroic Assembly](#Dichroic%20Assembly) |
+| 1×   | M4 heat-set insert                         | For the central KM100 mounting screw.                                                                                                                                                 | [Dichroic Assembly](#Dichroic%20Assembly) |
 
 ---
 
@@ -388,7 +388,7 @@ _Source: Thorlabs – “Longpass Dichroic Mirrors/Beamsplitters”_
 _Source: Thorlabs – “Longpass Dichroic Mirrors/Beamsplitters”_
 
 3. On the Thorlabs DMLP550, the **dichroic side is indicated by a small engraved arrow pointing towards the coated surface**. This arrow is etched on the outer edge and can be hard to see in dim light.  
-4. With clean nitrile gloves, carefully hold the dichroic by its outer edge and locate the engraved arrow.  
+4. With clean powder-free nitrile gloves, carefully hold the dichroic by its outer edge and locate the engraved arrow.  
 5. Insert the dichroic mirror into the KM100 so that:  
    - The dichroic (arrow-marked) side faces the incoming laser beam (front side).  
    - The AR-coated side faces towards the KM100 adjustment knobs (back side).  
@@ -414,14 +414,14 @@ In this final step you mount all sub-assemblies onto the baseplate to form the c
 
 **Sourced parts**
 
-| Qty | Part                                    | Notes                                          |
-| --- | --------------------------------------- | ---------------------------------------------- |
-| 1×  | [Sample Assembly](#sample-assembly)     |                                                |
-| 1×  | [Laser Assembly](#laser-assembly)       |                                                |
-| 1×  | [Focusing Assembly](#focusing-assembly) |                                                |
-| 1×  | [Dichroic Assembly](#dichroic-assembly) |                                                |
-| 14× | M4 screw, 16 mm                         | For fastening sub-assemblies to the baseplate. |
-| 6×  | M4 nut                                  | For additional clamping where required.        |
+| Qty | Part                                      | Notes                                          |
+| --- | ----------------------------------------- | ---------------------------------------------- |
+| 1×  | [Sample Assembly](#Sample%20Assembly)     |                                                |
+| 1×  | [Laser Assembly](#Laser%20Assembly)       |                                                |
+| 1×  | [Focusing Assembly](#Focusing%20Assembly) |                                                |
+| 1×  | [Dichroic Assembly](#Dichroic%20Assembly) |                                                |
+| 14× | M4 screw, 16 mm                           | For fastening sub-assemblies to the baseplate. |
+| 6×  | M4 nut                                    | For additional clamping where required.        |
 
 ---
 

@@ -24,14 +24,14 @@ The design is simple to print and tune, and accurate enough to focus the final l
 
 ### Sourced parts
 
-| Part                          | Qty | Specification / notes                                                              |
-| ----------------------------- | --- | ---------------------------------------------------------------------------------- |
-| Micrometer screw              | 1×  | ~10–15 mm travel, with mounting nut/collar                                         |
-| Metal rods, ⌀ 6 mm            | 2×  | ≥ 55 mm length, straight, smooth surface                                           |
-| Compression springs, ⌀ ≥ 6 mm | 2×  | Inner diameter slightly larger than 6 mm; stiffness chosen for light pre-load      |
-| M3.5 screw + washer + nut     | 4×  | ≥ 12 mm length (for securing two frontplates to the base)                          |
-| Sandpaper                     | –   | ~150–240 grit for fine tuning of rod holes                                         |
-| (Optional) Lubricant          | –   | Light machine oil or PTFE/silicone-based lubricant for rods and sliding interfaces |
+| Qty | Part                          | Specification / notes                                                              |
+| --- | ----------------------------- | ---------------------------------------------------------------------------------- |
+| 1×  | Micrometer screw              | ~10–15 mm travel, with mounting nut/collar                                         |
+| 2×  | Metal rods, ⌀ 6 mm            | ≥ 55 mm length, straight, smooth surface                                           |
+| 2×  | Compression springs, ⌀ ≥ 6 mm | Inner diameter slightly larger than 6 mm; stiffness chosen for light pre-load      |
+| 4×  | M3.5 screw + washer + nut     | ≥ 12 mm length (for securing two frontplates to the base)                          |
+| –   | Sandpaper                     | ~150–240 grit for fine tuning of rod holes                                         |
+| –   | (Optional) Lubricant          | Light machine oil or PTFE/silicone-based lubricant for rods and sliding interfaces |
 
 > [!NOTE] Micrometer choice  
 > Any mechanical micrometer head with ~10–15 mm travel is suitable. The exact scale, brand and knob style are not critical as long as the body fits the printed holder.
@@ -41,7 +41,7 @@ The design is simple to print and tune, and accurate enough to focus the final l
 ### 3D-printed parts
 
 > [!NOTE] STL files  
-> All STL files are provided in the project repository. The BOM IDs below are used consistently across the documentation.
+> All STL files are provided in the project repository. An exhaustive overview can be found in the [BOM (Bill of Materials)](../../bom/BOM%20(Bill%20of%20Materials).md).
 
 | Qty  | Part name (.stl)         | Print preview                                                                                     |
 | ---- | ------------------------ | ------------------------------------------------------------------------------------------------- |
