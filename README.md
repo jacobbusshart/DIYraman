@@ -2,8 +2,8 @@
 
 ![License: CERN-OHL-S v2](https://img.shields.io/badge/Hardware_License-CERN--OHL--S_v2-blue) ![License: CC BY-SA 4.0](https://img.shields.io/badge/Docs_License-CC_BY--SA_4.0-green) ![License: MIT](https://img.shields.io/badge/Software_License-MIT-yellow)
 
-> **Build, understand, and modify your own Raman spectrometer.**
-> *A modular platform aimed at hobbyists, educators, and low-resource labs.*
+**Build, understand, and modify your own Raman spectrometer.**
+*A modular platform aimed at hobbyists, educators, and low-resource labs.*
 
 ![Full Assembly in Overpressure Glove Box](assets/images_pictures/Overview-Video-Pic_1_1400px_JPG.jpg)
 
@@ -62,14 +62,14 @@ The following build path is recommended to gradually increase the complexity and
 
 ## 📊 Technical Capabilities
 
+![](assets/images_pictures/Overview-Video-Pic_3_1400px_JPG.jpg)
+
 | Feature | Specification |
 | :--- | :--- |
 | **Spectral Range** | Stokes region > ~600 cm⁻¹ |
 | **Sample Type** | Solids & Liquids (Cuvette holder) |
 | **Resolution** | Dependent on B&W Tek module variant |
 | **Safety** | Enclosed optical path (Laser Class 3B precautions required during alignment) |
-
-![](assets/images_pictures/Overview-Video-Pic_3_1400px_JPG.jpg)
 
 > 🧪 **Drug / counterfeit screening**  
 > The system can be used for *exploratory, educational* screening of unknowns (e.g. counterfeit pills) but **must not** be treated as a validated forensic tool. **Always cross-check with certified methods!**
@@ -112,9 +112,9 @@ Contributions are welcome from makers, scientists, and coders. Areas for contrib
 
 A modular licensing structure is used to ensure maximum freedom for hardware and software usage.
 
-- **Hardware (CAD, Schematics):** [[]][CERN-OHL-S v2](https://www.google.com/search?q=LICENSES/CERN_OHL_S_V2.txt)
-- **Documentation (Guides, Images):** [CC BY-SA 4.0](https://www.google.com/search?q=LICENSES/CC-BY-SA-4.0.txt)
-- **Software (Firmware, GUI):** [MIT License](https://www.google.com/search?q=LICENSES/MIT.txt)
+- **Hardware (CAD, Schematics):** [CERN-OHL-S v2](LICENSES/CERN_OHL_S_V2.txt)
+- **Documentation (Guides, Images):** [CC BY-SA 4.0](LICENSES/CC-BY-SA-4.0.txt)
+- **Software (Firmware, GUI):** [MIT License](LICENSES/MIT.txt)
 
 ---
 
