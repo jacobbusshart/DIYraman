@@ -21,7 +21,7 @@ Raman spectroscopy allows for the identification of substances by analyzing how 
 * **Teach Optics:** A hands-on platform for learning spectroscopy and photonics.
 
 > 💡 This README is a *project overview*. Detailed build instructions can be found in `docs/` and the dedicated pages: 
-> [Basic Assembly](docs/instructions/Basic%20Raman%20Optical%20Assembly.md) | [Glove Box](docs/instructions/Overpressure%20Glove%20Box.md) | [Spectrometer Unit](docs/instructions/Spectrometer%20Unit.md) | [Rhodamine B](docs/instructions/Rhodamine%20B.md) | [Linear Stage](docs/instructions/Linear%20Translation%20Stage.md) | [Full Assembly](docs/instructions/Full%20Raman%20Optical%20Assembly.md)
+> [Basic Assembly](docs/Basic%20Raman%20Optical%20Assembly.md) | [Glove Box](docs/Overpressure%20Glove%20Box.md) | [Spectrometer Unit](docs/Spectrometer%20Unit.md) | [Rhodamine B](docs/Rhodamine%20B.md) | [SpectrumStudio Cheatsheet](docs/Spectrum%20Studio%20Cheatsheet.md) | [Linear Stage](docs/Linear%20Translation%20Stage.md) | [Full Assembly](docs/Full%20Raman%20Optical%20Assembly.md)
 
 ---
 
@@ -48,11 +48,11 @@ The following build path is recommended to gradually increase the complexity and
 
 | Step  | Module                                                                        | Description                                                              | Status     |
 | :---- | :---------------------------------------------------------------------------- | :----------------------------------------------------------------------- | :--------- |
-| **1** | [**Spectrometer Unit**](docs/instructions/Spectrometer%20Unit.md)             | Setup and testing of the B&W Tek sensor module.                          | 🟡 WiP     |
-| **2** | [**Glove Box**](docs/instructions/Overpressure%20Glove%20Box.md)              | Enclosure construction to keep optics dust-free and ensure laser safety. | ✅ Ready    |
-| **3** | [**Basic Assembly**](docs/instructions/Basic%20Raman%20Optical%20Assembly.md) | Alignment of the backscattering path. **Goal: First rough spectrum.**    | ✅ Ready    |
-| **4** | [**Linear Stage**](docs/instructions/Linear%20Translation%20Stage.md)         | Addition of fine focus control for precise measurements.                 | 🟡 WiP     |
-| **5** | [**Full Assembly**](docs/instructions/Full%20Raman%20Optical%20Assembly.md)   | Motorization and final integration.                                      | 🟠 Draft   |
+| **1** | [**Spectrometer Unit**](docs/Spectrometer%20Unit.md)             | Setup and testing of the B&W Tek sensor module.                          | 🟡 WiP     |
+| **2** | [**Glove Box**](docs/Overpressure%20Glove%20Box.md)              | Enclosure construction to keep optics dust-free and ensure laser safety. | ✅ Ready    |
+| **3** | [**Basic Assembly**](docs/Basic%20Raman%20Optical%20Assembly.md) | Alignment of the backscattering path. **Goal: First rough spectrum.**    | ✅ Ready    |
+| **4** | [**Linear Stage**](docs/Linear%20Translation%20Stage.md)         | Addition of fine focus control for precise measurements.                 | 🟡 WiP     |
+| **5** | [**Full Assembly**](docs/Full%20Raman%20Optical%20Assembly.md)   | Motorization and final integration.                                      | 🟠 Draft   |
 | **6** | **Software / GUI**                                                            | Custom acquisition and visualization software.                           | 🔴 Planned |
 
 

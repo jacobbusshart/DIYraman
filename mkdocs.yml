@@ -1,0 +1,28 @@
+site_name: DIYraman Documentation
+site_url: https://docs.diyraman.com
+
+docs_dir: docs
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - search.highlight
+    - search.suggest
+
+# IMPORTANT: no "nav:" section here.
+# MkDocs will auto-discover all .md files in docs/ and navigation respectively!!
+
+repo_url: https://github.com/jacobbusshart/DIYraman
+repo_name: DIYraman
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - footnotes
+  - def_list
+  - attr_list
