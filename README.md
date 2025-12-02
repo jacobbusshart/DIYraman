@@ -32,7 +32,7 @@ To balance cost with performance, DIYraman uses a "hybrid" approach: Professiona
 ![Optical Path Overview](assets/images_infographic/Optical-Path-Overview_PNG.png)
 
 ### The Stack
-* **Spectrometer:** Surplus B&W Tek module (repurposed from eBay).
+* **Spectrometer:** Surplus BTC100-2S unit (available on [eBay](https://www.ebay.com/itm/143989529085)).
 * **Excitation:** Cost-effective 532nm DPSS laser pointer.
 * **Mechanics:** Fully 3D-printable modular stages and enclosures.
 * **Critical Optics:** High-quality dichroic mirrors and filters (Thorlabs/Edmund Optics) are used to ensure signal integrity.
@@ -44,16 +44,16 @@ A detailed cost breakdown and parts list is available in the [**Bill of Material
 
 ## 🚀 Progress & Build Guide
 
-The following build path is recommended to gradually increase the complexity and capability of the setup. This table reflects the current development status of the project modules.
+The following build path is recommended for a complete and coherent build-experience. The table reflects the current development status of the project's modules.
 
-| Step  | Module                                                                        | Description                                                              | Status     |
-| :---- | :---------------------------------------------------------------------------- | :----------------------------------------------------------------------- | :--------- |
-| **1** | [**Spectrometer Unit**](docs/Spectrometer%20Unit.md)             | Setup and testing of the B&W Tek sensor module.                          | 🟡 WiP     |
-| **2** | [**Glove Box**](docs/Overpressure%20Glove%20Box.md)              | Enclosure construction to keep optics dust-free and ensure laser safety. | ✅ Ready    |
-| **3** | [**Basic Assembly**](docs/Basic%20Raman%20Optical%20Assembly.md) | Alignment of the backscattering path. **Goal: First rough spectrum.**    | ✅ Ready    |
-| **4** | [**Linear Stage**](docs/Linear%20Translation%20Stage.md)         | Addition of fine focus control for precise measurements.                 | 🟡 WiP     |
-| **5** | [**Full Assembly**](docs/Full%20Raman%20Optical%20Assembly.md)   | Motorization and final integration.                                      | 🟠 Draft   |
-| **6** | **Software / GUI**                                                            | Custom acquisition and visualization software.                           | 🔴 Planned |
+| Step  | Module                                                           | Description                                                                  | Status        |
+| :---- | :--------------------------------------------------------------- | :--------------------------------------------------------------------------- | :------------ |
+| **1** | [**Spectrometer Unit**](docs/Spectrometer%20Unit.md)             | Setup and testing of the B&W Tek spectrometer.                               | 🟡 Usable     |
+| **2** | [**Glove Box**](docs/Overpressure%20Glove%20Box.md)              | DIY overpressure glovebox construction to keep optics dust-free.             | ✅ Ready       |
+| **3** | [**Basic Assembly**](docs/Basic%20Raman%20Optical%20Assembly.md) | Essential optical assembly to acquire first Raman spectra.                   | ✅ Ready       |
+| **4** | [**Linear Stage**](docs/Linear%20Translation%20Stage.md)         | DIY build of a low-cost linear translation stage for fine focus adjustments. | 🟡 WiP        |
+| **5** | [**Full Assembly**](docs/Full%20Raman%20Optical%20Assembly.md)   | Motorization and integration of Linear Stage.                                | 🟠 Incomplete |
+| **6** | **Software / GUI**                                               | Custom acquisition and visualization software.                               | 🔴 Planned    |
 
 
 > **Status Key:** ✅ = Verified & Documented | 🟡 = Usable, Docs in Progress | 🟠 = Draft / Unstable | 🔴 = Planned / Unpublished

@@ -443,7 +443,9 @@ In this final step you mount all sub-assemblies onto the baseplate to form the c
 
 ## Continue reading
 
-- [Acquiring your first spectrum](Acquiring%20your%20first%20spectrum.md)  
+- [Spectrometer Unit](Spectrometer%20Unit.md)
+- [Spectrum Studio Cheatsheet](Spectrum%20Studio%20Cheatsheet.md)
+- [Rhodamine B](Rhodamine%20B.md)
 - [Build the Linear Translation Stage](Linear%20Translation%20Stage.md)  
 - [Build the Overpressure Glovebox](Overpressure%20Glove%20Box.md)  
 - [Build the Full Assembly](Full%20Raman%20Optical%20Assembly.md)  
