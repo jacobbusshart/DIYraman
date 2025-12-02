@@ -34,7 +34,7 @@ theme:
         name: Switch to dark mode
 
   font:
-    text: Roboto
+    text: Inter
     code: JetBrains Mono
 
 plugins:
