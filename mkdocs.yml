@@ -17,6 +17,7 @@ theme:
     - search.suggest
     - search.highlight
     - content.code.copy
+    - content.tabs.link
 
   palette:
     - scheme: slate          # dark scheme first = default
@@ -38,11 +39,13 @@ theme:
 
 plugins:
   - search
+  - callouts
 
 repo_url: https://github.com/jacobbusshart/DIYraman
 repo_name: DIYraman
 
 markdown_extensions:
+  - nl2br
   - admonition
   - toc:
       permalink: "#"
