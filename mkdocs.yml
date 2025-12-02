@@ -6,15 +6,40 @@ docs_dir: docs
 theme:
   name: material
   language: en
-  features:
-    - navigation.tabs
-    - navigation.sections
-    - toc.integrate
-    - search.highlight
-    - search.suggest
 
-# IMPORTANT: no "nav:" section here.
-# MkDocs will auto-discover all .md files in docs/ and navigation respectively!!
+  # 👇 These give you Coolify-like navigation & layout
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.expand
+    - navigation.tracking
+    - toc.integrate
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+  # 👇 Dark mode as default, with toggle to light
+  palette:
+    - scheme: slate          # dark scheme first = default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+  font:
+    text: Roboto
+    code: JetBrains Mono
+
+plugins:
+  - search
 
 repo_url: https://github.com/jacobbusshart/DIYraman
 repo_name: DIYraman
@@ -22,7 +47,13 @@ repo_name: DIYraman
 markdown_extensions:
   - admonition
   - toc:
-      permalink: true
-  - footnotes
-  - def_list
-  - attr_list
+      permalink: "#"
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.emoji
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
