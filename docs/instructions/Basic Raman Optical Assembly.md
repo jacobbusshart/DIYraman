@@ -2,7 +2,7 @@
 
 ![Basic Raman optical assembly overview](../../assets/images_picked/Raman-Optical-Assembly/FULL-Basic-Assembly-1400px_Screenshot_PNG-1.png)
 
-Build the basic optical assembly for the DIYRaman setup in a *backscattering* configuration. This module provides the minimum optical path you need to record your first Raman spectra.
+Build the basic optical assembly for the DIYraman setup in a *backscattering* configuration. This module provides the minimum optical path you need to record your first Raman spectra.
 
 The design shown here is built around a surplus [B&W Tek spectrometer module](https://www.ebay.com/itm/143989529085), which is commonly available on the used market for around 200€. Other spectrometers with a similar input geometry / SMA905-connector can also be adapted.
 
@@ -158,7 +158,7 @@ To ensure the printed parts slide smoothly but without play on the rods, test-fi
 
 ![Checking cuvette fit in the bottom holder](../../assets/images_picked/Raman-Optical-Assembly/Step-Graphics/Step_Sample_Kuvette_4_JPG.jpg)
 
-2. Slide the `Kuvettecase_Top` over the `Kuvettecase_Bottom` with the cuvette inside. The top should move smoothly and close without force.  
+2. Slide the `Kuvettecase_Top` over the `Kuvettecase_Bottom` with the cuvette inside. The top should sit tightly and close with some friction.  
 3. If the `Kuvettecase_Top` is too tight, lightly sand the inside surfaces. Afterwards, wipe off dust with a damp cloth.  
 4. If it still does not fit, slightly scale the `Kuvettecase_Top` in your slicer (for example, to 101 % in X/Y/Z) and re-print.  
 5. The cover is optional but recommended to reduce spills and minimise stray light entering from above.

@@ -154,8 +154,8 @@ Once the cuvette is mounted in the [Sample Assembly](Basic%20Raman%20Optical%20A
 3. From the side, verify a bright orange beam path and a clearly defined focus inside the cuvette.  
 4. In the acquisition software you should see:  
    - A strong, broad fluorescence band at longer wavelengths (Stokes side).  
-   - A heavily suppressed 532 nm laser line if longpass/notch filters are correctly installed. 
-5. Adjust mirror angles and focus until the fluorescence signal is strong and stable, aiming for the highest intensity value possible.
+   - A heavily suppressed 532 nm laser line if longpass filters are correctly installed. 
+1. Adjust mirror angles and focus until the fluorescence signal is strong and stable, aiming for the highest intensity value possible.
 
 > [!TIP] Quick troubleshooting  
 > - **No signal** → beam misses the cuvette or hits the plastic holder.  

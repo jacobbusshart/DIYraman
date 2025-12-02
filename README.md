@@ -21,7 +21,7 @@ Raman spectroscopy allows for the identification of substances by analyzing how 
 * **Teach Optics:** A hands-on platform for learning spectroscopy and photonics.
 
 > 💡 This README is a *project overview*. Detailed build instructions can be found in `docs/` and the dedicated pages: 
-> [Basic Assembly](docs/instructions/Basic%20Raman%20Optical%20Assembly.md) | [Glove Box](docs/instructions/Overpressure%20Glove%20Box.md) | [Spectrometer Unit](docs/instructions/Spectrometer%20Unit.md) | [Linear Stage](docs/instructions/Linear%20Translation%20Stage.md) | [Full Assembly](docs/instructions/Full%20Raman%20Optical%20Assembly.md)
+> [Basic Assembly](docs/instructions/Basic%20Raman%20Optical%20Assembly.md) | [Glove Box](docs/instructions/Overpressure%20Glove%20Box.md) | [Spectrometer Unit](docs/instructions/Spectrometer%20Unit.md) | [Rhodamine B](docs/instructions/Rhodamine%20B.md) | [Linear Stage](docs/instructions/Linear%20Translation%20Stage.md) | [Full Assembly](docs/instructions/Full%20Raman%20Optical%20Assembly.md)
 
 ---
 

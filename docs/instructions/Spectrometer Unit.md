@@ -147,6 +147,7 @@ Connect the RS-232 adapter between the DB-9 port and your PC.
 
 For initial testing, use the **original B&W Tek software** ([Spectrum Studio - Click to Download](https://drive.google.com/file/d/1ooKja8GXg5gMX-swFjbmAXFP61ucyWT_/view?usp=sharing)) to confirm that communication and data acquisition work as expected.
 
+**Visit [Spectrum Studio Cheatsheet](Spectrum%20Studio%20Cheatsheet.md) for a quick overview of the UI elements and their usage!**
 ### 5.1 Software setup
 
 1. Start the OEM software with the spectrometer powered.  
