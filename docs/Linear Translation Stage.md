@@ -22,40 +22,27 @@ The design is simple to print and tune, and accurate enough to focus the final l
 
 ![](../../assets/images_picked/Linear-Translation-Stage/LinearTranslationStage-Annotated-1-700px_JPG.jpg)
 
+
+> [!EXAMPLE] Visit the complete Bill of Materials
+> Everything you will need, both printed parts and sourced parts, along with their cost and supplier, can be viewed in the dedicated [BOM (Bill of Materials)](../bom/BOM%20(Bill%20of%20Materials).md)!
+
 ### Sourced parts
 
-| Qty | Part                          | Specification / notes                                                              |
-| --- | ----------------------------- | ---------------------------------------------------------------------------------- |
-| 1×  | Micrometer screw              | ~10–15 mm travel, with mounting nut/collar                                         |
-| 2×  | Metal rods, ⌀ 6 mm            | ≥ 55 mm length, straight, smooth surface                                           |
-| 2×  | Compression springs, ⌀ ≥ 6 mm | Inner diameter slightly larger than 6 mm; stiffness chosen for light pre-load      |
-| 4×  | M3.5 screw + washer + nut     | ≥ 12 mm length (for securing two frontplates to the base)                          |
-| –   | Sandpaper                     | ~150–240 grit for fine tuning of rod holes                                         |
-| –   | (Optional) Lubricant          | Light machine oil or PTFE/silicone-based lubricant for rods and sliding interfaces |
+| Qty | Name                      | Model / Spec                                                                                                  | Notes                                               |
+| --- | ------------------------- | ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| 1x  | Micrometer screw          | ~10-15 mm travel                                                                                              | With mounting nut/collar                            |
+| 2x  | Guide Rod ⌀ 6 mm, 55 mm   | Any, [ER Assembly Rods for 30 mm Cage Systems](https://www.thorlabs.de/newgrouppage9.cfm?objectgroup_ID=4125) | Ideally for optical applications (tight tolerances) |
+| 2x  | Compression spring        | ⌀ ≥ 6 mm                                                                                                      | Stiffness chosen for light pre-load                 |
+| 4x  | M3.5 screw + washer + nut | ~12 mm length                                                                                                 |                                                     |
 
-> [!NOTE] Micrometer choice  
-> Any mechanical micrometer head with ~10–15 mm travel is suitable. The exact scale, brand and knob style are not critical as long as the body fits the printed holder.
+### Printed parts
 
----
-
-### 3D-printed parts
-
-> [!NOTE] STL files  
-> All STL files are provided in the project repository. An exhaustive overview can be found in the [BOM (Bill of Materials)](../../bom/BOM%20(Bill%20of%20Materials).md).
-
-| Qty  | Part name (.stl)         | Print preview                                                                                     |
-| ---- | ------------------------ | ------------------------------------------------------------------------------------------------- |
-| 1×   | `LinearStage_Base`       | ![](../../assets/images_print-orientation/Print-Orientation_LinearStage_Base_164px_PNG.png)       |
-| 1×   | `LinearStage_Stage`      | ![](../../assets/images_print-orientation/Print-Orientation_LinearStage_Stage-Dual_164px_PNG.png) |
-| 1×   | `LinearStage_Frontplate` | ![](../../assets/images_print-orientation/Print-Orientation_LinearStage_Frontplate_164px_PNG.png) |
-| (1x) | `LinearStage_L-Bracket`  | ![](../../assets/images_print-orientation/Print-Orientation_LinearStage_L-Bracket_164px_PNG.png)  |
-
-> [!TIP] Suggested print settings  
-> - Material: PETG-CF or regular PETG for stiffness and wear resistance  
-> - Layer height: 0.2 mm  
-> - Perimeters: ≥ 3 walls  
-> - Infill: 30–40 % grid or gyroid  
-> - Supports: Not required in the recommended orientations
+| Qty | Part name (.stl)         | Print preview                                                                                     |
+| --- | ------------------------ | ------------------------------------------------------------------------------------------------- |
+| 1x  | `LinearStage_Base`       | ![](../../assets/images_print-orientation/Print-Orientation_LinearStage_Base_164px_PNG.png)       |
+| 1x  | `LinearStage_Stage`      | ![](../../assets/images_print-orientation/Print-Orientation_LinearStage_Stage-Dual_164px_PNG.png) |
+| 1x  | `LinearStage_Frontplate` | ![](../../assets/images_print-orientation/Print-Orientation_LinearStage_Frontplate_164px_PNG.png) |
+| 1x  | `LinearStage_L-Bracket`  | ![](../../assets/images_print-orientation/Print-Orientation_LinearStage_L-Bracket_164px_PNG.png)  |
 
 ---
 

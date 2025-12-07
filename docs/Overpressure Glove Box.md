@@ -17,50 +17,43 @@ This glove box is sized around an off‑the‑shelf IKEA SAMLA box but the conce
 
 ## Parts and Materials
 
+
+> [!EXAMPLE] Visit the complete Bill of Materials
+> Everything you will need, both printed parts and sourced parts, along with their cost and supplier, can be viewed in the dedicated [BOM (Bill of Materials)](../bom/BOM%20(Bill%20of%20Materials).md)!
+
 ### Sourced parts
 
-> [!TIP] Quantities and lengths
-> The exact screw lengths and fan model are not critical. Use comparable sizes and adjust where needed.
+| Qty                  | Name           | Model / Spec                                                                                                       | Notes                                                                                      |
+| -------------------- | -------------- | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
+| 1x                   | Storage box    | [IKEA SAMLA](https://www.ikea.com/de/en/p/samla-box-with-lid-transparent-s99440774/), transparent, <br>57×39×42 cm | Any similar box works, separate lid that forms tight seal is ideal.                        |
+| 1x                   | HEPA filter    | [IKEA UPPATVIND](https://www.ikea.com/de/en/p/uppatvind-filter-for-particle-removal-90551498/)                     | Any HEPA / fine dust filter of similar size works. Higher filtration = more pressure drop. |
+| 2x                   | PC fan         | Any, 120 mm PC fan                                                                                                 | 12V DC fans. Check current draw and airflow rating.                                        |
+| 2x                   | Gloves         | Any, long‑sleeved chemical or dishwashing gloves                                                                   | Choose gloves long enough to reach all areas inside the box.                               |
+| 14x                  | M4 screw + nut | Hex socket head cap screw                                                                                          | Mixture of lengths below.                                                                  |
+| 4x<br>4x<br>2x<br>4x |                | M4 × 12 mm<br>M4 × 16 mm<br>M4 × 20 mm<br>M4 × 65 mm                                                               |                                                                                            |
 
-| Qty | Name         | Model / example                             | Source                                                                                                | Notes                                                                                      |
-| --- | ------------ | ------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| 1×  | Box with lid | IKEA SAMLA, transparent, 57 × 39 × 42 cm    | [IKEA SAMLA box with lid](https://www.ikea.com/de/en/p/samla-box-with-lid-transparent-s99440774/)     | Any similar box works; a separate lid that forms a tight seal is ideal.                    |
-| 1×  | HEPA filter  | IKEA UPPATVIND                              | [IKEA UPPATVIND filter](https://www.ikea.com/de/en/p/uppatvind-filter-for-particle-removal-90551498/) | Any HEPA / fine dust filter of similar size works. Higher filtration = more pressure drop. |
-| 2×  | PC fan       | 120 mm PC fan                               | Any                                                                                                   | 12 V DC fans. Check current draw and airflow rating.                                       |
-| 1×  | Power supply | 12 V DC with barrel plug                    | Any                                                                                                   | Can also be 12.6 V. Make sure current rating ≥ sum of both fans.                           |
-| 1×  | Gloves       | Long‑sleeved chemical or dishwashing gloves | Any                                                                                                   | Choose gloves long enough to reach all areas inside the box.                               |
-| 14× | M4 screw     | Hex socket head cap screw                   | Any                                                                                                   | Mixture of lengths below.                                                                  |
-| 4×  |              | M4 × 12 mm                                  |                                                                                                       | Short screw length.                                                                        |
-| 4×  |              | M4 × 16 mm                                  |                                                                                                       | Medium screw length.                                                                       |
-| 2×  |              | M4 × 20 mm                                  |                                                                                                       | For thicker walls / stacked parts.                                                         |
-| 4×  |              | M4 × 65 mm                                  |                                                                                                       | For clamping filter + fan + brackets through the box wall.                                 |
-| 14× | M4 nut       | Any M4 nut                                  | Any                                                                                                   | Matching the M4 screws.                                                                    |
+### Printed parts
 
-### 3D‑printed parts
-
-> [!NOTE] Downloading the STL files  
-> All STL files are provided in the project repository. Parts are listed here with their role in the glove box.
-
-| Qty | Name                            | Used in                  | Source   | Notes                      |
-| --- | ------------------------------- | ------------------------ | -------- | -------------------------- |
-| 1×  | Fan_Connector‑Bracket           | Fan / filter assembly    | Download | Links fans to baseplate.   |
-| 1×  | Fan_Baseplate                   | Fan / filter assembly    | Download | Sits against the box lid.  |
-| 2×  | Filter_Holder‑Clamp             | Fan / filter assembly    | Download | Clamps the HEPA filter.    |
-| 4×  | Fan_Outer‑Bracket               | Fan / filter assembly    | Download | Outer support brackets.    |
-| 2×  | Glove‑Insert_Inner              | Glove ports              | Download | Sits inside the lid.       |
-| 2×  | Glove‑Insert_Outer‑Ring         | Glove ports              | Download | Clamps glove in the lid.   |
-| 1×  | Large‑Insert_Inner              | Large service port       | Download | For larger access port.    |
-| 1×  | Large‑Insert_Threaded‑Cover     | Large service port       | Download | Threaded inner cover.      |
-| 1×  | Large‑Insert_Outer‑Cover‑Open   | Large service port       | Download | Open cover variant.        |
-| 1×  | Large‑Insert_Outer‑Cover‑Closed | Large service port       | Download | Fully closed cover.        |
-| 1×  | Cable‑Insert_Inner              | Cable / feedthrough port | Download | Sits inside the wall.      |
-| 1×  | Cable‑Insert_Nut                | Cable / feedthrough port | Download | Locks insert from outside. |
-| 1×  | Cable‑Insert_Cover              | Cable / feedthrough port | Download | Closes port when unused.   |
+| Qty | Part name (.stl)                  | Used in                  |
+| --- | --------------------------------- | ------------------------ |
+| 1x  | `Fan_Connector‑Bracket`           | Fan / filter assembly    |
+| 1x  | `Fan_Baseplate`                   | Fan / filter assembly    |
+| 2x  | `Filter_Holder‑Clamp`             | Fan / filter assembly    |
+| 4x  | `Fan_Outer‑Bracket`               | Fan / filter assembly    |
+| 2x  | `Glove‑Insert_Inner`              | Glove ports              |
+| 2x  | `Glove‑Insert_Outer‑Ring`         | Glove ports              |
+| 1x  | `Large‑Insert_Inner`              | Large service port       |
+| 1x  | `Large‑Insert_Threaded‑Cover`     | Large service port       |
+| 1x  | `Large‑Insert_Outer‑Cover‑Open`   | Large service port       |
+| 1x  | `Large‑Insert_Outer‑Cover‑Closed` | Large service port       |
+| 1x  | `Cable‑Insert_Inner`              | Cable / feedthrough port |
+| 1x  | `Cable‑Insert_Nut`                | Cable / feedthrough port |
+| 1x  | `Cable‑Insert_Cover`              | Cable / feedthrough port |
 
 ### Notes for printing
 
 > [!TIP] Suggested print settings  
-> - Material: PETG(-CF) or ABS recommended for best strength.  
+> - Material: PETG-CF or ABS recommended for best strength.  
 > - Layer height: 0.2 mm.  
 > - Infill: 30–40 % gyroid or cubic.  
 > - Perimeters: ≥ 3 perimeters (walls) for brackets and inserts.  

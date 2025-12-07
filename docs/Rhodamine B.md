@@ -18,25 +18,28 @@ A dilute Rhodamine B solution is the **standard alignment sample** for the Raman
 
 ## Parts and Materials
 
-### Printed parts
+> [!EXAMPLE] Visit the complete Bill of Materials
+> Everything you will need, both printed parts and sourced parts, along with their cost and supplier, can be viewed in the dedicated [BOM (Bill of Materials)](../bom/BOM%20(Bill%20of%20Materials).md)!
 
-| Qty | Part name (.stl)     | Used with                                                                  |
-| --- | -------------------- | -------------------------------------------------------------------------- |
-| 1×  | `Kuvettecase_Top`    | [Sample Assembly](Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly) |
-| 1×  | `Kuvettecase_Bottom` | [Sample Assembly](Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly) |
 
 ### Sourced parts
 
-| Qty | Item                                | Notes                                                                                         |
-| --- | ----------------------------------- | --------------------------------------------------------------------------------------------- |
-| 1×  | Rhodamine B / fluorescent dye       | Any strong fluorescent dye with excitation near 532 nm; instructions here assume Rhodamine B. |
-| 1×  | Cuvette                             | Standard spectroscopic cuvette, compatible with the printed holder.                           |
-| 1×  | Small glass container               | For the initial stock solution.                                                               |
-| 1×  | Pipette or syringe (1–5 mL)         | For transferring and diluting the solution.                                                   |
-| –   | Distilled / deionised water         | Solvent. Ethanol is also possible.                                                            |
-| –   | PPE (gloves, goggles, lab coat)     | **Mandatory** for safe handling.                                                              |
-| –   | Paper towels / wipes                | For immediate cleanup of spills.                                                              |
-| –   | Dark glass bottle / vial (optional) | For storing a small batch light-protected for a few days.                                     |
+| Qty | Name                            | Model / Spec                     | Notes                                                                                                             |
+| --- | ------------------------------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| 1x  | Quartz Cuvette                  | Any                              | Same as [Basic Raman Optical Assembly - Sample Assembly](Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly) |
+| 1x  | Fluorescent dye                 | Rhodamine B (*CAS: 81-88-9*), 5g | Any strong fluorescent material with excitation at around the laser's wavelength (532 nm)                         |
+| -   | Pipette or syringe (1–5 mL)     |                                  |                                                                                                                   |
+| -   | Distilled / deionised water     |                                  |                                                                                                                   |
+| -   | PPE (gloves, goggles, lab coat) |                                  |                                                                                                                   |
+
+
+### Printed parts
+
+| Qty | Part name (.stl)     | Used in                                                                                    |
+| --- | -------------------- | ------------------------------------------------------------------------------------------ |
+| 1x  | `Kuvettecase_Top`    | Identical used: [Sample Assembly](Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly) |
+| 1x  | `Kuvettecase_Bottom` | Identical used: [Sample Assembly](Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly) |
+
 
 
 ---

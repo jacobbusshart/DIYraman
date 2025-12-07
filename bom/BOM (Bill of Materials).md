@@ -2,161 +2,121 @@
 
 ---
 
-### Essential Sourced Parts
+## [Basic Raman Optical Assembly](Basic%20Raman%20Optical%20Assembly.md)
 
-| Qty. | Name                                         | Model-Nr.                                                                             | Source                                                               | Notes                                                                                                           | Cost (total)      |
-| ---- | -------------------------------------------- | ------------------------------------------------------------------------------------- | -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | ----------------- |
-| 1x   | "Spectrometer Unit"                          | B&W Tek BTC100-2S                                                                     | [eBay](https://www.ebay.com/itm/143989529085)                        |                                                                                                                 | 200€              |
-| 1x   | "Longpass Filter" 550nm                      | Thorlabs FELH0550                                                                     | Thorlabs                                                             |                                                                                                                 | 170€              |
-| 1x   | "Dichroic Mirror" 550nm                      | Thorlabs DMLP550                                                                      | Thorlabs                                                             |                                                                                                                 | 230€              |
-| 1x   | "Laser" 532nm, 30mW                          | Any DPSS, 30mW - 70mW                                                                 | Aliexpress                                                           |                                                                                                                 | 25€               |
-| 2x   | "Kinematic Mount"                            | Thorlabs KM100                                                                        | Thorlabs                                                             |                                                                                                                 | 90€               |
-| 1x   | "Laser Safety Glasses"                       | PROTECT-Laserschutz<br>Terminator, Filter 0277                                        | [PROTECT-Laserschutz](https://protect-laserschutz.de/de/shop/~p1924) | Any laser safety glasses for 532nm (DONT BUY CHEAP CHINESE KNOCK-OFFS HERE!)                                    | 130€              |
-| 1x   | "Bandpass Filter" 532nm                      | Edmund Optics #65640                                                                  | Edmund Optics                                                        | OPTIONAL FOR NOW (use for cheap laser)                                                                          | 95€               |
-| 1x   | "Microscope Objective" 20x, Infinity Focused | Leitz PL Fluotar 20x/0.45 D EPI, oo/0                                                 | eBay Marketplace                                                     | WD > Cuvette-Thickness                                                                                          | 80€               |
-| 2x   | "Quartz Cuvette"                             |                                                                                       | eBay Marketplace                                                     | 1x is sufficient, but two cuvettes facilitate calibration (sample cuvette & fluorescent cuvette)                | 20€               |
-| 1x   | "Focusing Lens"                              | Thorlabs AC127-019-A - f = 19 mm, Ø1/2" Achromatic Doublet (+ optional "LMR05" mount) | Thorlabs                                                             | Alternatively this can be another infinity-corrected microscope objective or for testing, any plano-convex lens | 60€               |
-| 1x   | "Fiber Optic Cable" 200um                    | SMA905-SMA905 1m VIS-IR 200um                                                         | Aliexpress                                                           |                                                                                                                 | 50€               |
-| 1x   | 3D-Printing "Filament"                       | PETG-CF (Black)                                                                       |                                                                      |                                                                                                                 | 25€               |
-| 1x   | Fluorescent Dye                              | Rhodamine B, 1g (CAS: 81-88-9)                                                        | eBay                                                                 | Strong fluorescent material with excitation at around the laser's wavelength (532nm)                            | 15€               |
-| 4x   | Guide Rods ⌀6mm, 100mm                       |                                                                                       | eBay Marketplace / various                                           | ideally for optical applications (tight tolerances)                                                             | -                 |
-|      |                                              |                                                                                       |                                                                      | **<u>TOTAL</u>**                                                                                                | **<u>1,190€</u>** |
+### Sourced parts
 
+| Qty  | Name                     | Model / Spec                                                                                                                                                                                   | Supplier                              | Notes                                                                                                                                                                    | Used in                                                                          | Cost (total) |
+| ---- | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------- | ------------ |
+| 1-2x | Quartz Cuvette           | Any                                                                                                                                                                                            | eBay Marketplace                      | 1x is sufficient, but two cuvettes facilitate calibration (sample cuvette & fluorescent cuvette), matching the dimensions of `Kuvettecase_Bottom` and `Kuvettecase_Top`. | [Sample Assembly](#Sample%20Assembly)                                            | 20€          |
+| 1x   | Microscope objective     | Any, Leitz PL Fluotar 20x/0.45 D EPI, oo/0                                                                                                                                                     | eBay Marketplace                      | Any, 20x, inf.- corrected, WD > Cuvette-Thickness (alternative to printed part: [CP42/M](https://www.thorlabs.de/thorproduct.cfm?partnumber=CP42/M))                     | [Sample Assembly](#Sample%20Assembly)                                            | 80€          |
+| 4x   | Guide Rod ⌀ 6 mm, 100 mm | Any, [ER Assembly Rods for 30 mm Cage Systems](https://www.thorlabs.de/newgrouppage9.cfm?objectgroup_ID=4125) i.e. [ER4](https://www.thorlabs.de/thorproduct.cfm?partnumber=ER4) (4" ~ 100 mm) | Thorlabs / eBay Marketplace / various | Ideally for optical applications (tight tolerances)                                                                                                                      | [Sample Assembly](#Sample%20Assembly), [Focusing Assembly](#Focusing%20Assembly) | -            |
+| 1x   | Laser 532nm              | Any, 532 nm DPSS, 30mW - 70mW, (⌀ 18 mm)                                                                                                                                                       | Aliexpress                            | Cylindrical laser module, 18 mm body.                                                                                                                                    | [Laser Assembly](#Laser%20Assembly)                                              | 25€          |
+| 2x   | Kinematic Mount          | Thorlabs KM100                                                                                                                                                                                 | Thorlabs                              | Kinematic mirror mount.                                                                                                                                                  | [Laser Assembly](#Laser%20Assembly), [Dichroic Assembly](#Dichroic%20Assembly)   | 90€          |
+| 1x   | Longpass filter (550 nm) | Thorlabs FELH0550                                                                                                                                                                              | Thorlabs                              |                                                                                                                                                                          | [Focusing Assembly](#Focusing%20Assembly)                                        | 170€         |
+| 1x   | Focusing lens            | [Thorlabs AC127-019-A](https://www.thorlabs.de/thorproduct.cfm?partnumber=AC127-019-A) - f = 19 mm, Ø1/2" Achromatic Doublet                                                                   | Thorlabs                              | (mounted in [CP32/M](https://www.thorlabs.com/thorproduct.cfm?partnumber=CP32/M))                                                                                        | [Focusing Assembly](#Focusing%20Assembly)                                        | 60€          |
+| 1x   | Dichroic mirror (550 nm) | Thorlabs DMLP550                                                                                                                                                                               | Thorlabs                              |                                                                                                                                                                          | [Dichroic Assembly](#Dichroic%20Assembly)                                        | 230€         |
+| 8x   | M3 screw + nut           | Any                                                                                                                                                                                            | -                                     |                                                                                                                                                                          | [Sample Assembly](#Sample%20Assembly), [Focusing Assembly](#Focusing%20Assembly) | -            |
+| 4x   | M4 heat-set insert       | Any                                                                                                                                                                                            | -                                     |                                                                                                                                                                          | [Laser Assembly](#Laser%20Assembly), [Dichroic Assembly](#Dichroic%20Assembly)   | -            |
+| 7x   | M3 heat-set insert       | Any                                                                                                                                                                                            | -                                     |                                                                                                                                                                          | [Laser Assembly](#Laser%20Assembly), [Focusing Assembly](#Focusing%20Assembly)   | -            |
 
-### [Overpressure Glove Box](../docs/Overpressure%20Glove%20Box.md#Parts%20and%20Materials)
+### Printed parts
 
-#### Sourced Parts
+| Qty | Part name (.stl)         | Used in                                                                          |
+| --- | ------------------------ | -------------------------------------------------------------------------------- |
+| 4x  | `Defaultholder`          | [Sample Assembly](#Sample%20Assembly), [Focusing Assembly](#Focusing%20Assembly) |
+| 4x  | `Rodholder`              | [Sample Assembly](#Sample%20Assembly), [Focusing Assembly](#Focusing%20Assembly) |
+| 1x  | `Sample-Stage`           | [Sample Assembly](#Sample%20Assembly)                                            |
+| 1x  | `Kuvettecase_Top`        | [Sample Assembly](#Sample%20Assembly)                                            |
+| 1x  | `Kuvettecase_Bottom`     | [Sample Assembly](#Sample%20Assembly)                                            |
+| 1x  | `Objective-Mount_Insert` | [Sample Assembly](#Sample%20Assembly)                                            |
+| 1x  | `Laser_KM100-Insert`     | [Laser Assembly](#Laser%20Assembly)                                              |
+| 1x  | `Laser_KM100-Mount`      | [Laser Assembly](#Laser%20Assembly)                                              |
+| 1x  | `SMA905_Insert`          | [Focusing Assembly](#Focusing%20Assembly)                                        |
+| 1x  | `Dichroic_KM100-Mount`   | [Dichroic Assembly](#Dichroic%20Assembly)                                        |
+| 1x  | `Baseplate_Small`        | [Baseplate Mounting](#Baseplate%20Mounting)                                      |
 
-| Qty. | Name         | Model-Nr.                                   | Source                                                                                                | Notes                                                                                      | Cost (total) |
-| ---- | ------------ | ------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | ------------ |
-| 1×   | Box with lid | IKEA SAMLA, transparent, 57 × 39 × 42 cm    | [IKEA SAMLA box with lid](https://www.ikea.com/de/en/p/samla-box-with-lid-transparent-s99440774/)     | Any similar box works; a separate lid that forms a tight seal is ideal.                    | 12€          |
-| 1×   | HEPA filter  | IKEA UPPATVIND                              | [IKEA UPPATVIND filter](https://www.ikea.com/de/en/p/uppatvind-filter-for-particle-removal-90551498/) | Any HEPA / fine dust filter of similar size works. Higher filtration = more pressure drop. | 5€           |
-| 2×   | PC fan       | 120 mm PC fan                               | Any                                                                                                   | 12 V DC fans. Check current draw and airflow rating.                                       | 10€          |
-| 1×   | Power supply | 12 V DC with barrel plug                    | Any                                                                                                   | Can also be 12.6 V. Make sure current rating ≥ sum of both fans.                           | 5€           |
-| 1×   | Gloves       | Long‑sleeved chemical or dishwashing gloves | Any                                                                                                   | Choose gloves long enough to reach all areas inside the box.                               | 2€           |
-| 14×  | M4 screw     | Hex socket head cap screw                   | Any                                                                                                   | Mixture of lengths below.                                                                  | -            |
-| 4×   |              | M4 × 12 mm                                  |                                                                                                       | Short screw length.                                                                        |              |
-| 4×   |              | M4 × 16 mm                                  |                                                                                                       | Medium screw length.                                                                       |              |
-| 2×   |              | M4 × 20 mm                                  |                                                                                                       | For thicker walls / stacked parts.                                                         |              |
-| 4×   |              | M4 × 65 mm                                  |                                                                                                       | For clamping filter + fan + brackets through the box wall.                                 |              |
-| 14×  | M4 nut       | Any M4 nut                                  | Any                                                                                                   | Matching the M4 screws.                                                                    | -            |
+## Various
 
-#### 3D-Printed Parts
-
-| Qty | Part name (.stl)                  | Used for                 |
-| --- | --------------------------------- | ------------------------ |
-| 1×  | `Fan_Connector‑Bracket`           | Fan / filter assembly    |
-| 1×  | `Fan_Baseplate`                   | Fan / filter assembly    |
-| 2×  | `Filter_Holder‑Clamp`             | Fan / filter assembly    |
-| 4×  | `Fan_Outer‑Bracket`               | Fan / filter assembly    |
-| 2×  | `Glove‑Insert_Inner`              | Glove ports              |
-| 2×  | `Glove‑Insert_Outer‑Ring`         | Glove ports              |
-| 1×  | `Large‑Insert_Inner`              | Large service port       |
-| 1×  | `Large‑Insert_Threaded‑Cover`     | Large service port       |
-| 1×  | `Large‑Insert_Outer‑Cover‑Open`   | Large service port       |
-| 1×  | `Large‑Insert_Outer‑Cover‑Closed` | Large service port       |
-| 1×  | `Cable‑Insert_Inner`              | Cable / feedthrough port |
-| 1×  | `Cable‑Insert_Nut`                | Cable / feedthrough port |
-| 1×  | `Cable‑Insert_Cover`              | Cable / feedthrough port |
+| Qty  | Name                  | Model / Spec                                                                    | Supplier                                                             | Notes                                                                                     | Used in                         | Cost (total) |
+| ---- | --------------------- | ------------------------------------------------------------------------------- | -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ------------------------------- | ------------ |
+| 1x   | Laser safety glasses  | PROTECT-Laserschutz Terminator, Filter 0277                                     | [PROTECT-Laserschutz](https://protect-laserschutz.de/de/shop/~p1924) | Any laser safety glasses for 532nm (DONT BUY CHEAP CHINESE KNOCK-OFFS HERE!)              | EVERYWHERE                      | 130€         |
+| 1x   | 3D-printing filament  | PETG-CF (Black)                                                                 | -                                                                    | -                                                                                         | EVERYWHERE                      | 25€          |
+| 1x   | Fluorescent dye       | Rhodamine B (*CAS: 81-88-9*), 5g                                                | eBay                                                                 | Any strong fluorescent material with excitation at around the laser's wavelength (532 nm) | [Rhodamine B](Rhodamine%20B.md) | 15€          |
+| 1x   | Bandpass filter 532nm | Edmund Optics #65640                                                            | Edmund Optics                                                        | OPTIONAL FOR NOW (use for cheap laser)                                                    | Final Raman Assembly            | 95€          |
+| 2-4x | (Optional) Cage Plate | 30 mm cage plate, https://www.thorlabs.de/newgrouppage9.cfm?objectgroup_id=2273 | Any, Thorlabs, Edmund Optics                                         | Offers a thread, unlike the printed *Defaultholder*                                       |                                 |              |
 
 
-### [Spectrometer Unit](../docs/Spectrometer%20Unit.md#1.%20Parts%20and%20Materials)
+## [Spectrometer Unit](Spectrometer%20Unit.md)
 
-#### Sourced Parts
+### Sourced parts
 
-| Qty. | Name               | Model-Nr.                                | Source                                             | Notes                                                                                | Cost (total) |
-| ---- | ------------------ | ---------------------------------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------ | ------------ |
-| 1x   | Spectrometer board | B&W Tek BTC100-2S                        | [eBay](https://www.ebay.com/itm/143989529085)/ Any | Or any other spectrometer - ideally with SMA905 input, if you use fiber              | -            |
-| 1x   | Power supply       | 5 V, ≥ 3 A, barrel jack connector        | Any                                                | Must be stable and regulated.                                                        | -            |
-| 1x   | RS-232 to USB      | RS-232 to USB adapter cable              | Any                                                | Choose a chipset compatible with your OS (many FTDI / Prolific chips work reliably). | -            |
-| 1x   | Calibration source | CFL or mercury-vapour / calibration lamp | Any                                                | Needs several sharp lines near ~550 nm for wavelength calibration.                   | -            |
-|      | Sandpaper          | -                                        | Any                                                | ~150–240 grit for fine tuning of rod holes                                           |              |
-|      | Lubricant          |                                          | Any                                                | Light machine oil or PTFE/silicone-based lubricant for rods and sliding interfaces   |              |
+| Qty | Name                      | Model / Spec                                     | Supplier                                      | Notes                                                                                | Used in                                     | Cost (total) |
+| --- | ------------------------- | ------------------------------------------------ | --------------------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------- | ------------ |
+| 1x  | Spectrometer unit         | B&W Tek BTC100-2S                                | [eBay](https://www.ebay.com/itm/143989529085) | Or any other spectrometer - ideally with SMA905 input, if you use fiber.             | [Spectrometer Unit](Spectrometer%20Unit.md) | 200€         |
+| 1x  | Fiber optic cable, 200 μm | Any, SMA905-SMA905 1m VIS-IR 200um               | Any, Aliexpress                               | -                                                                                    | [Spectrometer Unit](Spectrometer%20Unit.md) | 50€          |
+| 1x  | Data cable                | RS-232 to USB                                    | Amazon                                        | Choose a chipset compatible with your OS (many FTDI / Prolific chips work reliably). | [Spectrometer Unit](Spectrometer%20Unit.md) | 15€          |
+| 1x  | Power supply              | 5V, ~3A, DC barrel jack                          | Amazon                                        |                                                                                      | [Spectrometer Unit](Spectrometer%20Unit.md) | 15€          |
+| 1x  | Calibration lamp          | Dedicated calibration / CFL / mercury-vapor lamp | Any, eBay Marketplace                         | Needs several sharp lines near ~550 nm for wavelength calibration.                   | [Spectrometer Unit](Spectrometer%20Unit.md) | 25€          |
 
-#### 3D-Printed Parts
+### Printed parts
 
-| Qty  | Part name (.stl)         |
-| ---- | ------------------------ |
-| 1×   | `LinearStage_Base`       |
-| 1×   | `LinearStage_Stage`      |
-| 1×   | `LinearStage_Frontplate` |
-| (1x) | `LinearStage_L-Bracket`  |
+| Qty | Part name (.stl)           | Used in                                     |
+| --- | -------------------------- | ------------------------------------------- |
+| 1x  | `Spectrometer-Case_Bottom` | [Spectrometer Unit](Spectrometer%20Unit.md) |
+| 1x  | `Spectrometer-Case_Top`    | [Spectrometer Unit](Spectrometer%20Unit.md) |
+| 1x  | `Spectrometer_Screw-Cover` | [Spectrometer Unit](Spectrometer%20Unit.md) |
 
 
-### [Basic Raman Optical Assembly](../docs/Basic%20Raman%20Optical%20Assembly.md#Parts%20and%20Materials)
+## [Overpressure Glove Box](Overpressure%20Glove%20Box.md)
 
-#### Sourced Parts
+### Sourced parts
 
-| Qty. | Name                                       | Model-Nr. | Source | Notes                                                                                                                                                                                 | Used for                                                                                            | Cost (total) |
-| ---- | ------------------------------------------ | --------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ------------ |
-| 1×   | Cuvette                                    |           |        | Standard spectroscopic cuvette matching the dimensions of `Kuvettecase_Bottom` and `Kuvettecase_Top`.                                                                                 | [Sample Assembly](../docs/Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly)     |              |
-| 1×   | Microscope objective (20×, inf.-corrected) |           |        | See [Edmund Optics – Understanding Microscopes and Objectives](https://www.edmundoptics.com/knowledge-center/application-notes/microscopy/understanding-microscopes-and-objectives/). | [Sample Assembly](../docs/Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly)     |              |
-| 2×   | Rod (⌀ 6 mm, 100 mm)                       |           |        | Smooth metal rods that fit the rod openings in the printed parts.                                                                                                                     | [Sample Assembly](../docs/Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly)     |              |
-| 2×   | M3 screw + nut                             |           |        | For clamping the microscope objective in its holder.                                                                                                                                  | [Sample Assembly](../docs/Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly)     |              |
-| 1×   | Laser (⌀ 18 mm)                            |           |        | Cylindrical laser module, 18 mm body.                                                                                                                                                 | [Laser Assembly](../docs/Basic%20Raman%20Optical%20Assembly.md#Laser%20Assembly)       |              |
-| 1×   | Thorlabs KM100                             |           |        | Kinematic mirror mount.                                                                                                                                                               | [Laser Assembly](../docs/Basic%20Raman%20Optical%20Assembly.md#Laser%20Assembly)       |              |
-| 2–3× | M4 heat-set insert                         |           |        | For mounting the KM100 to the base.                                                                                                                                                   | [Laser Assembly](../docs/Basic%20Raman%20Optical%20Assembly.md#Laser%20Assembly)       |              |
-| 1×   | M3 heat-set insert                         |           |        | For clamping the laser in the insert.                                                                                                                                                 | [Laser Assembly](../docs/Basic%20Raman%20Optical%20Assembly.md#Laser%20Assembly)       |              |
-| 1×   | Longpass filter (550 nm)                   |           |        | Thorlabs FELH0550                                                                                                                                                                     | [Focusing Assembly](../docs/Basic%20Raman%20Optical%20Assembly.md#Focusing%20Assembly) |              |
-| 1×   | Focusing lens                              |           |        | Diameter must match the corresponding printed holder.                                                                                                                                 | [Focusing Assembly](../docs/Basic%20Raman%20Optical%20Assembly.md#Focusing%20Assembly) |              |
-| 2×   | Rod (⌀ 6 mm, 100 mm)                       |           |        | Same rod type and diameter as used in the sample stage.                                                                                                                               | [Focusing Assembly](../docs/Basic%20Raman%20Optical%20Assembly.md#Focusing%20Assembly) |              |
-| 6×   | M3 heat-set insert                         |           |        | For clamping the optical elements in the holders.                                                                                                                                     | [Focusing Assembly](../docs/Basic%20Raman%20Optical%20Assembly.md#Focusing%20Assembly) |              |
-| 6×   | M3 screws                                  |           |        | For clamping the optical elements in the holders.                                                                                                                                     | [Focusing Assembly](../docs/Basic%20Raman%20Optical%20Assembly.md#Focusing%20Assembly) |              |
-| 1×   | Thorlabs KM100                             |           |        | Kinematic mirror mount.                                                                                                                                                               | [Dichroic Assembly](../docs/Basic%20Raman%20Optical%20Assembly.md#Dichroic%20Assembly) |              |
-| 1×   | Dichroic mirror (550 nm)                   |           |        | Thorlabs DMLP550 (or similar).                                                                                                                                                        | [Dichroic Assembly](../docs/Basic%20Raman%20Optical%20Assembly.md#Dichroic%20Assembly) |              |
-| 1×   | M4 heat-set insert                         |           |        | For the central KM100 mounting screw.                                                                                                                                                 | [Dichroic Assembly](../docs/Basic%20Raman%20Optical%20Assembly.md#Dichroic%20Assembly) |              |
+| Qty                  | Name           | Model / Spec                                         | Supplier                                                                             | Notes                                                                                      | Used in                                                 | Cost (total) |
+| -------------------- | -------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------- | ------------ |
+| 1x                   | Storage box    | IKEA SAMLA, transparent, <br>57×39×42 cm             | [IKEA](https://www.ikea.com/de/en/p/samla-box-with-lid-transparent-s99440774/)       | Any similar box works, separate lid that forms tight seal is ideal.                        | [Overpressure Glove Box](Overpressure%20Glove%20Box.md) | 12€          |
+| 1x                   | HEPA filter    | IKEA UPPATVIND                                       | [IKEA](https://www.ikea.com/de/en/p/uppatvind-filter-for-particle-removal-90551498/) | Any HEPA / fine dust filter of similar size works. Higher filtration = more pressure drop. | [Overpressure Glove Box](Overpressure%20Glove%20Box.md) | 5€           |
+| 2x                   | PC fan         | Any, 120 mm PC fan                                   | -                                                                                    | 12V DC fans. Check current draw and airflow rating.                                        | [Overpressure Glove Box](Overpressure%20Glove%20Box.md) | 10€          |
+| 2x                   | Gloves         | Any, long‑sleeved chemical or dishwashing gloves     | -                                                                                    | Choose gloves long enough to reach all areas inside the box.                               | [Overpressure Glove Box](Overpressure%20Glove%20Box.md) | 2€           |
+| 14x                  | M4 screw + nut | Hex socket head cap screw                            | Any                                                                                  | Mixture of lengths below.                                                                  | [Overpressure Glove Box](Overpressure%20Glove%20Box.md) | -            |
+| 4x<br>4x<br>2x<br>4x |                | M4 × 12 mm<br>M4 × 16 mm<br>M4 × 20 mm<br>M4 × 65 mm |                                                                                      |                                                                                            |                                                         |              |
 
-#### 3D-Printed Parts
+### Printed parts
 
-| Qty  | Part name (.stl)         | Used for                                                                                              |
-| ---- | ------------------------ | ----------------------------------------------------------------------------------------------------- |
-| 1×   | `Defaultholder`          | [Sample Assembly](../docs/Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly)       |
-| 2×   | `Rodholder`              | [Sample Assembly](../docs/Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly)       |
-| 1×   | `Sample-Stage`           | [Sample Assembly](../docs/Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly)       |
-| 1×   | `Kuvettecase_Top`        | [Sample Assembly](../docs/Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly)       |
-| 1×   | `Kuvettecase_Bottom`     | [Sample Assembly](../docs/Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly)       |
-| 1×   | `Objective-Mount_Insert` | [Sample Assembly](../docs/Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly)       |
-| 1x   | `Laser_KM100-Insert`     | [Laser Assembly](../docs/Basic%20Raman%20Optical%20Assembly.md#Laser%20Assembly)         |
-| 1x   | `Laser_KM100-Mount`      | [Laser Assembly](../docs/Basic%20Raman%20Optical%20Assembly.md#Laser%20Assembly)         |
-| 3x   | `Defaultholder`          | [Focusing Assembly](../docs/Basic%20Raman%20Optical%20Assembly.md#Focusing%20Assembly)   |
-| 2x   | `Rodholder`              | [Focusing Assembly](../docs/Basic%20Raman%20Optical%20Assembly.md#Focusing%20Assembly)   |
-| (1x) | `SMA905_Insert`          | [Focusing Assembly](../docs/Basic%20Raman%20Optical%20Assembly.md#Focusing%20Assembly)   |
-| 1x   | `Dichroic_KM100-Mount`   | [Dichroic Assembly](../docs/Basic%20Raman%20Optical%20Assembly.md#Dichroic%20Assembly)   |
-| 1x   | `Baseplate_Small`        | [Baseplate Mounting](../docs/Basic%20Raman%20Optical%20Assembly.md#Baseplate%20Mounting) |
+| Qty | Part name (.stl)                  | Used in                                                                          |
+| --- | --------------------------------- | -------------------------------------------------------------------------------- |
+| 1x  | `Fan_Connector‑Bracket`           | [Overpressure Glove Box](Overpressure%20Glove%20Box.md) Fan / filter assembly    |
+| 1x  | `Fan_Baseplate`                   | [Overpressure Glove Box](Overpressure%20Glove%20Box.md) Fan / filter assembly    |
+| 2x  | `Filter_Holder‑Clamp`             | [Overpressure Glove Box](Overpressure%20Glove%20Box.md) Fan / filter assembly    |
+| 4x  | `Fan_Outer‑Bracket`               | [Overpressure Glove Box](Overpressure%20Glove%20Box.md) Fan / filter assembly    |
+| 2x  | `Glove‑Insert_Inner`              | [Overpressure Glove Box](Overpressure%20Glove%20Box.md) Glove ports              |
+| 2x  | `Glove‑Insert_Outer‑Ring`         | [Overpressure Glove Box](Overpressure%20Glove%20Box.md) Glove ports              |
+| 1x  | `Large‑Insert_Inner`              | [Overpressure Glove Box](Overpressure%20Glove%20Box.md) Large service port       |
+| 1x  | `Large‑Insert_Threaded‑Cover`     | [Overpressure Glove Box](Overpressure%20Glove%20Box.md) Large service port       |
+| 1x  | `Large‑Insert_Outer‑Cover‑Open`   | [Overpressure Glove Box](Overpressure%20Glove%20Box.md) Large service port       |
+| 1x  | `Large‑Insert_Outer‑Cover‑Closed` | [Overpressure Glove Box](Overpressure%20Glove%20Box.md) Large service port       |
+| 1x  | `Cable‑Insert_Inner`              | [Overpressure Glove Box](Overpressure%20Glove%20Box.md) Cable / feedthrough port |
+| 1x  | `Cable‑Insert_Nut`                | [Overpressure Glove Box](Overpressure%20Glove%20Box.md) Cable / feedthrough port |
+| 1x  | `Cable‑Insert_Cover`              | [Overpressure Glove Box](Overpressure%20Glove%20Box.md) Cable / feedthrough port |
 
 
-### [Linear Translation Stage](../docs/Linear%20Translation%20Stage.md#Parts%20and%20Materials)
+## [Linear Translation Stage](Linear%20Translation%20Stage.md)
 
-#### Sourced Parts
+### Sourced parts
 
-| Qty. | Name                          | Model-Nr. | Source                     | Notes                                                                              | Cost (total) |
-| ---- | ----------------------------- | --------- | -------------------------- | ---------------------------------------------------------------------------------- | ------------ |
-| 1x   | Micrometer Screw              | -         | Any                        | ~10–15 mm travel, with mounting nut/collar                                         | -            |
-| 2x   | Guide Rods ⌀6mm, 50mm         | -         | eBay Marketplace / various | ideally for optical applications (tight tolerances)                                | -            |
-| 2x   | Compression springs, ⌀ ≥ 6 mm | -         | Any                        | Inner diameter slightly larger than 6 mm; stiffness chosen for light pre-load      | -            |
-| 4x   | M3.5 screw + nut + washer     | -         | Any                        | ≥ 12 mm length (for securing two frontplates to the base)                          | -            |
-|      | Sandpaper                     | -         | Any                        | ~150–240 grit for fine tuning of rod holes                                         |              |
-|      | Lubricant                     |           | Any                        | Light machine oil or PTFE/silicone-based lubricant for rods and sliding interfaces |              |
+| Qty | Name                      | Model / Spec                                                                                                  | Supplier                              | Notes                                               | Used in                                                     | Cost (total) |
+| --- | ------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------- | --------------------------------------------------- | ----------------------------------------------------------- | ------------ |
+| 1x  | Micrometer screw          | ~10-15 mm travel                                                                                              | Aliexpress                            | With mounting nut/collar                            | [Linear Translation Stage](Linear%20Translation%20Stage.md) | 10€          |
+| 2x  | Guide Rod ⌀ 6 mm, 55 mm   | Any, [ER Assembly Rods for 30 mm Cage Systems](https://www.thorlabs.de/newgrouppage9.cfm?objectgroup_ID=4125) | Thorlabs / eBay Marketplace / various | Ideally for optical applications (tight tolerances) | [Linear Translation Stage](Linear%20Translation%20Stage.md) | -            |
+| 2x  | Compression spring        | ⌀ ≥ 6 mm                                                                                                      | Any                                   | Stiffness chosen for light pre-load                 | [Linear Translation Stage](Linear%20Translation%20Stage.md) | -            |
+| 4x  | M3.5 screw + washer + nut | ~12 mm length                                                                                                 | Any                                   |                                                     | [Linear Translation Stage](Linear%20Translation%20Stage.md) | -            |
 
-#### 3D-Printed Parts
+### Printed parts
 
-| Qty  | Part name (.stl)         |
-| ---- | ------------------------ |
-| 1×   | `LinearStage_Base`       |
-| 1×   | `LinearStage_Stage`      |
-| 1×   | `LinearStage_Frontplate` |
-| (1x) | `LinearStage_L-Bracket`  |
+| Qty | Part name (.stl)         | Used in                                                     |
+| --- | ------------------------ | ----------------------------------------------------------- |
+| 1x  | `LinearStage_Base`       | [Linear Translation Stage](Linear%20Translation%20Stage.md) |
+| 1x  | `LinearStage_Stage`      | [Linear Translation Stage](Linear%20Translation%20Stage.md) |
+| 1x  | `LinearStage_Frontplate` | [Linear Translation Stage](Linear%20Translation%20Stage.md) |
+| 1x  | `LinearStage_L-Bracket`  | [Linear Translation Stage](Linear%20Translation%20Stage.md) |
 
-
-
-
-### Old Placeholder for 3D-Printed Parts
-
-| Part-Nr. | Name | Qty. | Related To               | Source   | Notes | Print Preview |
-| -------- | ---- | ---- | ------------------------ | -------- | ----- | ------------- |
-| #101     |      |      |                          | Download |       |               |
-| #102     |      |      |                          |          |       |               |
-| #103     |      |      | Linear Translation Stage |          |       |               |
-| #104     |      |      |                          |          |       |               |
-| #105     |      |      |                          |          |       |               |
-| #106     |      |      |                          |          |       |               |

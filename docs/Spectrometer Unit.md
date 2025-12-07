@@ -10,8 +10,6 @@ Prepare, house and use the surplus **B&W Tek BTC100-2S** spectrometer module as 
 - **Acquire a first spectrum** and apply a basic wavelength calibration
 
 
-
-
 ![View inside the optical assembly of the Spectrometer Unit BTC100-2S](../../assets/images_picked/Spectrometer-Unit/Spectrometer_Unit_inside1_JPG-rotated.jpg)
 
 > [!ABSTRACT] Learn more about the BTC100-2S
@@ -21,15 +19,18 @@ Prepare, house and use the surplus **B&W Tek BTC100-2S** spectrometer module as 
 
 ## Parts and Materials
 
+> [!EXAMPLE] Visit the complete Bill of Materials
+> Everything you will need, both printed parts and sourced parts, along with their cost and supplier, can be viewed in the dedicated [BOM (Bill of Materials)](../bom/BOM%20(Bill%20of%20Materials).md)!
+
 ### Sourced parts
 
-| Qty | Part                    | Minimum spec / example                                                             | Notes                                                                                      |
-| --- | ----------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| 1×  | Spectrometer board      | **B&W Tek BTC100-2S** ([Available on eBay](https://www.ebay.com/itm/143989529085)) | Main detector module.                                                                      |
-| 1×  | Power supply            | 5 V, ≥ 3 A, barrel jack connector                                                  | Must be **stable, regulated** and correctly polarised.                                     |
-| 1×  | Data cable              | RS-232 to USB adapter cable                                                        | Choose a chipset compatible with your OS (FTDI / Prolific / similar mid-range adapter).    |
-| 1×  | Calibration lamp        | CFL or mercury-vapour / calibration lamp                                           | Needs several sharp emission lines close to ~550 nm for wavelength calibration.            |
-| 1×  | (Optional) SMA905 fibre | Standard multimode fibre, SMA905 connector                                         | Only required if you use fibre coupling instead of direct coupling into the entrance slit. |
+| Qty | Name                      | Model / Spec                                               | Notes                                                                                |
+| --- | ------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| 1x  | Spectrometer unit         | [B&W Tek BTC100-2S](https://www.ebay.com/itm/143989529085) | Or any other spectrometer - ideally with SMA905 input, if you use fiber.             |
+| 1x  | Fiber optic cable, 200 μm | Any, SMA905-SMA905 1m VIS-IR 200um                         | -                                                                                    |
+| 1x  | Data cable                | RS-232 to USB                                              | Choose a chipset compatible with your OS (many FTDI / Prolific chips work reliably). |
+| 1x  | Power supply              | 5V, ~3A, DC barrel jack                                    |                                                                                      |
+| 1x  | Calibration lamp          | Dedicated calibration / CFL / mercury-vapor lamp           | Needs several sharp lines near ~550 nm for wavelength calibration.                   |
 
 
 > [!TIP] Spectrometer cost consideration  
@@ -37,11 +38,11 @@ Prepare, house and use the surplus **B&W Tek BTC100-2S** spectrometer module as 
 
 ### Printed parts
 
-| Qty | Part name (.stl)           | Function                                    |
-| --- | -------------------------- | ------------------------------------------- |
-| 1×  | `Spectrometer-Case_Bottom` | Holds the BTC100-2S and standoffs.          |
-| 1×  | `Spectrometer-Case_Top`    | Shields the unit from dust and stray light. |
-|     |                            | Protects and covers the input slit.         |
+| Qty | Part name (.stl)           | Print preview |
+| --- | -------------------------- | ------------- |
+| 1x  | `Spectrometer-Case_Bottom` |               |
+| 1x  | `Spectrometer-Case_Top`    |               |
+| 1x  | `Spectrometer_Screw-Cover` |               |
 
 
 > [!WARNING] Health & safety – sanding fibre-filled plastics  
