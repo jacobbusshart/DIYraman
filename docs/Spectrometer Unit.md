@@ -38,11 +38,11 @@ Prepare, house and use the surplus **B&W Tek BTC100-2S** spectrometer module as 
 
 ### Printed parts
 
-| Qty | Part name (.stl)           | Print preview |
-| --- | -------------------------- | ------------- |
-| 1x  | `Spectrometer-Case_Bottom` |               |
-| 1x  | `Spectrometer-Case_Top`    |               |
-| 1x  | `Spectrometer_Screw-Cover` |               |
+| Qty | Part name (.stl)           | Print preview                                                                                    |
+| --- | -------------------------- | ------------------------------------------------------------------------------------------------ |
+| 1x  | `Spectrometer-Case_Bottom` | ![](../assets/images_print-orientation/Print-Orientation_Spectrometer_Case_Bottom_164px_PNG.png) |
+| 1x  | `Spectrometer-Case_Top`    | ![](../assets/images_print-orientation/Print-Orientation_Spectrometer_Case_Top_164px_PNG.png)    |
+| 1x  | `Spectrometer_Screw-Cover` | ![](../assets/images_print-orientation/Print-Orientation_Spectrometer_Screw-Cover_164px_PNG.png) |
 
 
 > [!WARNING] Health & safety – sanding fibre-filled plastics  

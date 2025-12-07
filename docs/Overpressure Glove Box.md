@@ -34,21 +34,21 @@ This glove box is sized around an off‑the‑shelf IKEA SAMLA box but the conce
 
 ### Printed parts
 
-| Qty | Part name (.stl)                  | Used in                  |
-| --- | --------------------------------- | ------------------------ |
-| 1x  | `Fan_Connector‑Bracket`           | Fan / filter assembly    |
-| 1x  | `Fan_Baseplate`                   | Fan / filter assembly    |
-| 2x  | `Filter_Holder‑Clamp`             | Fan / filter assembly    |
-| 4x  | `Fan_Outer‑Bracket`               | Fan / filter assembly    |
-| 2x  | `Glove‑Insert_Inner`              | Glove ports              |
-| 2x  | `Glove‑Insert_Outer‑Ring`         | Glove ports              |
-| 1x  | `Large‑Insert_Inner`              | Large service port       |
-| 1x  | `Large‑Insert_Threaded‑Cover`     | Large service port       |
-| 1x  | `Large‑Insert_Outer‑Cover‑Open`   | Large service port       |
-| 1x  | `Large‑Insert_Outer‑Cover‑Closed` | Large service port       |
-| 1x  | `Cable‑Insert_Inner`              | Cable / feedthrough port |
-| 1x  | `Cable‑Insert_Nut`                | Cable / feedthrough port |
-| 1x  | `Cable‑Insert_Cover`              | Cable / feedthrough port |
+| Qty | Part name (.stl)                  | Used in                  | Print preview                                                                                                    |
+| --- | --------------------------------- | ------------------------ | ---------------------------------------------------------------------------------------------------------------- |
+| 1x  | `Fan_Connector‑Bracket`           | Fan / filter assembly    | ![](../assets/images_print-orientation/Print-Orientation_Glovebox_Fan_Connector-Bracket_164px_PNG.png)           |
+| 1x  | `Fan_Baseplate`                   | Fan / filter assembly    | ![](../assets/images_print-orientation/Print-Orientation_Glovebox_Fan_Baseplate_164px_PNG.png)                   |
+| 2x  | `Filter_Holder‑Clamp`             | Fan / filter assembly    | ![](../assets/images_print-orientation/Print-Orientation_Glovebox_Filter_Holder-Clamp_164px_PNG.png)             |
+| 4x  | `Fan_Outer‑Bracket`               | Fan / filter assembly    | ![](../assets/images_print-orientation/Print-Orientation_Glovebox_Fan_Outer-Bracket_164px_PNG.png)               |
+| 2x  | `Glove‑Insert_Inner`              | Glove ports              | ![](../assets/images_print-orientation/Print-Orientation_Glovebox_Glove-Insert_Inner_164px_PNG.png)              |
+| 2x  | `Glove‑Insert_Outer‑Ring`         | Glove ports              | ![](../assets/images_print-orientation/Print-Orientation_Glovebox_Glove-Insert_Outer-Ring_164px_PNG.png)         |
+| 1x  | `Large‑Insert_Inner`              | Large service port       | ![](../assets/images_print-orientation/Print-Orientation_Glovebox_Large-Insert_Inner_164px_PNG.png)              |
+| 1x  | `Large‑Insert_Threaded‑Cover`     | Large service port       | ![](../assets/images_print-orientation/Print-Orientation_Glovebox_Large-Insert_Threaded-Cover_164px_PNG.png)     |
+| 1x  | `Large‑Insert_Outer‑Cover‑Open`   | Large service port       | ![](../assets/images_print-orientation/Print-Orientation_Glovebox_Large-Insert_Outer-Cover-Open_164px_PNG.png)   |
+| 1x  | `Large‑Insert_Outer‑Cover‑Closed` | Large service port       | ![](../assets/images_print-orientation/Print-Orientation_Glovebox_Large-Insert_Outer-Cover-Closed_164px_PNG.png) |
+| 1x  | `Cable‑Insert_Inner`              | Cable / feedthrough port | ![](../assets/images_print-orientation/Print-Orientation_Glovebox_Cable-Insert_Inner_164px_PNG.png)              |
+| 1x  | `Cable‑Insert_Nut`                | Cable / feedthrough port | ![](../assets/images_print-orientation/Print-Orientation_Glovebox_Cable-Insert_Nut_164px_PNG.png)                |
+| 1x  | `Cable‑Insert_Cover`              | Cable / feedthrough port | ![](../assets/images_print-orientation/Print-Orientation_Glovebox_Cable-Insert_Cover_164px_PNG.png)              |
 
 ### Notes for printing
 
