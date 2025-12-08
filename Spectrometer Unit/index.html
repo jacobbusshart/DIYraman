@@ -885,6 +885,95 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bom
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bom
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bom/BOM%20%28Bill%20of%20Materials%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parts and Materials
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1093,11 +1182,13 @@
 </ul>
 </li>
 <li>If it does not auto-detect the device:  </li>
-<li>Click <strong>“Detect Spectrometer”</strong> in the toolbar.  </li>
-<li>Wait for the blank graph to appear.  </li>
-<li>Open the <strong>“Calibrate”</strong> window (gear icon at the right of the toolbar).  </li>
-<li>Set parameter <strong>C1 = 1</strong> at the bottom and confirm with <strong>OK</strong> – this enables the wavelength calibration features you will need later.</li>
 </ol>
+<p><img alt="" src="../assets/images_picked/Spectrometer-Unit/DetectSpectrometer_Screenshot_JPG.jpg" /><br />
+   - Click <strong>“Detect Spectrometer”</strong> in the toolbar.  </p>
+<p><img alt="" src="../assets/images_picked/Spectrometer-Unit/HomeScreenConnected_Screenshot_JPG.jpg" /><br />
+   - Wait for the blank graph to appear.<br />
+3. Open the <strong>“Calibrate”</strong> window (<img alt="" src="../assets/images_picked/SpectrumStudio-Icons/Settings.png" /> - settings icon at the right of the toolbar).<br />
+4. Set parameter <strong>C1 = 1</strong> at the bottom and confirm with <strong>OK</strong> – this enables the wavelength calibration features you will need later.</p>
 <h3 id="integration-time-and-averaging">Integration time and averaging<a class="headerlink" href="#integration-time-and-averaging" title="Permanent link">#</a></h3>
 <p>The spectrometer behaves much like a camera sensor:</p>
 <ul>
@@ -1115,11 +1206,29 @@
 <h3 id="capturing-and-subtracting-background">Capturing and subtracting background<a class="headerlink" href="#capturing-and-subtracting-background" title="Permanent link">#</a></h3>
 <ol>
 <li>Block the input slit (e.g. with your finger, a printed cap or tape).  </li>
-<li>Start an acquisition with typical settings (e.g. 250–2000 ms, a few averages).  </li>
-<li>Use the <strong>green arrow icon</strong> in the left toolbar (background submenu) to:</li>
-<li>Capture the current spectrum - the noise print of the dark sensor - as background.</li>
 </ol>
-<p>This background remains active and will be subtracted from all new spectra until you clear or update it.</p>
+<p><img alt="" src="../assets/images_picked/Spectrometer-Unit/FirstScanDarkSensorNoise_Screenshot_JPG.jpg" /><br />
+2. Start an acquisition <img alt="" src="../assets/images_picked/SpectrumStudio-Icons/PlayOnce.png" /> with typical settings (e.g. 250–2000 ms, a few averages).<br />
+3. Use the <strong>green arrow icon</strong> in the left toolbar (<img alt="" src="../assets/images_picked/SpectrumStudio-Icons/Background2.png" /> - background submenu) to:<br />
+   - Capture the current spectrum - the noise print of the dark sensor - as background.</p>
+<p><img alt="" src="../assets/images_picked/Spectrometer-Unit/BasicScanCaptureBackground_Screenshot_JPG.jpg" /><br />
+4. Scan again to capture a test - using a dedicated light source or just your room</p>
+<p><img alt="" src="../assets/images_picked/Spectrometer-Unit/BasicScanWithSubtraction_Screenshot_JPG.jpg" /></p>
+<p>This background remains active and will be applied on all subsequent spectra until you clear or update it. The table below highlights the difference in quality of the final spectrum - with and without the subtracted sensor noise.</p>
+<table>
+<thead>
+<tr>
+<th>With background subtraction (clean)</th>
+<th>Without background subtraction (raw)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="" src="../assets/images_picked/Spectrometer-Unit/BasicScanWithSubtraction_Screenshot_JPG.jpg" /></td>
+<td><img alt="" src="../assets/images_picked/Spectrometer-Unit/BasicScanWithoutSubtraction_Screenshot_JPG.jpg" /></td>
+</tr>
+</tbody>
+</table>
 <div class="admonition warning">
 <p class="admonition-title">Re-acquire background after changing integration time</p>
 <p>Whenever you change the <strong>integration time</strong>, capture a <strong>new background</strong>. Spectrum Studio does not automatically warn you or clear the old background – it will otherwise subtract an incorrect background.</p>
@@ -1146,6 +1255,10 @@
 <li>If the spectrometer was just powered on, leave it running for roughly 10 minutes until the measured noise stabilizes.  </li>
 <li>Turn off or dim ambient lights in the room to avoid stray lines.  </li>
 <li>Place the calibration lamp so light enters the slit (directly or via SMA fibre, if used).  </li>
+</ol>
+<p><img alt="Mercury-vapour lamp very close to the input slit" src="../assets/images_picked/Spectrometer-Unit/Picture_MercuryVapor_ClippedSpectrum_JPG.jpg" /><br />
+<em>A mercury-vapour lamp was bought cheaply on eBay, along with its required ballast. This is an old picture with the lamp placed too close to the input slit.</em> </p>
+<ol>
 <li>Adjust integration time until you get:  </li>
 <li>Clearly visible peaks  </li>
 <li>No saturated pixels  </li>
@@ -1159,6 +1272,20 @@
 </ol>
 <p>Collect at least <strong>4 calibration points</strong> across the usable range – air for more points to give a better fit.</p>
 <h3 id="least-squares-fitting-in-spectrum-studio">Least-squares fitting in Spectrum Studio<a class="headerlink" href="#least-squares-fitting-in-spectrum-studio" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th><img alt="325" src="../assets/images_picked/Spectrometer-Unit/DADOS-Calibration_Old-Screenshot_JPG.jpg" /><br></th>
+<th><img alt="325" src="../assets/images_picked/Spectrometer-Unit/DADOS-NeonSpectrum_Reference_JPG.jpg" /><br></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Old image of the first ever calibration done using a dedicated calibration lamp. Least-squares fitting with all pixel numbers and respective wavelengths added - fit residual is calculated automatically.</em></td>
+<td><em>This was the reference spectrum provided with the cheap calibration lamp, whose wavelengths lie mostly in the upper range of the Raman's design.</em></td>
+</tr>
+</tbody>
+</table>
 <ol>
 <li>Open the <strong>Calibrate</strong> window again.  </li>
 <li>Switch to the <strong>“Least-Squares Fitting”</strong> tab.  </li>
@@ -1166,7 +1293,7 @@
 <li>Let the software compute the calibration coefficients.  </li>
 <li>Write the 4 calibrated coefficients down or take a screenshot for future reference.</li>
 <li>Confirm with <strong>OK</strong>, then take another scan.</li>
-<li>The coefficients are written to the spectrometer's internal memory.</li>
+<li>The coefficients are written and <strong>saved to the spectrometer's internal memory</strong>.</li>
 <li>The calibration only gets overwritten, if the coefficients are changed (or automatically calculated).</li>
 </ol>
 <p>The x-axis should now be displayed directly in <strong>nanometers (nm)</strong> instead of raw pixel numbers.</p>
