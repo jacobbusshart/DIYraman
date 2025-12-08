@@ -44,7 +44,7 @@ jobs:
       - name: Copy BOM into docs so MkDocs ships it
         run: |
           mkdir -p "docs/bom"
-          cp "bom/BOM (Bill of Materials).md" "docs/bom/BOM (Bill of Materials).md" || true
+          cp "bom/BOM.md" "docs/bom/BOM.md" || true
 
       - name: Copy assets into docs so MkDocs ships them
         run: |
