@@ -20,8 +20,7 @@ Raman spectroscopy allows for the identification of substances by analyzing how 
 * **Qualitative Screening:** Exploratory analysis of pharmaceuticals (e.g., pill composition).
 * **Teach Optics:** A hands-on platform for learning spectroscopy and photonics.
 
-> 💡 This README is a *project overview*. Detailed build instructions can be found in `docs/` and the dedicated pages: 
-> [Basic Assembly](docs/Basic%20Raman%20Optical%20Assembly.md) | [Glove Box](docs/Overpressure%20Glove%20Box.md) | [Spectrometer Unit](docs/Spectrometer%20Unit.md) | [Rhodamine B](docs/Rhodamine%20B.md) | [SpectrumStudio Cheatsheet](docs/Spectrum%20Studio%20Cheatsheet.md) | [Linear Stage](docs/Linear%20Translation%20Stage.md) | [Full Assembly](docs/Full%20Raman%20Optical%20Assembly.md)
+> 💡 This README is a *project overview*. Detailed build instructions can be found in `docs/` and the dedicated pages or further down in [🚀 Progress & Build Guide](#🚀%20Progress%20&%20Build%20Guide).
 
 ---
 
@@ -46,14 +45,14 @@ A detailed cost breakdown and parts list is available in the [**Bill of Material
 
 The following build path is recommended for a complete and coherent build-experience. The table reflects the current development status of the project's modules.
 
-| Step  | Module                                                           | Description                                                                  | Status        |
-| :---- | :--------------------------------------------------------------- | :--------------------------------------------------------------------------- | :------------ |
-| **1** | [**Spectrometer Unit**](docs/Spectrometer%20Unit.md)             | Setup and testing of the B&W Tek spectrometer.                               | 🟡 Usable     |
-| **2** | [**Glove Box**](docs/Overpressure%20Glove%20Box.md)              | DIY overpressure glovebox construction to keep optics dust-free.             | ✅ Ready       |
-| **3** | [**Basic Assembly**](docs/Basic%20Raman%20Optical%20Assembly.md) | Essential optical assembly to acquire first Raman spectra.                   | ✅ Ready       |
-| **4** | [**Linear Stage**](docs/Linear%20Translation%20Stage.md)         | DIY build of a low-cost linear translation stage for fine focus adjustments. | 🟡 WiP        |
-| **5** | [**Full Assembly**](docs/Full%20Raman%20Optical%20Assembly.md)   | Motorization and integration of Linear Stage.                                | 🟠 Incomplete |
-| **6** | **Software / GUI**                                               | Custom acquisition and visualization software.                               | 🔴 Planned    |
+| Step  | Module                                                                                                                                                                    | Description                                                                  | Status         |
+| :---- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------- | :------------- |
+| **1** | [**Spectrometer Unit**](docs/Spectrometer%20Unit.md) <br>+ [Spectrum Studio Cheatsheet](docs/Spectrum%20Studio%20Cheatsheet.md)<br>+ [Rhodamine B](docs/Rhodamine%20B.md) | Setup and testing of the B&W Tek spectrometer.                               | ✅ Ready        |
+| **2** | [**Overpressuree Glove Box**](docs/Overpressure%20Glove%20Box.md)                                                                                                         | DIY overpressure glovebox construction to keep optics dust-free.             | ✅ Ready        |
+| **3** | [**Basic Raman Assembly**](docs/Basic%20Raman%20Optical%20Assembly.md)                                                                                                    | Essential optical assembly to acquire first Raman spectra.                   | ✅ Ready        |
+| **4** | [**Linear Translation Stage**](docs/Linear%20Translation%20Stage.md)                                                                                                      | DIY build of a low-cost linear translation stage for fine focus adjustments. | 🟡 WiP         |
+| **5** | [**Full Raman Assembly**](docs/Full%20Raman%20Optical%20Assembly.md)                                                                                                      | Motorization and integration of Linear Stage.                                | 🔴 Unpublished |
+| **6** | **Software / GUI**                                                                                                                                                        | Custom acquisition and visualization software.                               | 🔴 Planned     |
 
 
 > **Status Key:** ✅ = Verified & Documented | 🟡 = Usable, Docs in Progress | 🟠 = Draft / Unstable | 🔴 = Planned / Unpublished

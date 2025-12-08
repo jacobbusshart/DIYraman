@@ -148,9 +148,13 @@ For initial testing, use the original B&W Tek software (“Spectrum Studio”) t
    - In case the program isn't working or executing correctly, run it in **compatibility mode**.
 	   - Right-Click > "*Properties*" > "*Compatibility*" > "*Run in comp...*" > Check Box and Select "*Windows 7*" > Press "*OK*".
 2. If it does not auto-detect the device:  
+
+![](../assets/images_picked/Spectrometer-Unit/DetectSpectrometer_Screenshot_JPG.jpg)
    - Click **“Detect Spectrometer”** in the toolbar.  
+   
+![](../assets/images_picked/Spectrometer-Unit/HomeScreenConnected_Screenshot_JPG.jpg)
    - Wait for the blank graph to appear.  
-3. Open the **“Calibrate”** window (gear icon at the right of the toolbar).  
+3. Open the **“Calibrate”** window (![](../assets/images_picked/SpectrumStudio-Icons/Settings.png) - settings icon at the right of the toolbar).  
 4. Set parameter **C1 = 1** at the bottom and confirm with **OK** – this enables the wavelength calibration features you will need later.
 
 ### Integration time and averaging
@@ -170,11 +174,24 @@ The spectrometer behaves much like a camera sensor:
 ### Capturing and subtracting background
 
 1. Block the input slit (e.g. with your finger, a printed cap or tape).  
-2. Start an acquisition with typical settings (e.g. 250–2000 ms, a few averages).  
-3. Use the **green arrow icon** in the left toolbar (background submenu) to:
+
+![](../assets/images_picked/Spectrometer-Unit/FirstScanDarkSensorNoise_Screenshot_JPG.jpg)
+2. Start an acquisition ![](../assets/images_picked/SpectrumStudio-Icons/PlayOnce.png) with typical settings (e.g. 250–2000 ms, a few averages).  
+3. Use the **green arrow icon** in the left toolbar (![](../assets/images_picked/SpectrumStudio-Icons/Background2.png) - background submenu) to:
    - Capture the current spectrum - the noise print of the dark sensor - as background.
 
-This background remains active and will be subtracted from all new spectra until you clear or update it.
+![](../assets/images_picked/Spectrometer-Unit/BasicScanCaptureBackground_Screenshot_JPG.jpg)
+4. Scan again to capture a test - using a dedicated light source or just your room
+
+![](../assets/images_picked/Spectrometer-Unit/BasicScanWithSubtraction_Screenshot_JPG.jpg)
+
+
+This background remains active and will be applied on all subsequent spectra until you clear or update it. The table below highlights the difference in quality of the final spectrum - with and without the subtracted sensor noise.
+
+| With background subtraction (clean)                                                        | Without background subtraction (raw)                                                          |
+| ------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------- |
+| ![](../assets/images_picked/Spectrometer-Unit/BasicScanWithSubtraction_Screenshot_JPG.jpg) | ![](../assets/images_picked/Spectrometer-Unit/BasicScanWithoutSubtraction_Screenshot_JPG.jpg) |
+
 
 > [!WARNING] Re-acquire background after changing integration time  
 > Whenever you change the **integration time**, capture a **new background**. Spectrum Studio does not automatically warn you or clear the old background – it will otherwise subtract an incorrect background.
@@ -206,6 +223,10 @@ You can find reference spectra and line lists for mercury-vapour lamps in many s
    - If the spectrometer was just powered on, leave it running for roughly 10 minutes until the measured noise stabilizes.  
 2. Turn off or dim ambient lights in the room to avoid stray lines.  
 3. Place the calibration lamp so light enters the slit (directly or via SMA fibre, if used).  
+
+![Mercury-vapour lamp very close to the input slit](../assets/images_picked/Spectrometer-Unit/Picture_MercuryVapor_ClippedSpectrum_JPG.jpg)
+*A mercury-vapour lamp was bought cheaply on eBay, along with its required ballast. This is an old picture with the lamp placed too close to the input slit.* 
+
 4. Adjust integration time until you get:  
    - Clearly visible peaks  
    - No saturated pixels  
@@ -221,13 +242,25 @@ Collect at least **4 calibration points** across the usable range – air for mo
 
 ### Least-squares fitting in Spectrum Studio
 
+
+| ![325](../assets/images_picked/Spectrometer-Unit/DADOS-Calibration_Old-Screenshot_JPG.jpg)<br>                                                                                                               | ![325](../assets/images_picked/Spectrometer-Unit/DADOS-NeonSpectrum_Reference_JPG.jpg)<br>                                                         |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| *Old image of the first ever calibration done using a dedicated calibration lamp. Least-squares fitting with all pixel numbers and respective wavelengths added - fit residual is calculated automatically.* | *This was the reference spectrum provided with the cheap calibration lamp, whose wavelengths lie mostly in the upper range of the Raman's design.* |
+
+
+
+
+
+
+
+
 1. Open the **Calibrate** window again.  
 2. Switch to the **“Least-Squares Fitting”** tab.  
 3. Enter all recorded **pixel indices** and their respective **wavelengths** into the table.  
 4. Let the software compute the calibration coefficients.  
 5. Write the 4 calibrated coefficients down or take a screenshot for future reference.
 6. Confirm with **OK**, then take another scan.
-   - The coefficients are written to the spectrometer's internal memory.
+   - The coefficients are written and **saved to the spectrometer's internal memory**.
    - The calibration only gets overwritten, if the coefficients are changed (or automatically calculated).
 
 The x-axis should now be displayed directly in **nanometers (nm)** instead of raw pixel numbers.

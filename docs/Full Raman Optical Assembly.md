@@ -1,3 +1,6 @@
+PLACEHOLDER PAGE
+
+
 ![](../../assets/images_picked/Raman-Optical-Assembly/FULL-Assembly-1400px_03LW_PNG.png)
 
 ## Pre-Requisites: 
@@ -6,13 +9,6 @@
 - [Overpressure Glove Box](Overpressure%20Glove%20Box.md)
 - Spectrometer Unit Case
 
---------------------------
-EXPORT FROM FUSION DRAWING WITHOUT LINEWEIGHTS!
-
-SUB ASSEMBLIES MIT LINEWEIGHT ON UND SHADING
-## Kurzerklärung/Übersicht der essenziellen / funktionalen Komponenten vorweg!!
-
-Lorem ipsum
 
 --------------------------
 
