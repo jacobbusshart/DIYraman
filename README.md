@@ -37,7 +37,7 @@ To balance cost with performance, DIYraman uses a "hybrid" approach: Professiona
 * **Critical Optics:** High-quality dichroic mirrors and filters (Thorlabs/Edmund Optics) are used to ensure signal integrity.
 
 **Bill of Materials**
-A detailed cost breakdown and parts list is available in the [**Bill of Materials (BOM)**](bom/BOM.md).
+A detailed cost breakdown and parts list is available in the [BOM (Bill of Materials)](bom/BOM.md) .
 
 ---
 
@@ -47,11 +47,11 @@ The following build path is recommended for a complete and coherent build-experi
 
 | Step  | Module                                                                                                                                                                    | Description                                                                  | Status         |
 | :---- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------- | :------------- |
-| **1** | [**Spectrometer Unit**](docs/Spectrometer%20Unit.md) <br>+ [Spectrum Studio Cheatsheet](docs/Spectrum%20Studio%20Cheatsheet.md)<br>+ [Rhodamine B](docs/Rhodamine%20B.md) | Setup and testing of the B&W Tek spectrometer.                               | ✅ Ready        |
-| **2** | [**Overpressuree Glove Box**](docs/Overpressure%20Glove%20Box.md)                                                                                                         | DIY overpressure glovebox construction to keep optics dust-free.             | ✅ Ready        |
-| **3** | [**Basic Raman Assembly**](docs/Basic%20Raman%20Optical%20Assembly.md)                                                                                                    | Essential optical assembly to acquire first Raman spectra.                   | ✅ Ready        |
-| **4** | [**Linear Translation Stage**](docs/Linear%20Translation%20Stage.md)                                                                                                      | DIY build of a low-cost linear translation stage for fine focus adjustments. | 🟡 WiP         |
-| **5** | [**Full Raman Assembly**](docs/Full%20Raman%20Optical%20Assembly.md)                                                                                                      | Motorization and integration of Linear Stage.                                | 🔴 Unpublished |
+| **1** | **[Spectrometer Unit](docs/Spectrometer%20Unit.md)** <br>+ [Spectrum Studio Cheatsheet](docs/Spectrum%20Studio%20Cheatsheet.md)<br>+ [Rhodamine B](docs/Rhodamine%20B.md) | Setup and testing of the B&W Tek spectrometer.                               | ✅ Ready        |
+| **2** | **[Overpressure Glove Box](docs/Overpressure%20Glove%20Box.md)**                                                                                                          | DIY overpressure glovebox construction to keep optics dust-free.             | ✅ Ready        |
+| **3** | **[Basic Raman Assembly](docs/Basic%20Raman%20Optical%20Assembly.md)**                                                                                                    | Essential optical assembly to acquire first Raman spectra.                   | ✅ Ready        |
+| **4** | **[Linear Translation Stage](docs/Linear%20Translation%20Stage.md)**                                                                                                      | DIY build of a low-cost linear translation stage for fine focus adjustments. | 🟡 WiP         |
+| **5** | **[Full Raman Assembly](docs/Full%20Raman%20Optical%20Assembly.md)**                                                                                                      | Motorization and integration of Linear Stage.                                | 🔴 Unpublished |
 | **6** | **Software / GUI**                                                                                                                                                        | Custom acquisition and visualization software.                               | 🔴 Planned     |
 
 
