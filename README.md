@@ -37,7 +37,7 @@ To balance cost with performance, DIYraman uses a "hybrid" approach: Professiona
 * **Critical Optics:** High-quality dichroic mirrors and filters (Thorlabs/Edmund Optics) are used to ensure signal integrity.
 
 **Bill of Materials**
-A detailed cost breakdown and parts list is available in the [**Bill of Materials (BOM)**](bom/BOM%20-%20Bill%20of%20Materials.md).
+A detailed cost breakdown and parts list is available in the [**Bill of Materials (BOM)**](bom/BOM.md).
 
 ---
 

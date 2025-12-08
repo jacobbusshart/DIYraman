@@ -19,7 +19,7 @@ A dilute Rhodamine B solution is the **standard alignment sample** for the Raman
 ## Parts and Materials
 
 > [!EXAMPLE] Visit the complete Bill of Materials
-> Everything you will need, both printed parts and sourced parts, along with their cost and supplier, can be viewed in the dedicated [BOM - Bill of Materials](../bom/BOM%20-%20Bill%20of%20Materials.md)!
+> Everything you will need, both printed parts and sourced parts, along with their cost and supplier, can be viewed in the dedicated [BOM](../bom/BOM.md)!
 
 
 ### Sourced parts

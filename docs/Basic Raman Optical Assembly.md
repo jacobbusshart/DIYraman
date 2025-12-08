@@ -6,7 +6,7 @@ Build the basic optical assembly for the DIYraman setup in a *backscattering* co
 
 The design shown here is built around a surplus [B&W Tek spectrometer module](https://www.ebay.com/itm/143989529085), which is commonly available on the used market for around 200€. Other spectrometers with a similar input geometry / SMA905-connector can also be adapted.
 
-For cost reasons, this setup uses a low-cost 532 nm green laser pointer together with a dichroic mirror (cut-on 550 nm) and a longpass filter (cut-on 550 nm). You can find more information in the respective [Parts and Materials](#Parts%20and%20Materials) sections  below or in the [BOM - Bill of Materials](../bom/BOM%20-%20Bill%20of%20Materials.md). Because the laser operates at 532 nm and the filters begin transmitting at 550 nm, the usable Raman signal will be in the Stokes region above roughly 600 cm⁻¹.
+For cost reasons, this setup uses a low-cost 532 nm green laser pointer together with a dichroic mirror (cut-on 550 nm) and a longpass filter (cut-on 550 nm). You can find more information in the respective [Parts and Materials](#Parts%20and%20Materials) sections  below or in the [BOM](../bom/BOM.md). Because the laser operates at 532 nm and the filters begin transmitting at 550 nm, the usable Raman signal will be in the Stokes region above roughly 600 cm⁻¹.
 
 
 > [!NOTE] Full vs. Basic Optical Assembly  
@@ -34,7 +34,7 @@ The sample assembly positions the cuvette in front of the microscope objective o
 ### Parts and Materials
 
 > [!EXAMPLE] Visit the complete Bill of Materials
-> Everything you will need, both printed parts and sourced parts, along with their cost and supplier, can be viewed in the dedicated [BOM - Bill of Materials](../bom/BOM%20-%20Bill%20of%20Materials.md)!
+> Everything you will need, both printed parts and sourced parts, along with their cost and supplier, can be viewed in the dedicated [BOM](../bom/BOM.md)!
 
 #### Sourced parts
 
@@ -149,7 +149,7 @@ The laser assembly holds a cylindrical laser module in a Thorlabs KM100 kinemati
 ### Parts and Materials
 
 > [!EXAMPLE] Visit the complete Bill of Materials
-> Everything you will need, both printed parts and sourced parts, along with their cost and supplier, can be viewed in the dedicated [BOM - Bill of Materials](../bom/BOM%20-%20Bill%20of%20Materials.md)!
+> Everything you will need, both printed parts and sourced parts, along with their cost and supplier, can be viewed in the dedicated [BOM](../bom/BOM.md)!
 
 #### Sourced parts
 
@@ -243,7 +243,7 @@ The focusing assembly combines the longpass filter, focusing lens and (optionall
 ### Parts and Materials
 
 > [!EXAMPLE] Visit the complete Bill of Materials
-> Everything you will need, both printed parts and sourced parts, along with their cost and supplier, can be viewed in the dedicated [BOM - Bill of Materials](../bom/BOM%20-%20Bill%20of%20Materials.md)!
+> Everything you will need, both printed parts and sourced parts, along with their cost and supplier, can be viewed in the dedicated [BOM](../bom/BOM.md)!
 
 #### Sourced parts
 
@@ -314,7 +314,7 @@ The dichroic assembly mounts a Thorlabs dichroic mirror in a KM100 kinematic mou
 ### Parts and Materials
 
 > [!EXAMPLE] Visit the complete Bill of Materials
-> Everything you will need, both printed parts and sourced parts, along with their cost and supplier, can be viewed in the dedicated [BOM - Bill of Materials](../bom/BOM%20-%20Bill%20of%20Materials.md)!
+> Everything you will need, both printed parts and sourced parts, along with their cost and supplier, can be viewed in the dedicated [BOM](../bom/BOM.md)!
 
 #### Sourced parts
 
@@ -380,7 +380,7 @@ In this final step you mount all sub-assemblies onto the baseplate to form the c
 ### Parts and Materials
 
 > [!EXAMPLE] Visit the complete Bill of Materials
-> Everything you will need, both printed parts and sourced parts, along with their cost and supplier, can be viewed in the dedicated [BOM - Bill of Materials](../bom/BOM%20-%20Bill%20of%20Materials.md)!
+> Everything you will need, both printed parts and sourced parts, along with their cost and supplier, can be viewed in the dedicated [BOM](../bom/BOM.md)!
 
 #### Sourced parts
 

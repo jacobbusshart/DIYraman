@@ -1,4 +1,4 @@
-# Parts and Materials
+# BOM (Bill of Materials)
 
 ---
 
