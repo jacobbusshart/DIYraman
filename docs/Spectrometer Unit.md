@@ -247,13 +247,6 @@ Collect at least **4 calibration points** across the usable range – air for mo
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | *Old image of the first ever calibration done using a dedicated calibration lamp. Least-squares fitting with all pixel numbers and respective wavelengths added - fit residual is calculated automatically.* | *This was the reference spectrum provided with the cheap calibration lamp, whose wavelengths lie mostly in the upper range of the Raman's design.* |
 
-
-
-
-
-
-
-
 1. Open the **Calibrate** window again.  
 2. Switch to the **“Least-Squares Fitting”** tab.  
 3. Enter all recorded **pixel indices** and their respective **wavelengths** into the table.  
