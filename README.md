@@ -1,10 +1,11 @@
 # DIYraman – Open Hardware Raman Spectrometer
-Available on [docs.diyraman.com](https://docs.diyraman.com)
 
 ![License: CERN-OHL-S v2](https://img.shields.io/badge/Hardware_License-CERN--OHL--S_v2-blue) ![License: CC BY-SA 4.0](https://img.shields.io/badge/Docs_License-CC_BY--SA_4.0-green) ![License: MIT](https://img.shields.io/badge/Software_License-MIT-yellow)
 
 **Build, understand, and modify your own Raman spectrometer.**
-*A modular platform aimed at hobbyists, educators, and low-resource labs.*
+*A modular platform aimed at hobbyists, educators, and low-resource labs.* 
+
+[docs.diyraman.com](https://docs.diyraman.com)
 
 ![Full Assembly in Overpressure Glove Box](assets/images_pictures/Overview-Video-Pic_1_1400px_JPG.jpg)
 
