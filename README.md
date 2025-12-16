@@ -1,4 +1,5 @@
 # DIYraman – Open Hardware Raman Spectrometer
+Available on [docs.diyraman.com](https://docs.diyraman.com)
 
 ![License: CERN-OHL-S v2](https://img.shields.io/badge/Hardware_License-CERN--OHL--S_v2-blue) ![License: CC BY-SA 4.0](https://img.shields.io/badge/Docs_License-CC_BY--SA_4.0-green) ![License: MIT](https://img.shields.io/badge/Software_License-MIT-yellow)
 
@@ -9,7 +10,7 @@
 
 ---
 
-## 🔭 Project Overview
+## Project Scope
 
 **DIYraman** aims to make Raman spectroscopy **replicable, affordable, and fully documented**.
 
@@ -20,17 +21,16 @@ Raman spectroscopy allows for the identification of substances by analyzing how 
 * **Qualitative Screening:** Exploratory analysis of pharmaceuticals (e.g., pill composition).
 * **Teach Optics:** A hands-on platform for learning spectroscopy and photonics.
 
-> 💡 This README is a *project overview*. Detailed build instructions can be found in `docs/` and the dedicated pages or further down in [🚀 Progress & Build Guide](#🚀%20Progress%20&%20Build%20Guide).
+> 💡 This README is a *project overview*. Detailed build instructions are available on **[docs.diyraman.com](https://docs.diyraman.com)** or can be found in `docs/` on the dedicated pages. An overview of the build instructions is found further down under [Build Overview](#Build%20Overview).
 
 ---
 
-## ⚙️ The Hardware Architecture
+## Component Selection
 
 To balance cost with performance, DIYraman uses a "hybrid" approach: Professional filtering optics combined with repurposed spectroscopy hardware and 3D-printed mechanics.
 
 ![Optical Path Overview](assets/images_infographic/Optical-Path-Overview_PNG.png)
 
-### The Stack
 * **Spectrometer:** Surplus BTC100-2S unit (available on [eBay](https://www.ebay.com/itm/143989529085)).
 * **Excitation:** Cost-effective 532nm DPSS laser pointer.
 * **Mechanics:** Fully 3D-printable modular stages and enclosures.
@@ -41,7 +41,7 @@ A detailed cost breakdown and parts list is available in the [BOM (Bill of Mater
 
 ---
 
-## 🚀 Progress & Build Guide
+## Build Overview
 
 The following build path is recommended for a complete and coherent build-experience. The table reflects the current development status of the project's modules.
 
@@ -60,23 +60,23 @@ The following build path is recommended for a complete and coherent build-experi
 
 ---
 
-## 📊 Technical Capabilities
+## Capabilities
 
 ![](assets/images_pictures/Overview-Video-Pic_3_1400px_JPG.jpg)
 
-| Feature | Specification |
-| :--- | :--- |
-| **Spectral Range** | Stokes region > ~600 cm⁻¹ |
-| **Sample Type** | Solids & Liquids (Cuvette holder) |
-| **Resolution** | Dependent on B&W Tek module variant |
-| **Safety** | Enclosed optical path (Laser Class 3B precautions required during alignment) |
+| Feature            | Specification                                                                |
+| :----------------- | :--------------------------------------------------------------------------- |
+| **Spectral Range** | Stokes region > ~600 cm⁻¹                                                    |
+| **Sample Type**    | Solids & Liquids (Cuvette holder)                                            |
+| **Resolution**     | Dependent on B&W Tek module variant and slit                                 |
+| **Safety**         | Enclosed optical path (Laser Class 3B precautions required during alignment) |
 
 > 🧪 **Drug / counterfeit screening**  
 > The system can be used for *exploratory, educational* screening of unknowns (e.g. counterfeit pills) but **must not** be treated as a validated forensic tool. **Always cross-check with certified methods!**
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 ├── assets/                 # Images, infographics, and media
@@ -92,7 +92,7 @@ The following build path is recommended for a complete and coherent build-experi
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome from makers, scientists, and coders. Areas for contribution include:
 
@@ -101,14 +101,14 @@ Contributions are welcome from makers, scientists, and coders. Areas for contrib
 3. **Coding:** Assisting with the upcoming GUI/Firmware.
 4. **Sharing:** Submitting example spectra.
 
-**Citation** If utilizing DIYRaman for research or teaching, please cite the project:
+**Citation:** If utilizing DIYRaman for research or teaching, please cite the project:
 
 > **DIYRaman - Open Hardware Raman Spectrometer (GitHub)** 
 > _Jacob Busshart, DIYraman.com_
 
 ---
 
-## 📜 Licenses
+## Licenses
 
 A modular licensing structure is used to ensure maximum freedom for hardware and software usage.
 
