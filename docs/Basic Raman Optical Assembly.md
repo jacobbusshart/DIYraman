@@ -1,4 +1,4 @@
-# Basic Raman Optical Assembly
+# Core Optical Assembly
 
 ![Basic Raman optical assembly overview](../../assets/images_picked/Raman-Optical-Assembly/FULL-Basic-Assembly-1400px_Screenshot_PNG-1.png)
 

@@ -1,4 +1,4 @@
-# Linear Translation Stage
+# DIY Linear Stage
 
 ![Linear translation stage – assembled](../../assets/images_picked/Linear-Translation-Stage/Linear%20Translation%20Stage%20Part%20-%20Desktop%20-%202.jpg)
 

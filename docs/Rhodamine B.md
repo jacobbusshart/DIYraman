@@ -1,4 +1,4 @@
-# Rhodamine B Fluorescence Reference Cuvette
+# Aligning with Fluorescence
 
 A dilute Rhodamine B solution is the **standard alignment sample** for the Raman optical assembly: if you cannot get a strong Rhodamine B signal, you will not be able to acquire a Raman signal from anything else.   
 

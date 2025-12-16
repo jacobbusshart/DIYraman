@@ -1,4 +1,4 @@
-# Overpressure Glove Box
+# Dustproof Workspace
 
 ![Overview of the overpressure glove box](../../assets/images_pictures/Overview-Video-Pic_3_1400px_JPG.jpg)
 

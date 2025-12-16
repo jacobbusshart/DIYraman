@@ -1,13 +1,26 @@
-# Spectrometer Unit (B&W Tek BTC100-2S)
+# Measuring light - Spectrometer Unit
 
 ![Spectrometer unit with printed case](../../assets/images_picked/Spectrometer-Unit/Spectrometer_1400_4_3_Overview-Case_12_JPG.jpg)
 
-Prepare, house and use the surplus **B&W Tek BTC100-2S** spectrometer module as the detector for the DIYraman system. This page focuses on the practical steps you need to:
+Prepare, house and use the surplus **B&W Tek BTC100-2S** spectrometer module as the detector for the DIYraman system. 
+
+This page focuses on the practical steps you need to:
 
 - **Inspect and clean** the used unit  
 - **Mount it** in a simple printed housing  
 - **Power it up** and talk to it over RS-232  
 - **Acquire a first spectrum** and apply a basic wavelength calibration
+
+| Specs      |                          |
+| ---------- | ------------------------ |
+| Range      | ~400nm - 650nm           |
+| Grating    | 1800l/mm, blaze at 500nm |
+| Input slit | 100µm (wide)             |
+| Coupling   | SMA905 fiber             |
+| Detector   | Sony ILX511 linear CCD   |
+| Resolution | 2048 pixel spectrum      |
+| Power      | 5V barrel jack           |
+| Connection | RS-232 serial            |
 
 
 ![View inside the optical assembly of the Spectrometer Unit BTC100-2S](../../assets/images_picked/Spectrometer-Unit/Spectrometer_Unit_inside1_JPG-rotated.jpg)
