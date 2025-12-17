@@ -7,7 +7,6 @@ edit_uri: edit/main/docs/
 
 docs_dir: docs
 
-
 nav:
   - 00 - Start here:
       - Parts list (BOM): https://github.com/jacobbusshart/DIYraman/blob/main/bom/BOM.md
@@ -45,13 +44,15 @@ theme:
     - search.suggest
     - search.highlight
 
+  # Material "keywords" here, set the exact hex colors in extra.css
   palette:
     - scheme: slate
       primary: black
       accent: red
 
+  # Body: Inter (16px), Headings: KoHo (via CSS)
   font:
-    text: KoHo
+    text: Inter
     code: JetBrains Mono
 
 plugins:
@@ -73,6 +74,6 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
-      
+
 extra_css:
   - extra.css

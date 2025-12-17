@@ -1,10 +1,11 @@
 /* DIYraman MkDocs skin
 
 /* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=KoHo:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=KoHo:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap");
 
-/* Core palette */
+/* Core palette + Material tokens */
 :root {
   --diy-bg: #101010;
   --diy-bg-2: #0c0c0c;
@@ -15,7 +16,7 @@
   --diy-text-3: rgba(255, 255, 255, 0.55);
   --diy-accent: #ff3c3c;
 
-  /* Material tokens */
+  /* Material theme tokens */
   --md-default-bg-color: var(--diy-bg);
   --md-default-fg-color: var(--diy-text);
   --md-default-fg-color--light: var(--diy-text-2);
@@ -29,12 +30,17 @@
 
   --md-code-bg-color: rgba(255, 255, 255, 0.06);
 
-  --md-text-font: "KoHo";
+  /* Base fonts */
+  --md-text-font: "Inter";
   --md-code-font: "JetBrains Mono";
 }
 
+/* Body font size = 16px */
+html { font-size: 16px; }
+
+/* Layout width: much wider */
 .md-grid {
-  max-width: 1200px;
+  max-width: min(96vw, 1800px);
 }
 
 /* Header / tabs */
@@ -48,84 +54,69 @@
   padding-bottom: 0.35rem;
 }
 
-/* Sidebars: subtle separation */
-.md-sidebar__scrollwrap {
-  background: var(--diy-bg);
-}
-.md-sidebar--primary {
-  border-right: 1px solid var(--diy-border-2);
-}
-.md-sidebar--secondary {
-  border-left: 1px solid var(--diy-border-2);
-}
+/* Sidebars */
+.md-sidebar__scrollwrap { background: var(--diy-bg); }
+.md-sidebar--primary { border-right: 1px solid var(--diy-border-2); }
+.md-sidebar--secondary { border-left: 1px solid var(--diy-border-2); }
 
 /* Navigation typography */
-.md-nav {
-  font-size: 0.92rem;
-  line-height: 1.35;
-}
+.md-nav { font-size: 0.95rem; line-height: 1.35; }
 .md-nav__title {
   color: var(--diy-text);
   font-weight: 600;
   letter-spacing: -0.01em;
 }
-.md-nav__link {
-  color: var(--diy-text-2);
-}
-.md-nav__link:hover {
-  color: var(--diy-text);
-}
+.md-nav__link { color: var(--diy-text-2); }
+.md-nav__link:hover { color: var(--diy-text); }
 .md-nav__link--active,
-.md-nav__item--active > .md-nav__link {
-  color: var(--diy-accent) !important;
-}
-
+.md-nav__item--active > .md-nav__link { color: var(--diy-accent) !important; }
 .md-nav__item--active > .md-nav__link {
   border-left: 2px solid var(--diy-accent);
   padding-left: calc(0.8rem - 2px);
 }
 
-.md-typeset {
-  font-size: 0.95rem;
-}
-.md-typeset h1 {
-  font-weight: 700;
-  letter-spacing: -0.02em;
-}
+/* Typesetting */
+.md-typeset { font-size: 1rem; } /* 1rem = 16px */
+
+/* Headings: KoHo (semi-bold), H2 = 32px */
+.md-typeset h1,
 .md-typeset h2,
-.md-typeset h3 {
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  font-family: "KoHo", "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-weight: 600;
   letter-spacing: -0.01em;
 }
-.md-typeset hr {
-  border-color: var(--diy-border-2);
-}
+.md-typeset h1 { letter-spacing: -0.02em; }
+.md-typeset h2 { font-size: 32px; line-height: 1.15; }
 
+.md-typeset hr { border-color: var(--diy-border-2); }
 
+/* Links */
 .md-typeset a:hover {
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 3px;
 }
 
+/* Search */
 .md-search__form {
   border-radius: 12px;
   border: 1px solid var(--diy-border-2);
   background: rgba(255, 255, 255, 0.03);
 }
-.md-search__input {
-  font-weight: 500;
-}
+.md-search__input { font-weight: 500; }
 
-/* Code blocks: rounded, bordered */
+/* Code blocks */
 .md-typeset pre > code {
   border: 1px solid var(--diy-border-2);
   border-radius: 12px;
 }
-.md-typeset code {
-  border-radius: 6px;
-}
+.md-typeset code { border-radius: 6px; }
 
-/* Admonitions / callouts: rounded, subtle, modern */
+/* Admonitions / callouts */
 .md-typeset .admonition,
 .md-typeset details {
   border-radius: 12px;
@@ -134,20 +125,17 @@
   box-shadow: none;
 }
 .md-typeset .admonition-title,
-.md-typeset summary {
-  font-weight: 600;
-}
+.md-typeset summary { font-weight: 600; }
 
-/* Tables: soft borders */
+/* Tables */
 .md-typeset table:not([class]) {
   border: 1px solid var(--diy-border-2);
   border-radius: 12px;
   overflow: hidden;
 }
-.md-typeset table:not([class]) th {
-  background: rgba(255, 255, 255, 0.04);
-}
+.md-typeset table:not([class]) th { background: rgba(255, 255, 255, 0.04); }
 
+/* Footer */
 .md-footer {
   background: var(--diy-bg);
   border-top: 1px solid var(--diy-border-2);
