@@ -2,46 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.diyraman.com/</loc>
-         <lastmod>2025-12-16</lastmod>
+         <lastmod>2025-12-17</lastmod>
     </url>
     <url>
-         <loc>https://docs.diyraman.com/Basic%20Raman%20Optical%20Assembly/</loc>
-         <lastmod>2025-12-16</lastmod>
+         <loc>https://docs.diyraman.com/Align-with-Fluorescence/</loc>
+         <lastmod>2025-12-17</lastmod>
     </url>
     <url>
-         <loc>https://docs.diyraman.com/Full%20Raman%20Optical%20Assembly/</loc>
-         <lastmod>2025-12-16</lastmod>
+         <loc>https://docs.diyraman.com/Core-Assembly/</loc>
+         <lastmod>2025-12-17</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.diyraman.com/DIY-Linear-Stage/</loc>
+         <lastmod>2025-12-17</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.diyraman.com/Dustproof-Workspace/</loc>
+         <lastmod>2025-12-17</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.diyraman.com/Full-Build/</loc>
+         <lastmod>2025-12-17</lastmod>
     </url>
     <url>
          <loc>https://docs.diyraman.com/Introduction/</loc>
-         <lastmod>2025-12-16</lastmod>
+         <lastmod>2025-12-17</lastmod>
     </url>
     <url>
-         <loc>https://docs.diyraman.com/Linear%20Translation%20Stage/</loc>
-         <lastmod>2025-12-16</lastmod>
+         <loc>https://docs.diyraman.com/Spectrometer-Setup/</loc>
+         <lastmod>2025-12-17</lastmod>
     </url>
     <url>
-         <loc>https://docs.diyraman.com/Overpressure%20Glove%20Box/</loc>
-         <lastmod>2025-12-16</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.diyraman.com/Rhodamine%20B/</loc>
-         <lastmod>2025-12-16</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.diyraman.com/Spectrometer%20Unit/</loc>
-         <lastmod>2025-12-16</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.diyraman.com/Spectrum%20Studio%20Cheatsheet/</loc>
-         <lastmod>2025-12-16</lastmod>
+         <loc>https://docs.diyraman.com/SpectrumStudio-Cheatsheet/</loc>
+         <lastmod>2025-12-17</lastmod>
     </url>
     <url>
          <loc>https://docs.diyraman.com/assets/</loc>
-         <lastmod>2025-12-16</lastmod>
+         <lastmod>2025-12-17</lastmod>
     </url>
     <url>
          <loc>https://docs.diyraman.com/bom/BOM/</loc>
-         <lastmod>2025-12-16</lastmod>
+         <lastmod>2025-12-17</lastmod>
     </url>
 </urlset>
