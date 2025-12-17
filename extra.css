@@ -1,0 +1,5 @@
+:root{--md-accent-fg-color:#ff3c3c;--md-typeset-a-color:#ff3c3c;}
+.md-grid{max-width:min(96vw,1800px)!important;}
+.md-content__inner,.md-typeset{max-width:none!important;}
+.md-typeset h1,.md-typeset h2,.md-typeset h3,.md-typeset h4,.md-typeset h5,.md-typeset h6{font-weight:600;}
+.md-typeset a{text-decoration:underline;text-decoration-color:#ff3c3c;text-decoration-thickness:2px;text-underline-offset:3px;}
