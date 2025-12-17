@@ -1,4 +1,4 @@
-# Measuring light - Spectrometer Unit
+# Measuring Light
 
 ![Spectrometer unit with printed case](../../assets/images_picked/Spectrometer-Unit/Spectrometer_1400_4_3_Overview-Case_12_JPG.jpg)
 
@@ -153,7 +153,7 @@ This section gets the spectrometer powered and talking to your computer.
 For initial testing, use the original B&W Tek software (“Spectrum Studio”) to confirm that communication and data acquisition work as expected.
 
 > [!TIP] Quick UI reference - Cheatsheet 
-> See the dedicated page [**Spectrum Studio Cheatsheet**](Spectrum%20Studio%20Cheatsheet.md) for screenshots and an overview of the most relevant controls.
+> See the dedicated page [**Spectrum Studio Cheatsheet**](SpectrumStudio-Cheatsheet.md) for screenshots and an overview of the most relevant controls.
 
 ### Software setup
 
@@ -287,8 +287,8 @@ The x-axis should now be displayed directly in **nanometers (nm)** instead of ra
 
 ## Continue reading
 
-- [Overpressure Glove Box](Overpressure%20Glove%20Box.md)
-- [Basic Raman Optical Assembly](Basic%20Raman%20Optical%20Assembly.md)
-- [Linear Translation Stage](Linear%20Translation%20Stage.md)
-- [Spectrum Studio Cheatsheet](Spectrum%20Studio%20Cheatsheet.md)
+- [Dustproof-Workspace](Dustproof-Workspace.md)
+- [Core-Assembly](Core-Assembly.md)
+- [DIY-Linear-Stage](DIY-Linear-Stage.md)
+- [SpectrumStudio-Cheatsheet](SpectrumStudio-Cheatsheet.md)
 

@@ -1,4 +1,4 @@
-# Spectrum Studio Cheatsheet
+# Software Quick Guide
 
 ![Acquisition Software Spectrum Studio showing a raman spectrum of toluene with background subtracted at 3000ms integration time and 5 averages ](../../assets/images_infographic/SpectrumStudio_Overview_Raman-Toluene_JPG.jpg)
 
@@ -85,4 +85,4 @@ SpectrumStudio is the original **control and acquisition software** for the BTC1
 
 ---
 
-[Spectrometer Unit](Spectrometer%20Unit.md)
+[Spectrometer-Setup](Spectrometer-Setup.md)

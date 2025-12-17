@@ -10,7 +10,7 @@ For cost reasons, this setup uses a low-cost 532 nm green laser pointer togeth
 
 
 > [!NOTE] Full vs. Basic Optical Assembly  
-> The [Full Raman Optical Assembly](Full%20Raman%20Optical%20Assembly.md) incorporates the [Linear Translation Stage](Linear%20Translation%20Stage.md) along with two stepper motors to motorise the kinematic laser mount for convenience.  
+> The [Full-Build](Full-Build.md) incorporates the [DIY-Linear-Stage](DIY-Linear-Stage.md) along with two stepper motors to motorise the kinematic laser mount for convenience.  
 > The basic setup on this page is intentionally simpler and sufficient to capture your first Raman signals.
 
 ---
@@ -420,9 +420,9 @@ In this final step you mount all sub-assemblies onto the baseplate to form the c
 
 ## Continue reading
 
-- [Spectrometer Unit](Spectrometer%20Unit.md)
-- [Spectrum Studio Cheatsheet](Spectrum%20Studio%20Cheatsheet.md)
-- [Rhodamine B](Rhodamine%20B.md)
-- [Build the Linear Translation Stage](Linear%20Translation%20Stage.md)  
-- [Build the Overpressure Glovebox](Overpressure%20Glove%20Box.md)  
-- [Build the Full Assembly](Full%20Raman%20Optical%20Assembly.md)  
+- [Spectrometer-Setup](Spectrometer-Setup.md)
+- [SpectrumStudio-Cheatsheet](SpectrumStudio-Cheatsheet.md)
+- [Align-with-Fluorescence](Align-with-Fluorescence.md)
+- [Build the Linear Translation Stage](DIY-Linear-Stage.md)  
+- [Build the Overpressure Glovebox](Dustproof-Workspace.md)  
+- [Build the Full Assembly](Full-Build.md)  

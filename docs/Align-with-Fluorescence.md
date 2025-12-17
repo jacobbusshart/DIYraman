@@ -11,7 +11,7 @@ A dilute Rhodamine B solution is the **standard alignment sample** for the Raman
 - **Check the filters** – the 532 nm line should be strongly suppressed while orange/red fluorescence passes.
 
 > [!INFO] Reminder  
-> This uses the same printed cuvette holder as the [Basic Raman Optical Assembly](Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly).  
+> This uses the same printed cuvette holder as the [Core-Assembly](Core-Assembly.md#Sample%20Assembly).  
 > For alignment you **do not** need a calibrated standard: a faintly pink, transparent solution is enough. Concentration only needs to be **roughly** in the right range.
 
 ---
@@ -26,7 +26,7 @@ A dilute Rhodamine B solution is the **standard alignment sample** for the Raman
 
 | Qty | Name                            | Model / Spec                     | Notes                                                                                                             |
 | --- | ------------------------------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| 1x  | Quartz Cuvette                  | Any                              | Same as [Basic Raman Optical Assembly - Sample Assembly](Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly) |
+| 1x  | Quartz Cuvette                  | Any                              | Same as [Basic Raman Optical Assembly - Sample Assembly](Core-Assembly.md#Sample%20Assembly) |
 | 1x  | Fluorescent dye                 | Rhodamine B (*CAS: 81-88-9*), 5g | Any strong fluorescent material with excitation at around the laser's wavelength (532 nm)                         |
 | -   | Pipette or syringe (1–5 mL)     |                                  |                                                                                                                   |
 | -   | Distilled / deionised water     |                                  |                                                                                                                   |
@@ -37,8 +37,8 @@ A dilute Rhodamine B solution is the **standard alignment sample** for the Raman
 
 | Qty | Part name (.stl)     | Used in                                                                                    |
 | --- | -------------------- | ------------------------------------------------------------------------------------------ |
-| 1x  | `Kuvettecase_Top`    | Identical used: [Sample Assembly](Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly) |
-| 1x  | `Kuvettecase_Bottom` | Identical used: [Sample Assembly](Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly) |
+| 1x  | `Kuvettecase_Top`    | Identical used: [Sample Assembly](Core-Assembly.md#Sample%20Assembly) |
+| 1x  | `Kuvettecase_Bottom` | Identical used: [Sample Assembly](Core-Assembly.md#Sample%20Assembly) |
 
 
 
@@ -150,7 +150,7 @@ This is sufficient for almost all users and does not require a scale.
 
 ## Optional: How to use for Alignment
 
-Once the cuvette is mounted in the [Sample Assembly](Basic%20Raman%20Optical%20Assembly.md#Sample%20Assembly):
+Once the cuvette is mounted in the [Sample Assembly](Core-Assembly.md#Sample%20Assembly):
 
 1. Place the cuvette holder at the objective focus (inside the cuvette, focusing its contents).  
 2. Switch on the laser (at low power, if possible).  

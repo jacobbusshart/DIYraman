@@ -280,5 +280,5 @@ Your overpressure glove box is now ready to use for clean assembly of the Raman 
 
 ## Continue reading
 
-- [Basic Raman Optical Assembly](Basic%20Raman%20Optical%20Assembly.md)  
-- [Linear Translation Stage](Linear%20Translation%20Stage.md)
+- [Core-Assembly](Core-Assembly.md)  
+- [DIY-Linear-Stage](DIY-Linear-Stage.md)

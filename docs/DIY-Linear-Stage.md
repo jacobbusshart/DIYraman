@@ -2,7 +2,7 @@
 
 ![Linear translation stage – assembled](../../assets/images_picked/Linear-Translation-Stage/Linear%20Translation%20Stage%20Part%20-%20Desktop%20-%202.jpg)
 
-Build a compact linear translation stage for fine axial adjustment of the focusing optics in the [Full Raman Optical Assembly](Full%20Raman%20Optical%20Assembly.md).
+Build a compact linear translation stage for fine axial adjustment of the focusing optics in the [Full-Build](Full-Build.md).
 
 This stage uses:
 
@@ -13,8 +13,8 @@ This stage uses:
 The design is simple to print and tune, and accurate enough to focus the final lens or fibre position onto the spectrometer input.
 
 > [!NOTE] Where this stage is used  
-> In the recommended build path, this translation stage sits underneath the **Focusing Assembly** [Focusing Assembly](Basic%20Raman%20Optical%20Assembly.md#Focusing%20Assembly) in the [Full Raman Optical Assembly](Full%20Raman%20Optical%20Assembly.md).  
-> It is **not** required for the [Basic Raman Optical Assembly](Basic%20Raman%20Optical%20Assembly.md) but strongly recommended for comfortable fine focus adjustment.
+> In the recommended build path, this translation stage sits underneath the **Focusing Assembly** [Focusing Assembly](Core-Assembly.md#Focusing%20Assembly) in the [Full-Build](Full-Build.md).  
+> It is **not** required for the [Core-Assembly](Core-Assembly.md) but strongly recommended for comfortable fine focus adjustment.
 
 ---
 
@@ -173,7 +173,7 @@ The front plate increases stiffness at the front end of the rods and reduces the
 
 In the **Full Raman Optical Assembly**, this stage is mounted beneath the focusing optics module.
 
-1. Identify the mounting pattern for the translation stage on your Raman baseplate (see [Full Raman Optical Assembly](Full%20Raman%20Optical%20Assembly.md)).  
+1. Identify the mounting pattern for the translation stage on your Raman baseplate (see [Full-Build](Full-Build.md)).  
 2. Disassemble the desired `Defaultholder` that holds the focusing lens by sliding it off the assembly rods.
 3. Use four screws to mount the optic holder to the stage.
 4. Place the assembled linear translation stage on the baseplate and align the mounting holes.  
@@ -192,7 +192,7 @@ For this design, part of the micrometer’s total travel is intentionally used t
 - Pre-load the springs (so the stage is always pressed firmly against the micrometer tip), and  
 - Avoid fully compressing the springs at the end of travel (to keep motion smooth and predictable).
 
-In practice, the **useful travel** of the stage is around **5 mm**, which is more than sufficient for fine focus adjustment of the final lens (or fibre input) in the [Full Raman Optical Assembly](Full%20Raman%20Optical%20Assembly.md).
+In practice, the **useful travel** of the stage is around **5 mm**, which is more than sufficient for fine focus adjustment of the final lens (or fibre input) in the [Full-Build](Full-Build.md).
 
 The spring pre-load:
 
@@ -211,6 +211,6 @@ The spring pre-load:
 
 ## Related
 
-- [Build an Overpressure Glove Box](Overpressure%20Glove%20Box.md)  
-- [Basic Raman Optical Assembly](Basic%20Raman%20Optical%20Assembly.md)  
-- [Full Raman Optical Assembly](Full%20Raman%20Optical%20Assembly.md)  
+- [Build an Overpressure Glove Box](Dustproof-Workspace.md)  
+- [Core-Assembly](Core-Assembly.md)  
+- [Full-Build](Full-Build.md)  

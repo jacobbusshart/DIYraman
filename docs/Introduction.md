@@ -36,11 +36,11 @@ After acquisition, the raw spectrum is exported as a CSV to be post-processed. T
 ## Get Started
 
 0. [BOM](../bom/BOM.md) - Visit the bill of materials to gain a better understanding of the essential parts
-1. [Spectrometer Unit](Spectrometer%20Unit.md) - Familiarize yourself with the B&W Tek spectrometer unit
-2. [Overpressure Glove Box](Overpressure%20Glove%20Box.md) - Build a dustproof box to protect the expensive optical components
-3. [Basic Raman Optical Assembly](Basic%20Raman%20Optical%20Assembly.md) - Print and build the core assembly of the system
+1. [Spectrometer-Setup](Spectrometer-Setup.md) - Familiarize yourself with the B&W Tek spectrometer unit
+2. [Dustproof-Workspace](Dustproof-Workspace.md) - Build a dustproof box to protect the expensive optical components
+3. [Core-Assembly](Core-Assembly.md) - Print and build the core assembly of the system
 4. Additional documents:
-	1. [Linear Translation Stage](Linear%20Translation%20Stage.md) - Recommended for the final assembly
-	2. [Rhodamine B](Rhodamine%20B.md) - Handling and preparing the fluorescent dye solution for alignment
-	3. [Spectrum Studio Cheatsheet](Spectrum%20Studio%20Cheatsheet.md) - Quick overview of the original 'Spectrum Studio' software 
-	4. [Full Raman Optical Assembly](Full%20Raman%20Optical%20Assembly.md) - Final integration of all components and partly motorizing adjustment 
+	1. [DIY-Linear-Stage](DIY-Linear-Stage.md) - Recommended for the final assembly
+	2. [Align-with-Fluorescence](Align-with-Fluorescence.md) - Handling and preparing the fluorescent dye solution for alignment
+	3. [SpectrumStudio-Cheatsheet](SpectrumStudio-Cheatsheet.md) - Quick overview of the original 'Spectrum Studio' software 
+	4. [Full-Build](Full-Build.md) - Final integration of all components and partly motorizing adjustment 

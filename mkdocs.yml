@@ -3,6 +3,25 @@ site_url: https://docs.diyraman.com
 
 docs_dir: docs
 
+
+nav:
+  - Start here:
+      - Introduction: Introduction.md
+      - Parts list (BOM): https://github.com/jacobbusshart/DIYraman/blob/main/bom/BOM.md
+
+  - Build the basics:
+      - Measuring light: "Spectrometer-Setup.md"
+      - Dustproof workspace: "Dustproof-Workspace.md"
+      - Core optical assembly (first spectra): "Core-Assembly.md"
+
+  - Calibrate & test:
+      - Aligning with fluorescence: "Align-with-Fluorescence.md"
+      - Software quick guide: "SpectrumStudio-Cheatsheet.md"
+
+  - Upgrades:
+      - DIY focus stage: "DIY-Linear-Stage.md"
+      - Full build: "Full-Build.md"
+
 theme:
   name: material
   language: en
