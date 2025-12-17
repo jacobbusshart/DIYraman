@@ -4,6 +4,7 @@ repo_url: https://github.com/jacobbusshart/DIYraman
 repo_name: jacobbusshart/DIYraman
 edit_uri: edit/main/docs/
 docs_dir: docs
+
 nav:
 - DIYraman: index.md
 - 00 - Start here:
@@ -19,6 +20,7 @@ nav:
 - 03 - Upgrades:
   - DIY focus stage: DIY-Linear-Stage.md
   - Full build: Full-Build.md
+
 theme:
   name: material
   language: en
@@ -43,9 +45,11 @@ theme:
   font:
     text: Inter
     code: JetBrains Mono
+
 plugins:
 - search
 - callouts
+
 markdown_extensions:
 - nl2br
 - admonition
@@ -61,5 +65,6 @@ markdown_extensions:
     alternate_style: true
 - pymdownx.tasklist:
     custom_checkbox: true
+
 extra_css:
 - extra.css
