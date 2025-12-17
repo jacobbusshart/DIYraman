@@ -5,20 +5,20 @@ docs_dir: docs
 
 
 nav:
-  - Start here:
+  - 00 - Start here:
       - Parts list (BOM): https://github.com/jacobbusshart/DIYraman/blob/main/bom/BOM.md
       - Introduction: Introduction.md
 
-  - Build the basics:
+  - 01 - Build the basics:
       - Measuring light: "Spectrometer-Setup.md"
       - Dustproof workspace: "Dustproof-Workspace.md"
       - Core optical assembly: "Core-Assembly.md"
 
-  - Calibrate & test:
+  - 02 - Calibrate & test:
       - Aligning with fluorescence: "Align-with-Fluorescence.md"
       - Software quick guide: "SpectrumStudio-Cheatsheet.md"
 
-  - Upgrades:
+  - 03 - Upgrades:
       - DIY focus stage: "DIY-Linear-Stage.md"
       - Full build: "Full-Build.md"
 
@@ -77,3 +77,6 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
+
+extra_css:
+  - extra.css
