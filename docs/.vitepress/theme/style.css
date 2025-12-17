@@ -1,0 +1,91 @@
+:root {
+  --vp-c-brand-1: #ff3c3c;
+  --vp-c-brand-2: #ff6a6a;
+  --vp-c-brand-3: #ff2a2a;
+
+  --vp-c-bg: #101010;
+  --vp-c-bg-alt: #0c0c0c;
+  --vp-c-bg-soft: #141414;
+  --vp-c-bg-mute: #171717;
+
+  --vp-c-divider: rgba(255, 255, 255, 0.08);
+  --vp-c-divider-light: rgba(255, 255, 255, 0.06);
+
+  --vp-c-text-1: rgba(255, 255, 255, 0.95);
+  --vp-c-text-2: rgba(255, 255, 255, 0.78);
+  --vp-c-text-3: rgba(255, 255, 255, 0.62);
+
+  --vp-font-family-base: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  --vp-font-family-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  --vp-layout-max-width: 1680px;
+}
+
+html, body {
+  background: var(--vp-c-bg);
+}
+
+.VPNav, .VPNavBar, .VPNavBarTitle, .VPNavBarMenu, .VPNavBarExtra {
+  background: var(--vp-c-bg) !important;
+}
+
+.VPSidebar, .VPSidebarItem, .VPLocalNav {
+  background: var(--vp-c-bg) !important;
+}
+
+.VPContent {
+  background: var(--vp-c-bg);
+}
+
+.VPDoc {
+  max-width: 100%;
+}
+
+.VPDoc .content {
+  max-width: 100%;
+}
+
+.vp-doc a {
+  color: var(--vp-c-text-1);
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: var(--vp-c-brand-1);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.vp-doc a:hover {
+  color: var(--vp-c-brand-1);
+}
+
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3,
+.vp-doc h4,
+.vp-doc h5,
+.vp-doc h6 {
+  color: var(--vp-c-text-1);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.vp-doc h2 {
+  font-size: 32px;
+  line-height: 1.15;
+}
+
+.vp-doc table {
+  font-size: 0.9rem;
+}
+
+.vp-doc .custom-block,
+.vp-doc details {
+  font-size: 0.9rem;
+  border: 1px solid var(--vp-c-divider);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.vp-doc .custom-block-title {
+  color: var(--vp-c-text-1);
+  font-weight: 600;
+}
