@@ -15,7 +15,7 @@ For cost reasons, this setup uses a low-cost 532 nm green laser pointer togeth
 
 ---
 
-# Sub-Assemblies
+## Sub-Assemblies
 
 | ![Sample assembly overview](../../assets/images_picked/Raman-Optical-Assembly/Sample-Basic-Assembly-1080px_Screenshot_PNG.png)                | ![Laser assembly overview](../../assets/images_picked/Raman-Optical-Assembly/Laser-Basic-Assembly-1080px_Screenshot_PNG.png)       |
 | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
@@ -371,7 +371,7 @@ _Source: Thorlabs – “Longpass Dichroic Mirrors/Beamsplitters”_
 
 ---
 
-# Baseplate Mounting
+## Baseplate Mounting
 
 ![Basic assembly mounted on the baseplate](../../assets/images_picked/Raman-Optical-Assembly/Basic-Assembly_Assembled_1400px_PDFto_PNG.png)
 
