@@ -1,0 +1,61 @@
+/* DIYraman — Additional CSS
+   Accent: #ff3c3c
+   Base:   #101010
+*/
+
+:root {
+  /* Brand colors */
+  --md-primary-fg-color: #101010;
+  --md-primary-fg-color--dark: #0a0a0a;
+  --md-primary-fg-color--light: #1a1a1a;
+
+  --md-accent-fg-color: #ff3c3c;
+  --md-accent-fg-color--transparent: rgba(255, 60, 60, 0.12);
+
+  /* Links */
+  --md-typeset-a-color: #ff3c3c;
+}
+
+/* Dark mode surfaces */
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #0e0e0e;
+  --md-default-fg-color: rgba(255, 255, 255, 0.90);
+  --md-default-fg-color--light: rgba(255, 255, 255, 0.72);
+  --md-default-fg-color--lighter: rgba(255, 255, 255, 0.55);
+
+  --md-code-bg-color: rgba(255, 255, 255, 0.06);
+}
+
+/* Slightly softer rounded look */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 12px;
+}
+
+/* Buttons */
+.md-typeset .md-button--primary {
+  background-color: var(--md-accent-fg-color);
+  border-color: var(--md-accent-fg-color);
+}
+
+.md-typeset .md-button--primary:hover {
+  filter: brightness(1.06);
+}
+
+/* Navigation emphasis */
+.md-nav__link--active,
+.md-nav__link:focus,
+.md-nav__link:hover {
+  color: var(--md-accent-fg-color);
+}
+
+/* Selection color */
+::selection {
+  background: rgba(255, 60, 60, 0.35);
+}
+
+/* Subtle underline for links in body text */
+.md-typeset a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
