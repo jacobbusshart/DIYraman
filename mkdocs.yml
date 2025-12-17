@@ -11,24 +11,20 @@ nav:
   - 00 - Start here:
       - Parts list (BOM): https://github.com/jacobbusshart/DIYraman/blob/main/bom/BOM.md
       - Introduction: Introduction.md
-
   - 01 - Build the basics:
-      - Measuring light: "Spectrometer-Setup.md"
-      - Dustproof workspace: "Dustproof-Workspace.md"
-      - Core assembly: "Core-Assembly.md"
-
+      - Measuring light: Spectrometer-Setup.md
+      - Dustproof workspace: Dustproof-Workspace.md
+      - Core assembly: Core-Assembly.md
   - 02 - Calibrate & test:
-      - Aligning with fluorescence: "Align-with-Fluorescence.md"
-      - Software quick guide: "SpectrumStudio-Cheatsheet.md"
-
+      - Aligning with fluorescence: Align-with-Fluorescence.md
+      - Software quick guide: SpectrumStudio-Cheatsheet.md
   - 03 - Upgrades:
-      - DIY focus stage: "DIY-Linear-Stage.md"
-      - Full build: "Full-Build.md"
+      - DIY focus stage: DIY-Linear-Stage.md
+      - Full build: Full-Build.md
 
 theme:
   name: material
   language: en
-
   features:
     - navigation.instant
     - navigation.sections
@@ -43,14 +39,10 @@ theme:
     - content.action.view
     - search.suggest
     - search.highlight
-
-  # Material "keywords" here, set the exact hex colors in extra.css
   palette:
     - scheme: slate
       primary: black
       accent: red
-
-  # Body: Inter (16px), Headings: KoHo (via CSS)
   font:
     text: Inter
     code: JetBrains Mono
