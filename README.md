@@ -22,6 +22,8 @@ Raman spectroscopy allows for the identification of substances by analyzing how 
 * **Qualitative Screening:** Exploratory analysis of pharmaceuticals (e.g., pill composition).
 * **Teach Optics:** A hands-on platform for learning spectroscopy and photonics.
 
+![](results/first-spectra_images/Paracetamol_Spectrum-Postprocessed_1.jpg)
+
 > 💡 This README is a *project overview*. Detailed build instructions are available on **[docs.diyraman.com](https://docs.diyraman.com)** or can be found in `docs/` on the dedicated pages. An overview of the build instructions is found further down under [Build Overview](#Build%20Overview).
 
 ---
