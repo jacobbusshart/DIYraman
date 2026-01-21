@@ -6,12 +6,19 @@
 *A modular platform aimed at hobbyists, educators, and low-resource labs.* 
 
 [docs.diyraman.com](https://docs.diyraman.com)
+## Introduction
 
-![Full Assembly in Overpressure Glove Box](assets/images_pictures/Overview-Video-Pic_1_1400px_JPG.jpg)
+![https://www.youtube.com/watch?v=EOOmlQH1UKw](assets/images_picked/YT-Thumbnail_FINAL.png)
+
+[**Click here to watch the Youtube video!**](https://www.youtube.com/watch?v=EOOmlQH1UKw)
+
+Watch the Youtube video to get started and learn about the principles of Raman Spectroscopy, a build overview, along with part considerations, challenges, limitations and practical decisions.  
 
 ---
 
 ## Project Scope
+
+![Full Assembly in Overpressure Glove Box](assets/images_pictures/Overview-Video-Pic_1_1400px_JPG.jpg)
 
 **DIYraman** aims to make Raman spectroscopy **replicable, affordable, and fully documented**.
 
