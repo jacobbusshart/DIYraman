@@ -34,7 +34,12 @@ jobs:
 
       - name: Install MkDocs + plugins
         run: |
-          pip install mkdocs-material mkdocs-callouts
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          else
+            pip install mkdocs-material mkdocs-callouts
+          fi
 
       - name: Use top-level README as docs home
         run: |
@@ -43,13 +48,24 @@ jobs:
 
       - name: Copy BOM into docs so MkDocs ships it
         run: |
-          mkdir -p "docs/bom"
-          cp "bom/BOM.md" "docs/bom/BOM.md" || true
+          if [ -f "bom/BOM.md" ]; then
+            mkdir -p "docs/bom"
+            cp "bom/BOM.md" "docs/bom/BOM.md"
+          fi
 
       - name: Copy assets into docs so MkDocs ships them
         run: |
-          mkdir -p docs/assets
-          cp -R assets/* docs/assets/ || true
+          if [ -d "assets" ]; then
+            mkdir -p docs/assets
+            cp -R assets/* docs/assets/ || true
+          fi
+
+      - name: Copy results into docs so MkDocs ships them
+        run: |
+          if [ -d "results" ]; then
+            mkdir -p docs/results
+            cp -R results/* docs/results/ || true
+          fi
 
       - name: Build & deploy to gh-pages
         run: mkdocs gh-deploy --force
