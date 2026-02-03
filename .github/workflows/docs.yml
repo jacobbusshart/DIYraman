@@ -22,135 +22,140 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup Python
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.x"
+          python-version: "3.11"
 
-      - name: Install MkDocs dependencies
+      - name: Install MkDocs + plugins
         run: |
           python -m pip install --upgrade pip
-          if [ -f requirements.txt ]; then
-            pip install -r requirements.txt
-          elif [ -f docs/requirements.txt ]; then
-            pip install -r docs/requirements.txt
-          else
-            pip install mkdocs mkdocs-material
-          fi
+          python -m pip install mkdocs mkdocs-material mkdocs-callouts
 
-      - name: Prepare docs (copy files + fix links)
+      - name: Prepare docs (copy folders + fix README links + patch nav)
         run: |
           python - <<'PY'
           from pathlib import Path
-          from collections import defaultdict
           import shutil, re
+          from urllib.parse import urlsplit, urlunsplit
 
           repo = Path(".").resolve()
           docs_dir = repo / "docs"
           docs_dir.mkdir(exist_ok=True)
 
-          # Make sure non-doc folders used by README links exist inside docs/
-          # (MkDocs only ships files inside docs_dir.)
           def copy_tree_merge(src: Path, dst: Path):
-              if not src.exists():
-                  return
-              dst.mkdir(parents=True, exist_ok=True)
-              shutil.copytree(src, dst, dirs_exist_ok=True)
+            if not src.exists():
+              return
+            dst.mkdir(parents=True, exist_ok=True)
+            # copy contents (not the folder itself)
+            for item in src.iterdir():
+              target = dst / item.name
+              if item.is_dir():
+                shutil.copytree(item, target, dirs_exist_ok=True)
+              else:
+                shutil.copy2(item, target)
 
-          copy_tree_merge(repo / "assets", docs_dir / "assets")
+          # 1) Ensure folders that README might reference exist inside docs/
+          copy_tree_merge(repo / "assets",  docs_dir / "assets")
           copy_tree_merge(repo / "results", docs_dir / "results")
 
-          # Copy BOM into docs/ so it is a real MkDocs page
+          # 2) Copy BOM into docs so it's served by MkDocs
           bom_src = repo / "bom" / "BOM.md"
           if bom_src.exists():
-              (docs_dir / "bom").mkdir(parents=True, exist_ok=True)
-              shutil.copy2(bom_src, docs_dir / "bom" / "BOM.md")
+            (docs_dir / "bom").mkdir(parents=True, exist_ok=True)
+            shutil.copy2(bom_src, docs_dir / "bom" / "BOM.md")
 
-          # Build a mapping of "Filename.md" -> actual relative path within docs/
-          # so links like (docs/Introduction.md) can become (00 - Start here/Introduction.md)
-          name_to_paths = defaultdict(list)
+          # 3) Build a mapping "Filename.md" -> "some/folder/Filename.md" within docs/
+          name_to_paths = {}
           for p in docs_dir.rglob("*.md"):
-              # ignore the homepage we generate below (and any existing index.md)
-              if p.relative_to(docs_dir).as_posix().lower() == "index.md":
-                  continue
-              name_to_paths[p.name].append(p.relative_to(docs_dir).as_posix())
+            rel = p.relative_to(docs_dir).as_posix()
+            name_to_paths.setdefault(p.name, []).append(rel)
 
           def unique_path_for_filename(filename: str):
-              paths = name_to_paths.get(filename, [])
-              if len(paths) == 1:
-                  return paths[0]
-              return None
+            paths = name_to_paths.get(filename, [])
+            if len(paths) == 1:
+              return paths[0]
+            return None
 
-          # Copy README.md -> docs/index.md, but rewrite links that break on the site
+          # 4) Copy README.md -> docs/index.md and rewrite broken links
           readme = repo / "README.md"
           if readme.exists():
-              text = readme.read_text(encoding="utf-8")
+            text = readme.read_text(encoding="utf-8")
 
-              def fix_url(url: str) -> str:
-                  u = url.strip()
+            def fix_url(url: str) -> str:
+              u = url.strip()
 
-                  # Add https:// for bare domain links (optional nicety)
-                  if u.startswith("docs.diyraman.com"):
-                      return "https://" + u
+              # Parse fragments like foo.md#section
+              parts = urlsplit(u)
+              path = parts.path
+              frag = parts.fragment
+              query = parts.query
 
-                  # Convert GitHub blob/raw links to repo-relative paths (then handle below)
-                  u = re.sub(r"^https?://github\.com/jacobbusshart/DIYraman/blob/main/", "", u)
-                  u = re.sub(r"^https?://raw\.githubusercontent\.com/jacobbusshart/DIYraman/main/", "", u)
+              # Normalize GitHub blob/raw links to repo-relative
+              path = re.sub(r"^https?://github\.com/jacobbusshart/DIYraman/blob/main/", "", path)
+              path = re.sub(r"^https?://raw\.githubusercontent\.com/jacobbusshart/DIYraman/main/", "", path)
 
-                  # BOM: force local MkDocs page
-                  if "bom/BOM.md" in u:
-                      return "bom/BOM.md"
+              # Force BOM to local page
+              if "bom/BOM.md" in path:
+                path = "bom/BOM.md"
 
-                  # README currently links like (docs/Loremipsum.md) which becomes /docs/Loremipsum.md = 404
-                  # Fix by mapping the basename to the real location inside docs/
-                  for prefix in ("./docs/", "docs/"):
-                      if u.startswith(prefix) and u.lower().endswith(".md"):
-                          stripped = u[len(prefix):]  # for example "Introduction.md"
-                          # If it directly exists under docs/ after stripping, use it
-                          if (docs_dir / stripped).exists():
-                              return stripped
-                          # Otherwise try basename mapping (handles nested structure)
-                          candidate = unique_path_for_filename(Path(stripped).name)
-                          if candidate:
-                              return candidate
-                          # fallback: at least remove the docs/ prefix
-                          return stripped
+              # Fix README links that start with docs/... (these 404 on the deployed site)
+              for prefix in ("docs/", "./docs/"):
+                if path.startswith(prefix):
+                  stripped = path[len(prefix):]
 
-                  return url  # leave everything else unchanged
+                  # If it exists exactly under docs/, use it
+                  if (docs_dir / stripped).exists():
+                    path = stripped
+                    break
 
-              # Rewrite Markdown links: [text](url) and images ![alt](url)
-              def repl(m):
-                  label = m.group(1)
-                  url = m.group(2)
-                  return f"[{label}]({fix_url(url)})"
+                  # If it's a bare filename, map it to its real location inside docs/
+                  candidate = unique_path_for_filename(Path(stripped).name)
+                  if candidate:
+                    path = candidate
+                    break
 
-              text = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", repl, text)
-              (docs_dir / "index.md").write_text(text, encoding="utf-8")
+                  # fallback: at least drop the docs/ prefix
+                  path = stripped
+                  break
 
-          # Patch mkdocs.yml so the sidebar "Parts list (BOM)" is internal (not GitHub)
+              # Rebuild URL
+              return urlunsplit((
+                parts.scheme, parts.netloc, path, query, frag
+              ))
+
+            # Replace markdown links and image links: [text](url) and ![alt](url)
+            def repl(m):
+              label = m.group(1)
+              url = m.group(2)
+              return f"[{label}]({fix_url(url)})"
+
+            text = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", repl, text)
+            (docs_dir / "index.md").write_text(text, encoding="utf-8")
+
+          # 5) Patch mkdocs.yml so "Parts list (BOM)" is internal (not GitHub)
           mk = repo / "mkdocs.yml"
           if mk.exists():
-              t = mk.read_text(encoding="utf-8")
+            t = mk.read_text(encoding="utf-8")
 
-              # Replace any explicit GitHub link to the BOM with local path
-              t = re.sub(
-                  r"https?://github\.com/jacobbusshart/DIYraman/(blob|tree)/main/bom(/BOM\.md)?(\?[^ \n]+)?",
-                  "bom/BOM.md",
-                  t,
-              )
+            # Replace explicit GitHub BOM urls with local path
+            t = re.sub(
+              r"https?://github\.com/jacobbusshart/DIYraman/(blob|tree)/main/bom/BOM\.md",
+              "bom/BOM.md",
+              t
+            )
 
-              # If nav uses a label line, force it to local
-              t = re.sub(r"(?m)^(\s*-\s*Parts list \(BOM\)\s*:\s*).*$", r"\1bom/BOM.md", t)
+            # If there's a nav line like: - Parts list (BOM): <something>
+            t = re.sub(
+              r"(?m)^(\s*-\s*Parts list \(BOM\)\s*:\s*).*$",
+              r"\1bom/BOM.md",
+              t
+            )
 
-              mk.write_text(t, encoding="utf-8")
+            mk.write_text(t, encoding="utf-8")
           PY
 
-      - name: Configure git identity
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-      - name: Build & deploy to gh-pages
+      - name: Deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
