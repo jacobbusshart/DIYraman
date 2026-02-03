@@ -2,70 +2,157 @@ name: Build & deploy docs
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: docs-deploy
+  cancel-in-progress: true
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Set up Python
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.x"
+          cache: "pip"
 
-      - name: Cache pip
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/pip
-          key: pip-${{ runner.os }}-${{ hashFiles('**/requirements.txt') }}
-          restore-keys: |
-            pip-${{ runner.os }}-
-
-      - name: Install MkDocs + plugins
+      - name: Install MkDocs dependencies
         run: |
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then
             pip install -r requirements.txt
+          elif [ -f docs/requirements.txt ]; then
+            pip install -r docs/requirements.txt
           else
-            pip install mkdocs-material mkdocs-callouts
+            pip install mkdocs mkdocs-material
           fi
 
-      - name: Use top-level README as docs home
+      - name: Prepare docs (copy files + fix links)
         run: |
-          mkdir -p docs
-          cp README.md docs/index.md
+          python - <<'PY'
+          from pathlib import Path
+          from collections import defaultdict
+          import shutil, re
 
-      - name: Copy BOM into docs so MkDocs ships it
-        run: |
-          if [ -f "bom/BOM.md" ]; then
-            mkdir -p "docs/bom"
-            cp "bom/BOM.md" "docs/bom/BOM.md"
-          fi
+          repo = Path(".").resolve()
+          docs_dir = repo / "docs"
+          docs_dir.mkdir(exist_ok=True)
 
-      - name: Copy assets into docs so MkDocs ships them
-        run: |
-          if [ -d "assets" ]; then
-            mkdir -p docs/assets
-            cp -R assets/* docs/assets/ || true
-          fi
+          # Make sure non-doc folders used by README links exist inside docs/
+          # (MkDocs only ships files inside docs_dir.)
+          def copy_tree_merge(src: Path, dst: Path):
+              if not src.exists():
+                  return
+              dst.mkdir(parents=True, exist_ok=True)
+              shutil.copytree(src, dst, dirs_exist_ok=True)
 
-      - name: Copy results into docs so MkDocs ships them
+          copy_tree_merge(repo / "assets", docs_dir / "assets")
+          copy_tree_merge(repo / "results", docs_dir / "results")
+
+          # Copy BOM into docs/ so it is a real MkDocs page
+          bom_src = repo / "bom" / "BOM.md"
+          if bom_src.exists():
+              (docs_dir / "bom").mkdir(parents=True, exist_ok=True)
+              shutil.copy2(bom_src, docs_dir / "bom" / "BOM.md")
+
+          # Build a mapping of "Filename.md" -> actual relative path within docs/
+          # so links like (docs/Introduction.md) can become (00 - Start here/Introduction.md)
+          name_to_paths = defaultdict(list)
+          for p in docs_dir.rglob("*.md"):
+              # ignore the homepage we generate below (and any existing index.md)
+              if p.relative_to(docs_dir).as_posix().lower() == "index.md":
+                  continue
+              name_to_paths[p.name].append(p.relative_to(docs_dir).as_posix())
+
+          def unique_path_for_filename(filename: str):
+              paths = name_to_paths.get(filename, [])
+              if len(paths) == 1:
+                  return paths[0]
+              return None
+
+          # Copy README.md -> docs/index.md, but rewrite links that break on the site
+          readme = repo / "README.md"
+          if readme.exists():
+              text = readme.read_text(encoding="utf-8")
+
+              def fix_url(url: str) -> str:
+                  u = url.strip()
+
+                  # Add https:// for bare domain links (optional nicety)
+                  if u.startswith("docs.diyraman.com"):
+                      return "https://" + u
+
+                  # Convert GitHub blob/raw links to repo-relative paths (then handle below)
+                  u = re.sub(r"^https?://github\.com/jacobbusshart/DIYraman/blob/main/", "", u)
+                  u = re.sub(r"^https?://raw\.githubusercontent\.com/jacobbusshart/DIYraman/main/", "", u)
+
+                  # BOM: force local MkDocs page
+                  if "bom/BOM.md" in u:
+                      return "bom/BOM.md"
+
+                  # README currently links like (docs/Loremipsum.md) which becomes /docs/Loremipsum.md = 404
+                  # Fix by mapping the basename to the real location inside docs/
+                  for prefix in ("./docs/", "docs/"):
+                      if u.startswith(prefix) and u.lower().endswith(".md"):
+                          stripped = u[len(prefix):]  # for example "Introduction.md"
+                          # If it directly exists under docs/ after stripping, use it
+                          if (docs_dir / stripped).exists():
+                              return stripped
+                          # Otherwise try basename mapping (handles nested structure)
+                          candidate = unique_path_for_filename(Path(stripped).name)
+                          if candidate:
+                              return candidate
+                          # fallback: at least remove the docs/ prefix
+                          return stripped
+
+                  return url  # leave everything else unchanged
+
+              # Rewrite Markdown links: [text](url) and images ![alt](url)
+              def repl(m):
+                  label = m.group(1)
+                  url = m.group(2)
+                  return f"[{label}]({fix_url(url)})"
+
+              text = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", repl, text)
+              (docs_dir / "index.md").write_text(text, encoding="utf-8")
+
+          # Patch mkdocs.yml so the sidebar "Parts list (BOM)" is internal (not GitHub)
+          mk = repo / "mkdocs.yml"
+          if mk.exists():
+              t = mk.read_text(encoding="utf-8")
+
+              # Replace any explicit GitHub link to the BOM with local path
+              t = re.sub(
+                  r"https?://github\.com/jacobbusshart/DIYraman/(blob|tree)/main/bom(/BOM\.md)?(\?[^ \n]+)?",
+                  "bom/BOM.md",
+                  t,
+              )
+
+              # If nav uses a label line, force it to local
+              t = re.sub(r"(?m)^(\s*-\s*Parts list \(BOM\)\s*:\s*).*$", r"\1bom/BOM.md", t)
+
+              mk.write_text(t, encoding="utf-8")
+          PY
+
+      - name: Configure git identity
         run: |
-          if [ -d "results" ]; then
-            mkdir -p docs/results
-            cp -R results/* docs/results/ || true
-          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Build & deploy to gh-pages
-        run: mkdocs gh-deploy --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdocs gh-deploy --force
