@@ -22,7 +22,7 @@ Watch the Youtube video to get started and learn about the principles of Raman S
 
 **DIYraman** aims to make Raman spectroscopy **replicable, affordable, and fully documented**.
 
-Raman spectroscopy allows for the identification of substances by analyzing how light interacts with molecular vibrations. Historically, this equipment costs tens of thousands of dollars. This project provides the files and instructions to bring that capability to the workbench of motivated makers and teachers.
+Raman spectroscopy allows for the identification of substances by analyzing how light interacts with molecular vibrations. Historically, this equipment costs tens of thousands of dollars. This project aims to provide instructions for interested tinkerers, who are looking for a documented, applicable build. 
 
 **Key Applications**
 * **Identify Substances:** Broad identification of plastics, solvents, and minerals.
@@ -31,7 +31,7 @@ Raman spectroscopy allows for the identification of substances by analyzing how 
 
 ![](results/first-spectra_images/Paracetamol_Spectrum-Postprocessed_1.jpg)
 
-> 💡 This README is a *project overview*. Detailed build instructions are available on **[docs.diyraman.com](https://docs.diyraman.com)** or can be found in `docs/` on the dedicated pages. An overview of the build instructions is found further down under [Build Overview](#Build%20Overview).
+> 💡 This README is a *project overview*. Detailed build instructions are available on **[docs.diyraman.com](https://docs.diyraman.com)** or can be found in `docs/` on the dedicated pages. An overview of the build instructions can be found further down under [Build Overview](#Build%20Overview).
 
 ---
 
@@ -41,10 +41,13 @@ To balance cost with performance, DIYraman uses a "hybrid" approach: Professiona
 
 ![Optical Path Overview](assets/images_infographic/Optical-Path-Overview_PNG.png)
 
-* **Spectrometer:** Surplus BTC100-2S unit (available on [eBay](https://www.ebay.com/itm/143989529085)).
-* **Excitation:** Cost-effective 532nm DPSS laser pointer.
-* **Mechanics:** Fully 3D-printable modular stages and enclosures.
+
+* **Spectrometer:** Surplus BTC100-2S unit (available on [eBay](https://www.ebay.com/itm/143989529085))
+* **Excitation:** Cost-effective 532nm DPSS laser pointer
+* **Mechanics:** Fully 3D-printable modular stages and enclosures
 * **Critical Optics:** High-quality dichroic mirrors and filters (Thorlabs/Edmund Optics) are used to ensure signal integrity.
+	* Thorlabs Longpass Dichroic Mirror [DMLP550](https://www.thorlabs.com/item/DMLP550)
+	* Thorlabs Longpass Filter [FELH0550](https://www.thorlabs.com/item/FELH0550)
 
 **Bill of Materials**
 A detailed cost breakdown and parts list is available in the [BOM (Bill of Materials)](bom/BOM.md) .
@@ -53,17 +56,19 @@ A detailed cost breakdown and parts list is available in the [BOM (Bill of Mater
 
 ## Build Overview
 
-The following build path is recommended for a complete and coherent build-experience. The table reflects the current development status of the project's modules.
+The following build path is recommended for a complete and coherent build-experience. The table reflects the current development status of the project's modules. Best viewed and navigated by visiting the [docs.diyraman.com](docs.diyraman.com) page!
+
+*Please note that at this point in time the reproducibility has not been externally validated, as I'm working on the next iteration to optimize and facilitate the entire setup. Until then, view this project as a documentation of my journey into DIY Raman spectroscopy.*
 
 | Step  | Module                                                                                                                                                                                    | Description                                                                  | Status         |
 | :---- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------- | :------------- |
 | **0** | **[Introduction](docs/Introduction.md)**                                                                                                                                                  | How all the parts work and why they were chosen.                             | 🟡 Unpolished  |
 | **1** | **[Spectrometer-Setup](docs/Spectrometer-Setup.md)** <br>+ [SpectrumStudio-Cheatsheet](docs/SpectrumStudio-Cheatsheet.md)<br>+ [Align-with-Fluorescence](docs/Align-with-Fluorescence.md) | Setup and testing of the B&W Tek spectrometer.                               | ✅ Ready        |
 | **2** | **[Dustproof-Workspace](docs/Dustproof-Workspace.md)**                                                                                                                                    | DIY overpressure glovebox construction to keep optics dust-free.             | ✅ Ready        |
-| **3** | **[Core-Assembly](docs/Core-Assembly.md)**                                                                                                                                | Essential optical assembly to acquire first Raman spectra.                   | ✅ Ready        |
+| **3** | **[Core-Assembly](docs/Core-Assembly.md)**                                                                                                                                                | Essential optical assembly to acquire first Raman spectra.                   | ✅ Ready        |
 | **4** | **[DIY-Linear-Stage](docs/DIY-Linear-Stage.md)**                                                                                                                                          | DIY build of a low-cost linear translation stage for fine focus adjustments. | 🟡 WiP         |
 | **5** | Full-Build                                                                                                                                                                                | Motorization and integration of Linear Stage.                                | 🔴 Unpublished |
-| **6** | Software / GUI                                                                                                                                                                            | Custom acquisition and visualization software.                               | 🔴 Planned     |
+| **6** | Software / GUI                                                                                                                                                                            | Custom acquisition and visualization software.                               | 🔴 Unpublished |
 
 
 > **Status Key:** ✅ = Verified & Documented | 🟡 = Usable, Docs in Progress | 🟠 = Draft / Unstable | 🔴 = Planned / Unpublished
@@ -74,12 +79,12 @@ The following build path is recommended for a complete and coherent build-experi
 
 ![](assets/images_pictures/Overview-Video-Pic_3_1400px_JPG.jpg)
 
-| Feature            | Specification                                                                |
-| :----------------- | :--------------------------------------------------------------------------- |
-| **Spectral Range** | Stokes region > ~600 cm⁻¹                                                    |
-| **Sample Type**    | Solids & Liquids (Cuvette holder)                                            |
-| **Resolution**     | Dependent on B&W Tek module variant and slit                                 |
-| **Safety**         | Enclosed optical path (Laser Class 3B precautions required during alignment) |
+| Feature            | Specification                                                                                 |
+| :----------------- | :-------------------------------------------------------------------------------------------- |
+| **Spectral Range** | Stokes region > ~600 cm⁻¹                                                                     |
+| **Sample Type**    | Solids & Liquids (Cuvette holder)                                                             |
+| **Resolution**     | estimated 35 cm⁻¹ (dependent on spectrometer input slit / sensor & laser beam quality)        |
+| **Safety**         | Wear laser safety protection during alignment or until the optical path is entirely enclosed! |
 
 > 🧪 **Drug / counterfeit screening**  
 > The system can be used for *exploratory, educational* screening of unknowns (e.g. counterfeit pills) but **must not** be treated as a validated forensic tool. **Always cross-check with certified methods!**
@@ -88,17 +93,13 @@ The following build path is recommended for a complete and coherent build-experi
 
 ## Repository Structure
 
-```text
-├── assets/                 # Images, infographics, and media
-├── bom/                    # Bill of Materials lists
-├── docs/                   # Detailed build instructions
-├── parts/                  # STL and CAD files for 3D printing
-│   ├── basic-assembly/
-│   ├── glovebox/
-│   └── ...
-├── results/                # Early example spectra captured
-└── software/               # Acquisition software (Coming Soon)
-```
+- `docs/` — the build instructions hosted on [docs.diyraman.com](docs.diyraman.com)
+- `bom/` — BOM tables and sourcing notes  
+- `parts/` — files for printing / 3d-models (.stl)  */feel free to contact me for the full Fusion (.F3D) project file*
+- `assets/` — all images, diagrams, misc. media  
+- `results/` — example spectra / early outputs  
+- `software/` — acquisition and post-processing software (unreleased, planned)
+
 
 ---
 
