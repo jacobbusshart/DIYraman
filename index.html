@@ -1099,30 +1099,35 @@
 <h2 id="project-scope">Project Scope<a class="headerlink" href="#project-scope" title="Permanent link">#</a></h2>
 <p><img alt="Full Assembly in Overpressure Glove Box" src="assets/images_pictures/Overview-Video-Pic_1_1400px_JPG.jpg" /></p>
 <p><strong>DIYraman</strong> aims to make Raman spectroscopy <strong>replicable, affordable, and fully documented</strong>.</p>
-<p>Raman spectroscopy allows for the identification of substances by analyzing how light interacts with molecular vibrations. Historically, this equipment costs tens of thousands of dollars. This project provides the files and instructions to bring that capability to the workbench of motivated makers and teachers.</p>
+<p>Raman spectroscopy allows for the identification of substances by analyzing how light interacts with molecular vibrations. Historically, this equipment costs tens of thousands of dollars. This project aims to provide instructions for interested tinkerers, who are looking for a documented, applicable build. </p>
 <p><strong>Key Applications</strong><br />
 * <strong>Identify Substances:</strong> Broad identification of plastics, solvents, and minerals.<br />
 * <strong>Qualitative Screening:</strong> Exploratory analysis of pharmaceuticals (e.g., pill composition).<br />
 * <strong>Teach Optics:</strong> A hands-on platform for learning spectroscopy and photonics.</p>
 <p><img alt="" src="results/first-spectra_images/Paracetamol_Spectrum-Postprocessed_1.jpg" /></p>
 <blockquote>
-<p>💡 This README is a <em>project overview</em>. Detailed build instructions are available on <strong><a href="https://docs.diyraman.com">docs.diyraman.com</a></strong> or can be found in <code>docs/</code> on the dedicated pages. An overview of the build instructions is found further down under <a href="#Build%20Overview">Build Overview</a>.</p>
+<p>💡 This README is a <em>project overview</em>. Detailed build instructions are available on <strong><a href="https://docs.diyraman.com">docs.diyraman.com</a></strong> or can be found in <code>docs/</code> on the dedicated pages. An overview of the build instructions can be found further down under <a href="#Build%20Overview">Build Overview</a>.</p>
 </blockquote>
 <hr />
 <h2 id="component-selection">Component Selection<a class="headerlink" href="#component-selection" title="Permanent link">#</a></h2>
 <p>To balance cost with performance, DIYraman uses a "hybrid" approach: Professional filtering optics combined with repurposed spectroscopy hardware and 3D-printed mechanics.</p>
 <p><img alt="Optical Path Overview" src="assets/images_infographic/Optical-Path-Overview_PNG.png" /></p>
 <ul>
-<li><strong>Spectrometer:</strong> Surplus BTC100-2S unit (available on <a href="https://www.ebay.com/itm/143989529085">eBay</a>).</li>
-<li><strong>Excitation:</strong> Cost-effective 532nm DPSS laser pointer.</li>
-<li><strong>Mechanics:</strong> Fully 3D-printable modular stages and enclosures.</li>
-<li><strong>Critical Optics:</strong> High-quality dichroic mirrors and filters (Thorlabs/Edmund Optics) are used to ensure signal integrity.</li>
+<li><strong>Spectrometer:</strong> Surplus BTC100-2S unit (available on <a href="https://www.ebay.com/itm/143989529085">eBay</a>)</li>
+<li><strong>Excitation:</strong> Cost-effective 532nm DPSS laser pointer</li>
+<li><strong>Mechanics:</strong> Fully 3D-printable modular stages and enclosures</li>
+<li><strong>Critical Optics:</strong> High-quality dichroic mirrors and filters (Thorlabs/Edmund Optics) are used to ensure signal integrity.<ul>
+<li>Thorlabs Longpass Dichroic Mirror <a href="https://www.thorlabs.com/item/DMLP550">DMLP550</a></li>
+<li>Thorlabs Longpass Filter <a href="https://www.thorlabs.com/item/FELH0550">FELH0550</a></li>
+</ul>
+</li>
 </ul>
 <p><strong>Bill of Materials</strong><br />
 A detailed cost breakdown and parts list is available in the <a href="bom/BOM/">BOM (Bill of Materials)</a> .</p>
 <hr />
 <h2 id="build-overview">Build Overview<a class="headerlink" href="#build-overview" title="Permanent link">#</a></h2>
-<p>The following build path is recommended for a complete and coherent build-experience. The table reflects the current development status of the project's modules.</p>
+<p>The following build path is recommended for a complete and coherent build-experience. The table reflects the current development status of the project's modules. Best viewed and navigated by visiting the <a href="docs.diyraman.com">docs.diyraman.com</a> page!</p>
+<p><em>Please note that at this point in time the reproducibility has not been externally validated, as I'm working on the next iteration to optimize and facilitate the entire setup. Until then, view this project as a documentation of my journey into DIY Raman spectroscopy.</em></p>
 <table>
 <thead>
 <tr>
@@ -1173,7 +1178,7 @@ A detailed cost breakdown and parts list is available in the <a href="bom/BOM/">
 <td style="text-align: left;"><strong>6</strong></td>
 <td style="text-align: left;">Software / GUI</td>
 <td style="text-align: left;">Custom acquisition and visualization software.</td>
-<td style="text-align: left;">🔴 Planned</td>
+<td style="text-align: left;">🔴 Unpublished</td>
 </tr>
 </tbody>
 </table>
@@ -1201,11 +1206,11 @@ A detailed cost breakdown and parts list is available in the <a href="bom/BOM/">
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Resolution</strong></td>
-<td style="text-align: left;">Dependent on B&amp;W Tek module variant and slit</td>
+<td style="text-align: left;">estimated 35 cm⁻¹ (dependent on spectrometer input slit / sensor &amp; laser beam quality)</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Safety</strong></td>
-<td style="text-align: left;">Enclosed optical path (Laser Class 3B precautions required during alignment)</td>
+<td style="text-align: left;">Wear laser safety protection during alignment or until the optical path is entirely enclosed!</td>
 </tr>
 </tbody>
 </table>
@@ -1215,16 +1220,14 @@ The system can be used for <em>exploratory, educational</em> screening of unknow
 </blockquote>
 <hr />
 <h2 id="repository-structure">Repository Structure<a class="headerlink" href="#repository-structure" title="Permanent link">#</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>├── assets/                 # Images, infographics, and media
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├── bom/                    # Bill of Materials lists
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>├── docs/                   # Detailed build instructions
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>├── parts/                  # STL and CAD files for 3D printing
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>│   ├── basic-assembly/
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>│   ├── glovebox/
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>│   └── ...
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>├── results/                # Early example spectra captured
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>└── software/               # Acquisition software (Coming Soon)
-</code></pre></div>
+<ul>
+<li><code>docs/</code> — the build instructions hosted on <a href="docs.diyraman.com">docs.diyraman.com</a></li>
+<li><code>bom/</code> — BOM tables and sourcing notes  </li>
+<li><code>parts/</code> — files for printing / 3d-models (.stl)  <em>/feel free to contact me for the full Fusion (.F3D) project file</em></li>
+<li><code>assets/</code> — all images, diagrams, misc. media  </li>
+<li><code>results/</code> — example spectra / early outputs  </li>
+<li><code>software/</code> — acquisition and post-processing software (unreleased, planned)</li>
+</ul>
 <hr />
 <h2 id="contributing">Contributing<a class="headerlink" href="#contributing" title="Permanent link">#</a></h2>
 <p>Contributions are welcome from makers, scientists, and coders. Areas for contribution include:</p>
